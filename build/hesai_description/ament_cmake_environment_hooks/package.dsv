@@ -1,0 +1,4 @@
+source;share/hesai_description/local_setup.bash
+source;share/hesai_description/local_setup.dsv
+source;share/hesai_description/local_setup.sh
+source;share/hesai_description/local_setup.zsh

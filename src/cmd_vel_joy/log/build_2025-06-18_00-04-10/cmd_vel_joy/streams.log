@@ -1,0 +1,24 @@
+[0.494s] Invoking command in '/home/takuto/turtlebot3_ws/src/cmd_vel_joy': PYTHONPATH=/home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/turtlebot3_ws/src/cmd_vel_joy/install/cmd_vel_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/cmd_vel_joy build --build-base /home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/build install --record /home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/install.log --single-version-externally-managed install_data
+[0.665s] running egg_info
+[0.666s] writing build/cmd_vel_joy/cmd_vel_joy.egg-info/PKG-INFO
+[0.666s] writing dependency_links to build/cmd_vel_joy/cmd_vel_joy.egg-info/dependency_links.txt
+[0.666s] writing entry points to build/cmd_vel_joy/cmd_vel_joy.egg-info/entry_points.txt
+[0.666s] writing requirements to build/cmd_vel_joy/cmd_vel_joy.egg-info/requires.txt
+[0.666s] writing top-level names to build/cmd_vel_joy/cmd_vel_joy.egg-info/top_level.txt
+[0.667s] reading manifest file 'build/cmd_vel_joy/cmd_vel_joy.egg-info/SOURCES.txt'
+[0.668s] writing manifest file 'build/cmd_vel_joy/cmd_vel_joy.egg-info/SOURCES.txt'
+[0.668s] running build
+[0.668s] running build_py
+[0.668s] copying cmd_vel_joy/joy_cmd.py -> /home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/build/lib/cmd_vel_joy
+[0.668s] running install
+[0.669s] running install_lib
+[0.669s] copying /home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/build/lib/cmd_vel_joy/joy_cmd.py -> /home/takuto/turtlebot3_ws/src/cmd_vel_joy/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy
+[0.670s] byte-compiling /home/takuto/turtlebot3_ws/src/cmd_vel_joy/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy/joy_cmd.py to joy_cmd.cpython-310.pyc
+[0.670s] running install_data
+[0.670s] running install_egg_info
+[0.672s] removing '/home/takuto/turtlebot3_ws/src/cmd_vel_joy/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy-0.0.0-py3.10.egg-info' (and everything under it)
+[0.672s] Copying build/cmd_vel_joy/cmd_vel_joy.egg-info to /home/takuto/turtlebot3_ws/src/cmd_vel_joy/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy-0.0.0-py3.10.egg-info
+[0.673s] running install_scripts
+[0.688s] Installing joy_cmd script to /home/takuto/turtlebot3_ws/src/cmd_vel_joy/install/cmd_vel_joy/lib/cmd_vel_joy
+[0.688s] writing list of installed files to '/home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/install.log'
+[0.718s] Invoked command in '/home/takuto/turtlebot3_ws/src/cmd_vel_joy' returned '0': PYTHONPATH=/home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/turtlebot3_ws/src/cmd_vel_joy/install/cmd_vel_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/cmd_vel_joy build --build-base /home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/build install --record /home/takuto/turtlebot3_ws/src/cmd_vel_joy/build/cmd_vel_joy/install.log --single-version-externally-managed install_data

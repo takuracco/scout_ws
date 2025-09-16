@@ -1,0 +1,1 @@
+/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0/launch/dashing_start.py

@@ -1,0 +1,164 @@
+[0.224s] Invoking command in '/home/takuto/scout_ws/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake /home/takuto/scout_ws/src/HesaiLidar_ROS_2.0 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/install/hesai_ros_driver
+[0.284s] -- The C compiler identification is GNU 11.4.0
+[0.337s] -- The CXX compiler identification is GNU 11.4.0
+[0.344s] -- Detecting C compiler ABI info
+[0.423s] -- Detecting C compiler ABI info - done
+[0.429s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.429s] -- Detecting C compile features
+[0.429s] -- Detecting C compile features - done
+[0.432s] -- Detecting CXX compiler ABI info
+[0.519s] -- Detecting CXX compiler ABI info - done
+[0.526s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.526s] -- Detecting CXX compile features
+[0.527s] -- Detecting CXX compile features - done
+[0.528s] -- cuda not found!
+[0.528s] [0m=============================================================[0m
+[0.528s] [0m-- ROS_VERSION is 2[0m
+[0.528s] [0m=============================================================[0m
+[0.682s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.741s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.874s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.885s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.898s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.914s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.938s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.998s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.004s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.114s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.144s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.190s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.204s] -- Looking for pthread.h
+[1.285s] -- Looking for pthread.h - found
+[1.286s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.364s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.365s] -- Found Threads: TRUE  
+[1.412s] [0m=============================================================[0m
+[1.413s] [0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[1.413s] [0m=============================================================[0m
+[1.416s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.443s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.478s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.738s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.054s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.172s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.193s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.197s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.222s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.223s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.223s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.223s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.242s] -- Found PythonExtra: .so  
+[2.330s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[2.342s] -- Configuring done
+[2.390s] -- Generating done
+[2.406s] -- Build files have been written to: /home/takuto/scout_ws/build/hesai_ros_driver
+[2.416s] Invoked command in '/home/takuto/scout_ws/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake /home/takuto/scout_ws/src/HesaiLidar_ROS_2.0 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/install/hesai_ros_driver
+[2.418s] Invoking command in '/home/takuto/scout_ws/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/hesai_ros_driver -- -j16 -l16
+[2.462s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.473s] [  3%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/log_lib.dir/Logger/src/logger.cc.o[0m
+[2.474s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.483s] [  3%] Built target ament_cmake_python_symlink_hesai_ros_driver
+[2.728s] running egg_info
+[2.728s] creating hesai_ros_driver.egg-info
+[2.728s] writing hesai_ros_driver.egg-info/PKG-INFO
+[2.729s] writing dependency_links to hesai_ros_driver.egg-info/dependency_links.txt
+[2.729s] writing top-level names to hesai_ros_driver.egg-info/top_level.txt
+[2.729s] writing manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[2.731s] reading manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[2.731s] writing manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[2.758s] [  3%] Built target ament_cmake_python_build_hesai_ros_driver_egg
+[2.902s] [  3%] Built target hesai_ros_driver__cpp
+[2.917s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.917s] [  8%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/ptp__functions.c.o[0m
+[2.917s] [  8%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/udp_frame__functions.c.o[0m
+[2.917s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.917s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.917s] [  9%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/udp_packet__functions.c.o[0m
+[2.917s] [ 10%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/loss_packet__functions.c.o[0m
+[2.919s] [ 11%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/firetime__functions.c.o[0m
+[3.018s] [ 12%] [32m[1mLinking CXX shared library liblog_lib.so[0m
+[3.020s] [ 13%] [32m[1mLinking C shared library libhesai_ros_driver__rosidl_generator_c.so[0m
+[3.092s] [ 13%] Built target hesai_ros_driver__rosidl_generator_c
+[3.108s] [ 17%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.108s] [ 17%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.108s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.128s] [ 17%] Built target log_lib
+[3.160s] [ 19%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/platutils_lib.dir/Common/src/auto_tick_count.cc.o[0m
+[3.160s] [ 19%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/platutils_lib.dir/Common/src/plat_utils.cc.o[0m
+[3.307s] [ 20%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/udp_packet__type_support.cpp.o[0m
+[3.309s] [ 21%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/ptp__type_support.cpp.o[0m
+[3.309s] [ 22%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/loss_packet__type_support.cpp.o[0m
+[3.310s] [ 23%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/udp_frame__type_support.cpp.o[0m
+[3.310s] [ 24%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/firetime__type_support.cpp.o[0m
+[3.333s] [ 26%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/udp_packet__type_support.cpp.o[0m
+[3.333s] [ 26%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/udp_frame__type_support.cpp.o[0m
+[3.333s] [ 27%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/loss_packet__type_support.cpp.o[0m
+[3.333s] [ 29%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/firetime__type_support.cpp.o[0m
+[3.338s] [ 30%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/ptp__type_support.cpp.o[0m
+[3.678s] [ 31%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/udp_packet__type_support.cpp.o[0m
+[3.716s] [ 32%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/udp_packet__type_support.cpp.o[0m
+[3.789s] [ 33%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/udp_frame__type_support.cpp.o[0m
+[3.836s] [ 34%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/udp_frame__type_support.cpp.o[0m
+[3.847s] [ 35%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/firetime__type_support.cpp.o[0m
+[3.847s] [ 36%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/firetime__type_support.cpp.o[0m
+[3.854s] [ 37%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/ptp__type_support.cpp.o[0m
+[3.870s] [ 38%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_cpp.so[0m
+[3.871s] [ 39%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/ptp__type_support.cpp.o[0m
+[3.909s] [ 40%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/udp_packet__type_support.c.o[0m
+[3.918s] [ 41%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/udp_frame__type_support.c.o[0m
+[3.934s] [ 43%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/loss_packet__type_support.cpp.o[0m
+[3.965s] [ 43%] Built target hesai_ros_driver__rosidl_typesupport_cpp
+[3.969s] [ 44%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/udp_packet__type_support_c.cpp.o[0m
+[3.987s] [ 45%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/firetime__type_support.c.o[0m
+[4.001s] [ 46%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_c.so[0m
+[4.004s] [ 47%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/loss_packet__type_support.cpp.o[0m
+[4.007s] [ 48%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/ptp__type_support.c.o[0m
+[4.027s] [ 49%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/udp_frame__type_support_c.cpp.o[0m
+[4.065s] [ 50%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/loss_packet__type_support.c.o[0m
+[4.073s] [ 51%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/firetime__type_support_c.cpp.o[0m
+[4.080s] [ 52%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/ptp__type_support_c.cpp.o[0m
+[4.101s] [ 52%] Built target hesai_ros_driver__rosidl_typesupport_c
+[4.102s] [ 53%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/loss_packet__type_support_c.cpp.o[0m
+[4.150s] [ 54%] [32m[1mLinking C shared library libhesai_ros_driver__rosidl_typesupport_introspection_c.so[0m
+[4.226s] [ 54%] Built target hesai_ros_driver__rosidl_typesupport_introspection_c
+[4.264s] [ 55%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so[0m
+[4.435s] [ 55%] Built target hesai_ros_driver__rosidl_typesupport_introspection_cpp
+[4.560s] [ 56%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.634s] [ 58%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so[0m
+[4.635s] [ 59%] [32m[1mLinking CXX shared library libplatutils_lib.so[0m
+[4.640s] [ 59%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_cpp
+[4.704s] [ 59%] Built target platutils_lib
+[4.704s] [ 59%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_c
+[4.731s] [ 60%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_1_0_parser.cc.o[0m
+[4.732s] [ 61%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_source.cc.o[0m
+[4.732s] [ 62%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/ptc_parser.cc.o[0m
+[4.732s] [ 64%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/UdpParser/udp_parser.cc.o[0m
+[4.732s] [ 64%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/ptc_client.cc.o[0m
+[4.732s] [ 65%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/source.cc.o[0m
+[4.733s] [ 66%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_ssl_client.cc.o[0m
+[4.733s] [ 67%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/socket_source.cc.o[0m
+[4.733s] [ 68%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_client.cc.o[0m
+[4.734s] [ 70%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/serial_source.cc.o[0m
+[4.734s] [ 70%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_2_0_parser.cc.o[0m
+[4.734s] [ 72%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_saver.cc.o[0m
+[4.734s] [ 73%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/general_ptc_parser.cc.o[0m
+[5.051s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:132: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_2_0_parser.cc.o] 割り込み
+[5.051s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:90: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_client.cc.o] 割り込み
+[5.051s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:104: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/general_ptc_parser.cc.o] 割り込み
+[5.051s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:160: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_ssl_client.cc.o] 割り込み
+[5.051s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:132: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_saver.cc.o] 割り込み
+[5.051s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:90: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/socket_source.cc.o] 割り込み
+[5.052s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:118: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_1_0_parser.cc.o] 割り込み
+[5.052s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:104: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_source.cc.o] 割り込み
+[5.052s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/build.make:76: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/UdpParser/udp_parser.cc.o] 割り込み
+[5.053s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:76: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/source.cc.o] 割り込み
+[5.053s] gmake[2]: *** wait: 子プロセスがありません.  中止.
+[5.053s] gmake[2]: *** 未完了のジョブを待っています....
+[5.053s] gmake[2]: *** wait: 子プロセスがありません.  中止.
+[5.053s] gmake[1]: *** [CMakeFiles/Makefile2:733: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/all] 割り込み
+[5.053s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:146: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/ptc_parser.cc.o] 割り込み
+[5.053s] gmake[1]: *** [CMakeFiles/Makefile2:787: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/all] エラー 2
+[5.054s] gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:76: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/ptc_client.cc.o] 割り込み
+[5.055s] gmake[1]: *** [CMakeFiles/Makefile2:760: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/all] 割り込み
+[5.055s] gmake: *** [Makefile:146: all] 割り込み
+[5.063s] Invoked command in '/home/takuto/scout_ws/build/hesai_ros_driver' returned '-2': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/hesai_ros_driver -- -j16 -l16

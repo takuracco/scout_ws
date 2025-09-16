@@ -1,0 +1,3 @@
+[console_scripts]
+joy_cmd = cmd_vel_joy.joy_cmd:main
+

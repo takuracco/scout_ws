@@ -1,0 +1,371 @@
+[0.245s] Invoking command in '/home/takuto/scout_ws/src/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake /home/takuto/scout_ws/src/HesaiLidar_ROS_2.0 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/src/install/hesai_ros_driver
+[0.775s] -- The C compiler identification is GNU 11.4.0
+[1.057s] -- The CXX compiler identification is GNU 11.4.0
+[1.074s] -- Detecting C compiler ABI info
+[1.172s] -- Detecting C compiler ABI info - done
+[1.177s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.177s] -- Detecting C compile features
+[1.178s] -- Detecting C compile features - done
+[1.182s] -- Detecting CXX compiler ABI info
+[1.276s] -- Detecting CXX compiler ABI info - done
+[1.282s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.282s] -- Detecting CXX compile features
+[1.282s] -- Detecting CXX compile features - done
+[1.283s] [0m=============================================================[0m
+[1.283s] -- cuda not found!
+[1.284s] [0m-- ROS_VERSION is 2[0m
+[1.284s] [0m=============================================================[0m
+[1.463s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.545s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.731s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.747s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.772s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.812s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.849s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.947s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.956s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.102s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.137s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.185s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.218s] -- Looking for pthread.h
+[2.314s] -- Looking for pthread.h - found
+[2.315s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.392s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.393s] -- Found Threads: TRUE  
+[2.466s] [0m=============================================================[0m
+[2.466s] [0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[2.466s] [0m=============================================================[0m
+[2.470s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.524s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[2.579s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.841s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.160s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.276s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.300s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.306s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.335s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.335s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.335s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.335s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.354s] -- Found PythonExtra: .so  
+[3.482s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[3.501s] -- Configuring done
+[3.561s] -- Generating done
+[3.576s] -- Build files have been written to: /home/takuto/scout_ws/src/build/hesai_ros_driver
+[3.587s] Invoked command in '/home/takuto/scout_ws/src/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake /home/takuto/scout_ws/src/HesaiLidar_ROS_2.0 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/src/install/hesai_ros_driver
+[3.589s] Invoking command in '/home/takuto/scout_ws/src/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/src/build/hesai_ros_driver -- -j16 -l16
+[3.634s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.645s] [  2%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/log_lib.dir/Logger/src/logger.cc.o[0m
+[3.645s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.655s] [  3%] Built target ament_cmake_python_symlink_hesai_ros_driver
+[3.880s] running egg_info
+[3.880s] creating hesai_ros_driver.egg-info
+[3.880s] writing hesai_ros_driver.egg-info/PKG-INFO
+[3.881s] writing dependency_links to hesai_ros_driver.egg-info/dependency_links.txt
+[3.881s] writing top-level names to hesai_ros_driver.egg-info/top_level.txt
+[3.881s] writing manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[3.882s] reading manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[3.883s] writing manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'
+[3.908s] [  3%] Built target ament_cmake_python_build_hesai_ros_driver_egg
+[4.110s] [  3%] Built target hesai_ros_driver__cpp
+[4.116s] [  7%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/loss_packet__functions.c.o[0m
+[4.117s] [  7%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/udp_packet__functions.c.o[0m
+[4.117s] [  7%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/firetime__functions.c.o[0m
+[4.117s] [  7%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/udp_frame__functions.c.o[0m
+[4.117s] [  8%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_c.dir/rosidl_generator_c/hesai_ros_driver/msg/detail/ptp__functions.c.o[0m
+[4.124s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.124s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.126s] [ 11%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.394s] [ 12%] [32m[1mLinking C shared library libhesai_ros_driver__rosidl_generator_c.so[0m
+[4.449s] [ 12%] Built target hesai_ros_driver__rosidl_generator_c
+[4.459s] [ 17%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/firetime__type_support.cpp.o[0m
+[4.459s] [ 17%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/ptp__type_support.cpp.o[0m
+[4.459s] [ 17%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/udp_packet__type_support.cpp.o[0m
+[4.459s] [ 17%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/loss_packet__type_support.cpp.o[0m
+[4.459s] [ 18%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hesai_ros_driver/msg/udp_frame__type_support.cpp.o[0m
+[4.468s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.468s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.469s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.576s] [ 22%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/udp_packet__type_support.cpp.o[0m
+[4.581s] [ 23%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/firetime__type_support.cpp.o[0m
+[4.583s] [ 24%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/ptp__type_support.cpp.o[0m
+[4.584s] [ 25%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/udp_frame__type_support.cpp.o[0m
+[4.602s] [ 26%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hesai_ros_driver/msg/detail/loss_packet__type_support.cpp.o[0m
+[4.629s] [ 29%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/udp_frame__type_support.cpp.o[0m
+[4.629s] [ 29%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/udp_packet__type_support.cpp.o[0m
+[4.638s] [ 30%] [32m[1mLinking CXX shared library liblog_lib.so[0m
+[4.804s] [ 30%] Built target log_lib
+[4.850s] [ 31%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/platutils_lib.dir/Common/src/plat_utils.cc.o[0m
+[4.955s] [ 32%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/platutils_lib.dir/Common/src/auto_tick_count.cc.o[0m
+[4.961s] [ 33%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/firetime__type_support.cpp.o[0m
+[4.967s] [ 35%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_cpp.so[0m
+[4.967s] [ 35%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/loss_packet__type_support.cpp.o[0m
+[4.968s] [ 36%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hesai_ros_driver/msg/detail/dds_fastrtps/ptp__type_support.cpp.o[0m
+[5.078s] [ 36%] Built target hesai_ros_driver__rosidl_typesupport_cpp
+[5.146s] [ 38%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/udp_frame__type_support.cpp.o[0m
+[5.146s] [ 38%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/udp_packet__type_support.cpp.o[0m
+[5.221s] [ 39%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/firetime__type_support.cpp.o[0m
+[5.253s] [ 40%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/ptp__type_support.cpp.o[0m
+[5.309s] [ 41%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c.dir/rosidl_typesupport_c/hesai_ros_driver/msg/loss_packet__type_support.cpp.o[0m
+[5.363s] [ 43%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/udp_packet__type_support.c.o[0m
+[5.363s] [ 44%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/firetime__type_support.c.o[0m
+[5.364s] [ 45%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/udp_frame__type_support.c.o[0m
+[5.366s] [ 46%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/udp_packet__type_support_c.cpp.o[0m
+[5.375s] [ 47%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/udp_frame__type_support_c.cpp.o[0m
+[5.380s] [ 48%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/ptp__type_support.c.o[0m
+[5.380s] [ 49%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_c.so[0m
+[5.391s] [ 50%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/firetime__type_support_c.cpp.o[0m
+[5.455s] [ 51%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hesai_ros_driver/msg/detail/loss_packet__type_support.c.o[0m
+[5.468s] [ 52%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/ptp__type_support_c.cpp.o[0m
+[5.468s] [ 53%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hesai_ros_driver/msg/detail/loss_packet__type_support_c.cpp.o[0m
+[5.496s] [ 53%] Built target hesai_ros_driver__rosidl_typesupport_c
+[5.537s] [ 54%] [32m[1mLinking C shared library libhesai_ros_driver__rosidl_typesupport_introspection_c.so[0m
+[5.546s] [ 55%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so[0m
+[5.616s] [ 55%] Built target hesai_ros_driver__rosidl_typesupport_introspection_c
+[5.708s] [ 55%] Built target hesai_ros_driver__rosidl_typesupport_introspection_cpp
+[5.722s] [ 56%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.821s] [ 56%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_cpp
+[5.925s] [ 58%] [32m[1mLinking CXX shared library libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so[0m
+[5.994s] [ 58%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_c
+[6.018s] [ 58%] Built target hesai_ros_driver
+[6.041s] [ 59%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.087s] [ 60%] [32m[1mLinking CXX shared library libplatutils_lib.so[0m
+[6.152s] [ 60%] Built target platutils_lib
+[6.180s] [ 62%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_client.cc.o[0m
+[6.180s] [ 62%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_1_0_parser.cc.o[0m
+[6.180s] [ 63%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/UdpParser/udp_parser.cc.o[0m
+[6.180s] [ 64%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/ptc_client.cc.o[0m
+[6.181s] [ 65%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/general_ptc_parser.cc.o[0m
+[6.182s] [ 67%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/socket_source.cc.o[0m
+[6.182s] [ 67%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_source.cc.o[0m
+[6.182s] [ 68%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_2_0_parser.cc.o[0m
+[6.183s] [ 69%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/ptc_parser.cc.o[0m
+[6.183s] [ 72%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/serial_source.cc.o[0m
+[6.183s] [ 72%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_ssl_client.cc.o[0m
+[6.183s] [ 73%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_saver.cc.o[0m
+[6.184s] [ 74%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/source.cc.o[0m
+[7.030s] [ 75%] [32m[1mLinking CXX shared library libudpParser_lib.so[0m
+[7.109s] [ 75%] Built target hesai_ros_driver__py
+[7.144s] [ 76%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_udp_frame_s.c.o[0m
+[7.144s] [ 77%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_udp_packet_s.c.o[0m
+[7.145s] [ 78%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_ptp_s.c.o[0m
+[7.148s] [ 79%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_firetime_s.c.o[0m
+[7.149s] [ 80%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_generator_py.dir/rosidl_generator_py/hesai_ros_driver/msg/_loss_packet_s.c.o[0m
+[7.154s] [ 80%] Built target udpParser_lib
+[7.429s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/hesai_ros_driver/libhesai_ros_driver__rosidl_generator_py.so[0m
+[7.487s] [ 81%] Built target hesai_ros_driver__rosidl_generator_py
+[7.515s] [ 83%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.515s] [ 83%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.516s] [ 84%] [32mBuilding C object CMakeFiles/hesai_ros_driver__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_c.c.o[0m
+[7.538s] [ 86%] [32m[1mLinking CXX shared library libsource_lib.so[0m
+[7.627s] [ 86%] Built target source_lib
+[7.658s] [ 87%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/serialClient_lib.dir/SerialClient/src/serial_client.cc.o[0m
+[7.693s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.693s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.693s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.744s] [ 90%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_c__pyext
+[7.744s] [ 90%] Built target hesai_ros_driver__rosidl_typesupport_c__pyext
+[7.744s] [ 90%] Built target hesai_ros_driver__rosidl_typesupport_introspection_c__pyext
+[8.144s] [ 91%] [32m[1mLinking CXX shared library libptcClient_lib.so[0m
+[8.255s] [ 91%] Built target ptcClient_lib
+[8.320s] [ 92%] [32m[1mLinking CXX shared library libserialClient_lib.so[0m
+[8.380s] [ 92%] Built target serialClient_lib
+[8.405s] [ 93%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/lidar_lib.dir/Lidar/lidar.cc.o[0m
+[9.022s] [ 94%] [32m[1mLinking CXX shared library liblidar_lib.so[0m
+[9.087s] [ 94%] Built target lidar_lib
+[9.109s] [ 95%] [32mBuilding CXX object src/driver/HesaiLidar_SDK_2.0/CMakeFiles/hesai_sdk_lib.dir/driver/hesai_lidar_sdk.cc.o[0m
+[9.727s] [ 96%] [32m[1mLinking CXX shared library libhesai_sdk_lib.so[0m
+[9.796s] [ 96%] Built target hesai_sdk_lib
+[9.817s] [ 98%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver_node.dir/node/hesai_ros_driver_node.cc.o[0m
+[9.817s] [ 98%] [32mBuilding CXX object CMakeFiles/hesai_ros_driver_node.dir/src/manager/node_manager.cc.o[0m
+[33.012s] [100%] [32m[1mLinking CXX executable hesai_ros_driver_node[0m
+[33.350s] [100%] Built target hesai_ros_driver_node
+[33.364s] Invoked command in '/home/takuto/scout_ws/src/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/src/build/hesai_ros_driver -- -j16 -l16
+[33.366s] Invoking command in '/home/takuto/scout_ws/src/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/src/build/hesai_ros_driver
+[33.373s] -- Install configuration: "Release"
+[33.374s] -- Execute custom install script
+[33.374s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/ament_index/resource_index/rosidl_interfaces/hesai_ros_driver
+[33.383s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__functions.h
+[33.392s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__struct.h
+[33.401s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.h
+[33.411s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__functions.h
+[33.419s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__struct.h
+[33.428s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.h
+[33.437s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__functions.h
+[33.446s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__struct.h
+[33.455s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.h
+[33.463s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__functions.h
+[33.472s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__struct.h
+[33.481s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.h
+[33.490s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__functions.h
+[33.498s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__struct.h
+[33.507s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.h
+[33.516s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/firetime.h
+[33.524s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/loss_packet.h
+[33.533s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/ptp.h
+[33.542s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_generator_c__visibility_control.h
+[33.550s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_frame.h
+[33.560s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_packet.h
+[33.568s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/library_path.sh
+[33.578s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/library_path.dsv
+[33.587s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_fastrtps_c.h
+[33.596s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_fastrtps_c.h
+[33.604s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_fastrtps_c.h
+[33.614s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_fastrtps_c.h
+[33.622s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_fastrtps_c.h
+[33.630s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[33.638s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__builder.hpp
+[33.664s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__struct.hpp
+[33.673s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__traits.hpp
+[33.681s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.hpp
+[33.690s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__builder.hpp
+[33.699s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__struct.hpp
+[33.709s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__traits.hpp
+[33.717s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.hpp
+[33.725s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__builder.hpp
+[33.734s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__struct.hpp
+[33.743s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__traits.hpp
+[33.751s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.hpp
+[33.759s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__builder.hpp
+[33.767s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__struct.hpp
+[33.775s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__traits.hpp
+[33.783s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.hpp
+[33.792s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__builder.hpp
+[33.801s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__struct.hpp
+[33.810s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__traits.hpp
+[33.818s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.hpp
+[33.826s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/firetime.hpp
+[33.836s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/loss_packet.hpp
+[33.844s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/ptp.hpp
+[33.852s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_generator_cpp__visibility_control.hpp
+[33.862s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_frame.hpp
+[33.870s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_packet.hpp
+[33.879s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_fastrtps_cpp.hpp
+[33.888s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[33.896s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_fastrtps_cpp.hpp
+[33.905s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_fastrtps_cpp.hpp
+[33.913s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_fastrtps_cpp.hpp
+[33.922s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[33.931s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_introspection_c.h
+[33.939s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_introspection_c.h
+[33.948s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_introspection_c.h
+[33.956s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_introspection_c.h
+[33.965s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_introspection_c.h
+[33.973s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[33.982s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_introspection_cpp.hpp
+[33.990s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_introspection_cpp.hpp
+[33.999s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_introspection_cpp.hpp
+[34.007s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_introspection_cpp.hpp
+[34.015s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_introspection_cpp.hpp
+[34.024s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/pythonpath.sh
+[34.032s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/pythonpath.dsv
+[34.041s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/PKG-INFO
+[34.051s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/SOURCES.txt
+[34.058s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/dependency_links.txt
+[34.066s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/top_level.txt
+[34.076s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/__init__.py
+[34.084s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_c.c
+[34.093s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_fastrtps_c.c
+[34.102s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_introspection_c.c
+[34.110s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[34.120s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[34.129s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[34.137s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/libhesai_ros_driver__rosidl_generator_py.so
+[34.145s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/__init__.py
+[34.152s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_firetime.py
+[34.161s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_firetime_s.c
+[34.170s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_loss_packet.py
+[34.179s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_loss_packet_s.c
+[34.187s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_ptp.py
+[34.196s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_ptp_s.c
+[34.204s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_frame.py
+[34.213s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_frame_s.c
+[34.222s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_packet.py
+[34.230s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_packet_s.c
+[34.239s] -- Up-to-date symlink: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[34.239s] -- Up-to-date symlink: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[34.239s] -- Up-to-date symlink: /home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[34.240s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg/UdpPacket.idl
+[34.248s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg/UdpFrame.idl
+[34.257s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg/Firetime.idl
+[34.265s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg/Ptp.idl
+[34.274s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg/LossPacket.idl
+[34.283s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/UdpPacket.msg
+[34.291s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/UdpFrame.msg
+[34.301s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/Firetime.msg
+[34.310s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/Ptp.msg
+[34.318s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/LossPacket.msg
+[34.327s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/hesai_ros_driver/hesai_ros_driver_node
+[34.337s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_sdk_lib.so
+[34.345s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/liblog_lib.so
+[34.354s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/liblidar_lib.so
+[34.363s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/launch/dashing_start.py
+[34.371s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/launch/start.launch
+[34.379s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/launch/start.py
+[34.388s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/rviz/rviz.rviz
+[34.397s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/rviz/rviz2.rviz
+[34.406s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/ament_index/resource_index/package_run_dependencies/hesai_ros_driver
+[34.415s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/ament_index/resource_index/parent_prefix_path/hesai_ros_driver
+[34.424s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/ament_prefix_path.sh
+[34.433s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/ament_prefix_path.dsv
+[34.441s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/path.sh
+[34.449s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/environment/path.dsv
+[34.458s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.bash
+[34.466s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.sh
+[34.475s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.zsh
+[34.484s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.dsv
+[34.493s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/package.dsv
+[34.501s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/ament_index/resource_index/packages/hesai_ros_driver
+[34.510s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake-extras.cmake
+[34.520s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.529s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.537s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[34.545s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_targets-extras.cmake
+[34.553s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[34.561s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[34.571s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driverConfig.cmake
+[34.579s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driverConfig-version.cmake
+[34.587s] -- Symlinking: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/package.xml
+[34.595s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_c.so
+[34.596s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_c.so" to ""
+[34.596s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so
+[34.596s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so" to ""
+[34.596s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so
+[34.597s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so" to ""
+[34.597s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_c.so
+[34.597s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_c.so" to ""
+[34.597s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_c.so
+[34.597s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_c.so" to ""
+[34.597s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so
+[34.598s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so" to ""
+[34.598s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_cpp.so
+[34.598s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_cpp.so" to ""
+[34.630s] Listing '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver'...
+[34.630s] Compiling '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/__init__.py'...
+[34.630s] Listing '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg'...
+[34.630s] Compiling '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/__init__.py'...
+[34.630s] Compiling '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_firetime.py'...
+[34.630s] Compiling '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_loss_packet.py'...
+[34.630s] Compiling '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_ptp.py'...
+[34.631s] Compiling '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_frame.py'...
+[34.631s] Compiling '/home/takuto/scout_ws/src/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_packet.py'...
+[34.633s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_py.so
+[34.634s] -- Set runtime path of "/home/takuto/scout_ws/src/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_py.so" to ""
+[34.634s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cExport.cmake
+[34.634s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cExport-release.cmake
+[34.634s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cExport.cmake
+[34.634s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cExport-release.cmake
+[34.634s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cppExport.cmake
+[34.635s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cppExport.cmake
+[34.635s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[34.635s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cExport.cmake
+[34.635s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cExport-release.cmake
+[34.635s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cExport.cmake
+[34.636s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cExport-release.cmake
+[34.636s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cppExport.cmake
+[34.636s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cppExport-release.cmake
+[34.636s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cppExport.cmake
+[34.636s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cppExport-release.cmake
+[34.636s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_pyExport.cmake
+[34.636s] -- Installing: /home/takuto/scout_ws/src/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_pyExport-release.cmake
+[34.640s] Invoked command in '/home/takuto/scout_ws/src/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/src/build/hesai_ros_driver

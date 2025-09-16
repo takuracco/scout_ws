@@ -1,0 +1,25 @@
+[0m=============================================================[0m
+[0m-- ROS_VERSION is 2[0m
+[0m=============================================================[0m
+[0m=============================================================[0m
+[0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[0m=============================================================[0m
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:132: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_2_0_parser.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:90: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_client.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:104: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/general_ptc_parser.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:160: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/tcp_ssl_client.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:132: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_saver.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:90: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/socket_source.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:118: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/src/ptc_1_0_parser.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:104: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/pcap_source.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/build.make:76: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/UdpParser/udp_parser.cc.o] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/build.make:76: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/Source/src/source.cc.o] 割り込み
+gmake[2]: *** wait: 子プロセスがありません.  中止.
+gmake[2]: *** 未完了のジョブを待っています....
+gmake[2]: *** wait: 子プロセスがありません.  中止.
+gmake[1]: *** [CMakeFiles/Makefile2:733: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/udpParser_lib.dir/all] 割り込み
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:146: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcParser/ptc_parser.cc.o] 割り込み
+gmake[1]: *** [CMakeFiles/Makefile2:787: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/source_lib.dir/all] エラー 2
+gmake[2]: *** [src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/build.make:76: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/PtcClient/src/ptc_client.cc.o] 割り込み
+gmake[1]: *** [CMakeFiles/Makefile2:760: src/driver/HesaiLidar_SDK_2.0/libhesai/CMakeFiles/ptcClient_lib.dir/all] 割り込み
+gmake: *** [Makefile:146: all] 割り込み
