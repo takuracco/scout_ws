@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target roughness_cul[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/roughness_cul_Node.dir/rclcpp_components/node_main_roughness_cul_Node.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/roughness_cul.dir/src/roughness_cul_Node/roughness_cul.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable roughness_cul_Node[0m
+[ 66%] [32m[1mLinking CXX shared library libroughness_cul.so[0m
+[100%] Built target roughness_cul

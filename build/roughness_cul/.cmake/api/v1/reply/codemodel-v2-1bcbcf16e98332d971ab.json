@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b24c22f819724e588528.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "roughness_cul",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "roughness_cul::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roughness_cul-da3af5ade374e065833f.json",
+					"name" : "roughness_cul",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roughness_cul_Node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roughness_cul_Node-210ea46dbdc5bd0cd6dc.json",
+					"name" : "roughness_cul_Node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "roughness_cul_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-roughness_cul_uninstall-61badd696f360b974b28.json",
+					"name" : "roughness_cul_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-de02545930b780a534e6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/takuto/scout_ws/build/roughness_cul",
+		"source" : "/home/takuto/scout_ws/src/roughness_cul"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -14,6 +14,8 @@
 /home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/meshes/wheel_type2.dae
 /home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/urdf/scout.urdf
 /home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/launch/launch.py
+/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/worlds/field.world
+/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/rviz/scout_gazebo.rviz
 /home/takuto/scout_ws/install/scout_gazebo/share/ament_index/resource_index/package_run_dependencies/scout_gazebo
 /home/takuto/scout_ws/install/scout_gazebo/share/ament_index/resource_index/parent_prefix_path/scout_gazebo
 /home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/environment/ament_prefix_path.sh

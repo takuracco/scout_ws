@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target roughness_cul[0m
+[ 40%] Built target roughness_cul_subscriber
+[ 60%] [32mBuilding CXX object CMakeFiles/roughness_cul.dir/src/roughness_cul_Node/roughness_cul.cpp.o[0m
+[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:3:1:[m[K [01;31m[Kerror: [m[Kreturn type specification for constructor invalid
+    3 | [01;31m[Kvoid[m[K roughness_cul::roughness_cul() : public Node("roughness_cul"){
+      | [01;31m[K^~~~[m[K
+[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:[m[K In constructor ‘[01m[Kroughness_cul::roughness_cul()[m[K’:
+[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:3:39:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Kpublic[m[K’
+    3 | void roughness_cul::roughness_cul() : [01;31m[Kpublic[m[K Node("roughness_cul"){
+      |                                       [01;31m[K^~~~~~[m[K
+[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:3:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.hpp:1[m[K,
+                 from [01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+ 1294 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+  101 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+   89 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:3:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kpublic[m[K’
+    3 | void roughness_cul::roughness_cul() : [01;31m[Kpublic[m[K Node("roughness_cul"){
+      |                                       [01;31m[K^~~~~~[m[K
+[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:[m[K At global scope:
+[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.cpp:3:39:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+gmake[2]: *** [CMakeFiles/roughness_cul.dir/build.make:76: CMakeFiles/roughness_cul.dir/src/roughness_cul_Node/roughness_cul.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/roughness_cul.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2

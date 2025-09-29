@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "meshes" "urdf" "launch" "DESTINATION" "share/scout_gazebo")
-ament_cmake_symlink_install_directory("/home/takuto/scout_ws/src/scout_gazebo" DIRECTORY "meshes" "urdf" "launch" "DESTINATION" "share/scout_gazebo")
+# install(DIRECTORY "meshes" "urdf" "launch" "worlds" "rviz" "DESTINATION" "share/scout_gazebo")
+ament_cmake_symlink_install_directory("/home/takuto/scout_ws/src/scout_gazebo" DIRECTORY "meshes" "urdf" "launch" "worlds" "rviz" "DESTINATION" "share/scout_gazebo")
 
 # install(FILES "/home/takuto/scout_ws/build/scout_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scout_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/takuto/scout_ws/src/scout_gazebo" FILES "/home/takuto/scout_ws/build/scout_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/scout_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

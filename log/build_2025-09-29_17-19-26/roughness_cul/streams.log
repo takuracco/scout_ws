@@ -1,0 +1,82 @@
+[0.250s] Invoking command in '/home/takuto/scout_ws/build/roughness_cul': CMAKE_PREFIX_PATH=/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver /usr/bin/cmake /home/takuto/scout_ws/src/roughness_cul -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/install/roughness_cul
+[0.842s] -- The C compiler identification is GNU 11.4.0
+[1.174s] -- The CXX compiler identification is GNU 11.4.0
+[1.196s] -- Detecting C compiler ABI info
+[1.365s] -- Detecting C compiler ABI info - done
+[1.372s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.377s] -- Detecting C compile features
+[1.379s] -- Detecting C compile features - done
+[1.391s] -- Detecting CXX compiler ABI info
+[1.507s] -- Detecting CXX compiler ABI info - done
+[1.515s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.515s] -- Detecting CXX compile features
+[1.516s] -- Detecting CXX compile features - done
+[1.527s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.686s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.040s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.051s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.067s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.091s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.121s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.194s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.201s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.340s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.373s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.420s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.440s] -- Looking for pthread.h
+[2.523s] -- Looking for pthread.h - found
+[2.523s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.598s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.599s] -- Found Threads: TRUE  
+[2.976s] -- Configuring done
+[2.980s] [31mCMake Error at /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_register_node.cmake:70 (file):
+[2.980s]   Error evaluating generator expression:
+[2.980s] 
+[2.980s]     $<TARGET_FILE_NAME:roughness_cul_lib>
+[2.980s] 
+[2.980s]   No target "roughness_cul_lib"
+[2.981s] Call Stack (most recent call first):
+[2.981s]   CMakeLists.txt:19 (rclcpp_components_register_node)
+[2.981s] 
+[2.981s] [0m
+[2.981s] [31mCMake Error at /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_register_node.cmake:70 (file):
+[2.981s]   Error evaluating generator expression:
+[2.981s] 
+[2.981s]     $<TARGET_FILE_NAME:roughness_cul_lib>
+[2.981s] 
+[2.981s]   No target "roughness_cul_lib"
+[2.981s] Call Stack (most recent call first):
+[2.981s]   CMakeLists.txt:19 (rclcpp_components_register_node)
+[2.981s] 
+[2.981s] [0m
+[2.981s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake:93 (file):
+[2.981s]   Error evaluating generator expression:
+[2.982s] 
+[2.982s]     $<TARGET_FILE_NAME:roughness_cul_lib>
+[2.982s] 
+[2.982s]   No target "roughness_cul_lib"
+[2.982s] Call Stack (most recent call first):
+[2.982s]   /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_package_hook.cmake:18 (ament_index_register_resource)
+[2.982s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.982s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[2.982s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_package.cmake:102 (ament_package)
+[2.982s]   CMakeLists.txt:29 (ament_auto_package)
+[2.982s] 
+[2.982s] [0m
+[2.982s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake:93 (file):
+[2.982s]   Error evaluating generator expression:
+[2.982s] 
+[2.982s]     $<TARGET_FILE_NAME:roughness_cul_lib>
+[2.982s] 
+[2.982s]   No target "roughness_cul_lib"
+[2.982s] Call Stack (most recent call first):
+[2.982s]   /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_package_hook.cmake:18 (ament_index_register_resource)
+[2.982s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.982s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[2.982s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_package.cmake:102 (ament_package)
+[2.982s]   CMakeLists.txt:29 (ament_auto_package)
+[2.982s] 
+[2.983s] [0m
+[2.987s] -- Generating done
+[2.988s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[2.996s] Invoked command in '/home/takuto/scout_ws/build/roughness_cul' returned '1': CMAKE_PREFIX_PATH=/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver /usr/bin/cmake /home/takuto/scout_ws/src/roughness_cul -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/install/roughness_cul

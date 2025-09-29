@@ -1,0 +1,2 @@
+Invoking command in '/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul': /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul -- -j16 -l16
+Invoked command in '/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul' returned '2': /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul -- -j16 -l16

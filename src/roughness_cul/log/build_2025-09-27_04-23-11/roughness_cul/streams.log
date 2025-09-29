@@ -1,0 +1,32 @@
+[0.014s] Invoking command in '/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul': /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul -- -j16 -l16
+[0.040s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.191s] Error parsing '/home/takuto/scout_ws/src/roughness_cul/package.xml':
+[0.231s] Traceback (most recent call last):
+[0.231s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.231s]     main()
+[0.231s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.231s]     raise e
+[0.231s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.231s]     package = parse_package_string(
+[0.232s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.244s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.244s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/takuto/scout_ws/src/roughness_cul/package.xml':
+[0.244s] Error(s):
+[0.244s] - The generic dependency on 'rclcpp' is redundant with: build_depend, exec_depend
+[0.244s] - The generic dependency on 'rclcpp_components' is redundant with: build_depend, exec_depend
+[0.258s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.258s]   execute_process(/usr/bin/python3
+[0.258s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.258s]   /home/takuto/scout_ws/src/roughness_cul/package.xml
+[0.258s]   /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/ament_cmake_core/package.cmake)
+[0.258s]   returned error code 1
+[0.258s] Call Stack (most recent call first):
+[0.258s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.258s]   /opt/ros/humble/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:42 (ament_package_xml)
+[0.258s]   CMakeLists.txt:11 (ament_auto_find_build_dependencies)
+[0.258s] 
+[0.258s] [0m
+[0.258s] -- Configuring incomplete, errors occurred!
+[0.258s] See also "/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/CMakeFiles/CMakeOutput.log".
+[0.260s] gmake: *** [Makefile:335: cmake_check_build_system] エラー 1
+[0.263s] Invoked command in '/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul' returned '2': /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul -- -j16 -l16

@@ -25,9 +25,9 @@ class joy_cmd(Node):
     def set_cmd(self):
         cmd_msg = Twist()
 
-        cmd_msg.linear.x = self.joy.axes[1]
+        cmd_msg.linear.x = self.joy.axes[1] * 5
         # cmd_msg.linear.y = self.joy.axes[1]
-        cmd_msg.angular.z = self.joy.axes[3]
+        cmd_msg.angular.z = self.joy.axes[3] * 5
 
         self.cmd_pub.publish(cmd_msg)
 

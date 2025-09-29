@@ -1,0 +1,4 @@
+source;share/roughness_cul/local_setup.bash
+source;share/roughness_cul/local_setup.dsv
+source;share/roughness_cul/local_setup.sh
+source;share/roughness_cul/local_setup.zsh
