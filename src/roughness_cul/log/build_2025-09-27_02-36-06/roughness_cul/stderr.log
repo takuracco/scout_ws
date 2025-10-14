@@ -1,8 +1,0 @@
-In file included from [01m[K/home/takuto/scout_ws/src/roughness_cul/src/main.cpp:1[m[K:
-[01m[K/home/takuto/scout_ws/src/roughness_cul/src/roughness_cul_Node/roughness_cul.hpp:2:10:[m[K [01;31m[Kfatal error: [m[Krobot_node/robot.hpp: そのようなファイルやディレクトリはありません
-    2 | #include [01;31m[K"robot_node/robot.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/roughness_cul.dir/build.make:76: CMakeFiles/roughness_cul.dir/src/main.cpp.o] エラー 1
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/roughness_cul.dir/all] エラー 2
-gmake: *** [Makefile:146: all] エラー 2

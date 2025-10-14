@@ -18,5 +18,6 @@
         "/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
+    ],
+    "cmake.sourceDirectory": "/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0"
 }
