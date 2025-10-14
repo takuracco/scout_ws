@@ -1,14 +1,14 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2
+import sensor_msgs.point_cloud2 as pc2
 from numpy import np
-import open3d as o3d
 
 class vector:
     def __init__(self):
-        self.x
-        self.y
-        self.z
+        self.x = 0
+        self.y = 0
+        self.z = 0
 
 class roughness_cul(Node):
     def __init__(self):
@@ -21,7 +21,7 @@ class roughness_cul(Node):
             10)
         
         # グローバル変数
-        self.points = np.zeros((N, 3), dtype=np.float32)
+        self.points = []
         self.pose = vector()
 
     
@@ -32,11 +32,52 @@ class roughness_cul(Node):
         self.pose.z = z
     
     def callback(self,scan):
-        pcl = o3d.io.read_point_cloud(scan, field_names=("x", "y", "z"), skip_nans=True)
-        points = np.asarray(pcl.points).copy()
-        self.points[:,0] = points[:,0] + self.pose.x
-        self.points[:,1] = points[:,1] + self.pose.y
-        self.points[:,2] = points[:,2] + self.pose.z
+        """LiDARのデータの"""
+        PCL_points = np.array(list(pc2.read_points(scan, field_names=("x", "y", "z"), skip_nans=True)), dtype=np.float32)
+        self.points[:,0] = PCL_points[:,0] + self.pose.x
+        self.points[:,1] = PCL_points[:,1] + self.pose.y
+        self.points[:,2] = PCL_points[:,2] + self.pose.z
+
+    def grid_culculate(self):
+        """自身の座標から見たグリッドに分ける"""
+        ox = -10  #オフセットx 左下のx座標 左下の座標を(0,0)とするために
+        oy = -10  #オフセットy
+        res = 1   #1セルのサイズ(m)
+        size = 21 #セル数
+
+        x = self.points[:, 0]
+        y = self.points[:, 1]
+
+        # 各点がどのセルに入るかのデータ配列
+        ix = np.floor((x - ox) / res).astype(np.int32)
+        iy = np.floor((y - oy) / res).astype(np.int32)
+
+        mask = (ix >=0) & (ix < size) & (iy >=0) & (iy<size)
+        ix = ix[mask]
+        iy = iy[mask]
+        pts_in = self.points[mask]
+        
+        self.grid_points = [[[] for _ in range(size)] for _ in range(size)]
+        for k in range(len(ix)):
+            self.grid_points[ix[k]][iy[k]].append(pts_in[k])
+        
+        self.grid_points = [[[] for _ in range(size)]for _ in range(size)]
+        for i in range(size):
+            for j in range(size):
+                if self.grid_points[i][j]:
+                    self.grid_points[i][j] = np.vstack(self.grid_points[i][j]).astype(np.float32)
+                else:
+                    self.grid_points[i][j] = np.empty((0,3), dtype = np.float32)
+        
+
+
+
+    def Plane_culculate(self):
+        """平面推定プログラム"""
+
+
+    def roughness_culculate(self):
+        """分散から粗さを計測する"""
 
         
     
