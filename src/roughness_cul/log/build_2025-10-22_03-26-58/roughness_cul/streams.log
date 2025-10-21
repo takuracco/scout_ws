@@ -1,0 +1,24 @@
+[0.694s] Invoking command in '/home/takuto/scout_ws/src/roughness_cul': PYTHONPATH=/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/roughness_cul build --build-base /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build install --record /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/install.log --single-version-externally-managed install_data
+[0.954s] running egg_info
+[0.955s] writing build/roughness_cul/roughness_cul.egg-info/PKG-INFO
+[0.955s] writing dependency_links to build/roughness_cul/roughness_cul.egg-info/dependency_links.txt
+[0.955s] writing entry points to build/roughness_cul/roughness_cul.egg-info/entry_points.txt
+[0.956s] writing requirements to build/roughness_cul/roughness_cul.egg-info/requires.txt
+[0.956s] writing top-level names to build/roughness_cul/roughness_cul.egg-info/top_level.txt
+[0.957s] reading manifest file 'build/roughness_cul/roughness_cul.egg-info/SOURCES.txt'
+[0.958s] writing manifest file 'build/roughness_cul/roughness_cul.egg-info/SOURCES.txt'
+[0.958s] running build
+[0.958s] running build_py
+[0.958s] copying roughness_cul/roughness_cul.py -> /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib/roughness_cul
+[0.959s] running install
+[0.959s] running install_lib
+[0.960s] copying /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib/roughness_cul/roughness_cul.py -> /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul
+[0.961s] byte-compiling /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul/roughness_cul.py to roughness_cul.cpython-310.pyc
+[0.963s] running install_data
+[0.963s] running install_egg_info
+[0.965s] removing '/home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul-0.0.0-py3.10.egg-info' (and everything under it)
+[0.965s] Copying build/roughness_cul/roughness_cul.egg-info to /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul-0.0.0-py3.10.egg-info
+[0.966s] running install_scripts
+[0.987s] Installing roughness_cul script to /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/roughness_cul
+[0.987s] writing list of installed files to '/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/install.log'
+[1.014s] Invoked command in '/home/takuto/scout_ws/src/roughness_cul' returned '0': PYTHONPATH=/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/roughness_cul build --build-base /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build install --record /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/install.log --single-version-externally-managed install_data

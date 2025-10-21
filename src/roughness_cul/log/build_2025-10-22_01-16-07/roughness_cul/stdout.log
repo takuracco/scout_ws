@@ -1,0 +1,35 @@
+running egg_info
+creating build/roughness_cul/roughness_cul.egg-info
+writing build/roughness_cul/roughness_cul.egg-info/PKG-INFO
+writing dependency_links to build/roughness_cul/roughness_cul.egg-info/dependency_links.txt
+writing entry points to build/roughness_cul/roughness_cul.egg-info/entry_points.txt
+writing requirements to build/roughness_cul/roughness_cul.egg-info/requires.txt
+writing top-level names to build/roughness_cul/roughness_cul.egg-info/top_level.txt
+writing manifest file 'build/roughness_cul/roughness_cul.egg-info/SOURCES.txt'
+reading manifest file 'build/roughness_cul/roughness_cul.egg-info/SOURCES.txt'
+writing manifest file 'build/roughness_cul/roughness_cul.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build
+creating /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib
+creating /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib/roughness_cul
+copying roughness_cul/roughness_cul.py -> /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib/roughness_cul
+copying roughness_cul/__init__.py -> /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib/roughness_cul
+running install
+running install_lib
+creating /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul
+copying /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib/roughness_cul/roughness_cul.py -> /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul
+copying /home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/build/lib/roughness_cul/__init__.py -> /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul
+byte-compiling /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul/roughness_cul.py to roughness_cul.cpython-310.pyc
+byte-compiling /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/share/ament_index
+creating /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/share/ament_index/resource_index
+creating /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/share/ament_index/resource_index/packages
+copying resource/roughness_cul -> /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/share/ament_index/resource_index/packages
+copying package.xml -> /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/share/roughness_cul
+running install_egg_info
+Copying build/roughness_cul/roughness_cul.egg-info to /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/python3.10/site-packages/roughness_cul-0.0.0-py3.10.egg-info
+running install_scripts
+Installing roughness_cul script to /home/takuto/scout_ws/src/roughness_cul/install/roughness_cul/lib/roughness_cul
+writing list of installed files to '/home/takuto/scout_ws/src/roughness_cul/build/roughness_cul/install.log'
