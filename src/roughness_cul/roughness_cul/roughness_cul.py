@@ -2,7 +2,10 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2
 import sensor_msgs.point_cloud2 as pc2
+from std_msgs.msg import Float32MultiArray
 from numpy import np
+import open3d as o3d
+import pyransac3d as pyrsc
 
 class vector:
     def __init__(self):
@@ -19,6 +22,12 @@ class roughness_cul(Node):
             '/scan',
             self.callback,
             10)
+        
+        self.pub = self.create_publisher(
+            Float32MultiArray,
+            '/roughness',
+            10
+        )
         
         # グローバル変数
         self.points = []
@@ -37,6 +46,11 @@ class roughness_cul(Node):
         self.points[:,0] = PCL_points[:,0] + self.pose.x
         self.points[:,1] = PCL_points[:,1] + self.pose.y
         self.points[:,2] = PCL_points[:,2] + self.pose.z
+        self.grid_culculate
+        self.Plane_culculate
+        self.roughness_culculate
+        self.pub(self.grid_var)
+        
 
     def grid_culculate(self):
         """自身の座標から見たグリッドに分ける"""
@@ -57,9 +71,9 @@ class roughness_cul(Node):
         iy = iy[mask]
         pts_in = self.points[mask]
         
-        self.grid_points = [[[] for _ in range(size)] for _ in range(size)]
-        for k in range(len(ix)):
-            self.grid_points[ix[k]][iy[k]].append(pts_in[k])
+        # self.grid_points = [[[] for _ in range(size)] for _ in range(size)]
+        # for k in range(len(ix)):
+        #     self.grid_points[ix[k]][iy[k]].append(pts_in[k])
         
         self.grid_points = [[[] for _ in range(size)]for _ in range(size)]
         for i in range(size):
@@ -68,17 +82,34 @@ class roughness_cul(Node):
                     self.grid_points[i][j] = np.vstack(self.grid_points[i][j]).astype(np.float32)
                 else:
                     self.grid_points[i][j] = np.empty((0,3), dtype = np.float32)
-        
-
 
 
     def Plane_culculate(self):
         """平面推定プログラム"""
+        size = 21 #セル数
 
+        plane = pyrsc.Plane()
+
+        self.grid_plane = [[[] for _ in range(size)] for _ in range(size)]
+
+        for i in range(size):
+            for j in range(size):
+                equation, inliers = plane.fit(self.grid_points[i][j], 0.01)
+                self.grid_plane[i][j] = equation
+
+    def convert_plane_high(self,x,y,i,j):
+        return -1 * ( self.grid_plane[i][j][1] * x + self.grid_plane[i][j][2] * y + self.grid_plane[i][j][4] ) / self.grid_plane[i][j][3]
 
     def roughness_culculate(self):
         """分散から粗さを計測する"""
+        size = 21 #セル数
 
+        self.grid_var = [[[] for _ in range(size)] for _ in range(size)]
+
+        for i in range (size):
+            for j in range(size):
+                self.grid_var[i][j] = np.mean((self.grid_points[i][j] - self.convert_plane_high(self.grid_points[i][j][1],self.grid_points[i][j][2],i,j)) ** 2)
+                
         
     
     
@@ -88,7 +119,7 @@ def main(args = None):
     rclpy.init(args=args)
     node = roughness_cul()
     try:
-        rclpy.spin(node)
+        rclpy.spin_once(node)
     except KeyboardInterrupt:
         pass
     node.destroy_node()
