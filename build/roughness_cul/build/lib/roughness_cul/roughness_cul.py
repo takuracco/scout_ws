@@ -5,6 +5,9 @@ import sensor_msgs_py.point_cloud2 as pc2
 import numpy as np
 from std_msgs.msg import Float32MultiArray
 from std_msgs.msg import MultiArrayLayout, MultiArrayDimension
+from visualization_msgs.msg import MarkerArray, Marker
+from builtin_interfaces.msg import Duration
+from geometry_msgs.msg import Point
 import pyransac3d as pyrsc
 
 class Pose3D:
@@ -33,7 +36,11 @@ class RoughnessNode(Node):
         # Publisher / Subscriber
         self.sub = self.create_subscription(PointCloud2, '/scan', self.callback, 10)
         self.pub = self.create_publisher(Float32MultiArray, '/roughness', 10)
-    
+        self.grid_pub = self.create_publisher(MarkerArray, "/grid", 10)
+
+        # timer
+        self.Timer = self.create_timer(100, self.timer_callback)
+
         self.get_logger().info('roughness_cul node is up.')
 
     # --- 外部から位置更新したい場合に呼ぶ ---
@@ -58,6 +65,7 @@ class RoughnessNode(Node):
         self.Plane_culculate()
         self.roughness_culculate()
         self.publish_roughness()
+        self.publish_grid()
 
     def cloud2_to_xyz(self,msg: PointCloud2) -> np.ndarray:
         """
@@ -214,6 +222,109 @@ class RoughnessNode(Node):
 
         self.pub.publish(msg)
         self.get_logger().info("粗さマップを Publish しました")
+
+    def publish_grid(self):
+        """gridに出力"""
+        msg = MarkerArray()
+        now = self.get_clock().now().to_msg()
+        cell = self.cell_res
+        frame = "base_link"
+
+        marker_id = 0
+
+        for i in range(self.grid_size):
+            for j in range(self.grid_size):
+                
+                data = np.sqrt(self.grid_var[i][j])
+                if data > 10 :
+                    data = 10
+                marker = Marker()
+                marker.header.stamp = now
+                marker.header.frame_id = frame
+                marker.ns = "roughness_grid"
+                marker.id = marker_id
+                marker_id += 1
+                marker.type = Marker.CUBE
+                marker.action = Marker.ADD
+
+                marker.scale.x = cell
+                marker.scale.y = cell
+                marker.scale.z = 0.02
+                marker.pose.position.x = i - self.grid_size / 2 + 0.5
+                marker.pose.position.y = j - self.grid_size / 2 + 0.5
+                marker.pose.position.z = 0.0
+
+                # 粗さ値 → 色（赤の強さ）に変換
+                val = self.grid_var[i][j]
+                if val is None or np.isnan(val):
+                    val = 0.0
+                std = float(np.sqrt(max(val, 0.0)))  # 分散→標準偏差
+                std = min(std, 10.0)                 # 上限クリップ
+                intensity = std / 10.0               # 0.0〜1.0 に正規化
+
+                marker.color.r = intensity
+                marker.color.g = 1.0
+                marker.color.b = 0.0
+                marker.color.a = 1.0
+
+                marker.lifetime = Duration(sec=0, nanosec=0)
+                
+
+                msg.markers.append(marker)
+
+        # -------------ここからグリッドの境目表示----------------
+        lines = Marker()
+        lines.header.frame_id = "base_link"              # いま使ってる frame_id に合わせる
+        lines.header.stamp = now
+        lines.ns = "grid_lines"
+        lines.id = 999999                          # 他とかぶらない固定ID                lines.type = Marker.LINE_LIST
+        lines.action = Marker.ADD
+        lines.pose.orientation.w = 1.0
+
+        lines.scale.x = 0.02                       # 線の太さ（m）
+        lines.color.r = 1.0                        # 白の半透明とか見やすい
+        lines.color.g = 1.0
+        lines.color.b = 1.0
+        lines.color.a = 0.6
+
+        # Z-fighting防止に少し浮かせる
+        z = 0.01
+
+        N = self.grid_size                         # 例: 5
+        res = self.cell_res                        # 例: 1.0
+        # グリッド全体の左下原点（境界線用。中心原点±N/2セル分）
+        x0 = - (N * res) / 2.0
+        y0 = - (N * res) / 2.0
+        width  = N * res
+        height = N * res
+
+        # 垂直線 i = 0..N
+        for i in range(N + 1):
+            x = x0 + i * res
+            p1 = Point(x=x, y=y0,       z=z)
+            p2 = Point(x=x, y=y0+height,z=z)
+            lines.points.append(p1)
+            lines.points.append(p2)
+
+        # 水平線 j = 0..N
+        for j in range(N + 1):
+            y = y0 + j * res
+            p1 = Point(x=x0,       y=y, z=z)
+            p2 = Point(x=x0+width, y=y, z=z)
+            lines.points.append(p1)
+            lines.points.append(p2)
+
+        # …ここにセルCUBEを詰める処理…
+        msg.markers.append(lines)
+
+        self.msg = msg
+        self.grid_pub.publish(msg)
+        self.get_logger().info("grid書き出し完了")
+
+    def timer_callback(self):
+        self.grid_pub.publish(self.msg)
+
+        
                 
         
 

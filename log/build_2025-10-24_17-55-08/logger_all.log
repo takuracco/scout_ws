@@ -1,0 +1,515 @@
+[0.149s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.149s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], ament_gradle_args=None, ament_gradle_task=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, gradle_args=None, gradle_task=None, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8bfb13c730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8bfb2a5bd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8bfb2a5bd0>>)
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.398s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/takuto/scout_ws'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ament_gradle']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ament_gradle'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'gradle', 'python']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'gradle'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ignore', 'ignore_ament_install']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore_ament_install'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_pkg']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_pkg'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_meta']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_meta'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ament_gradle']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ament_gradle'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ros']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ros'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['cmake', 'gradle', 'python']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'cmake'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'gradle'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['python_setup_py']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python_setup_py'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extensions ['ignore', 'ignore_ament_install']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'ignore'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'ignore_ament_install'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extensions ['colcon_pkg']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'colcon_pkg'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extensions ['colcon_meta']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'colcon_meta'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extensions ['ament_gradle']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'ament_gradle'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extensions ['ros']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'ros'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extensions ['cmake', 'gradle', 'python']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'cmake'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'gradle'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'python'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extensions ['python_setup_py']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026) by extension 'python_setup_py'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'ignore'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'ignore_ament_install'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extensions ['colcon_pkg']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'colcon_pkg'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extensions ['colcon_meta']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'colcon_meta'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extensions ['ament_gradle']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'ament_gradle'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extensions ['ros']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'ros'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extensions ['cmake', 'gradle', 'python']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'cmake'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'gradle'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'python'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extensions ['python_setup_py']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/nhk2026/meshes) by extension 'python_setup_py'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extensions ['ignore', 'ignore_ament_install']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'ignore'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'ignore_ament_install'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extensions ['colcon_pkg']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'colcon_pkg'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extensions ['colcon_meta']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'colcon_meta'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extensions ['ament_gradle']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'ament_gradle'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extensions ['ros']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'ros'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extensions ['cmake', 'gradle', 'python']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'cmake'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'gradle'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'python'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extensions ['python_setup_py']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope) by extension 'python_setup_py'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'ignore'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'ignore_ament_install'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extensions ['colcon_pkg']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'colcon_pkg'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extensions ['colcon_meta']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'colcon_meta'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extensions ['ament_gradle']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'ament_gradle'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extensions ['ros']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'ros'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extensions ['cmake', 'gradle', 'python']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'cmake'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'gradle'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'python'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extensions ['python_setup_py']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(models/slope/meshes) by extension 'python_setup_py'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ament_gradle']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ament_gradle'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'gradle', 'python']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'gradle'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extensions ['ignore', 'ignore_ament_install']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extension 'ignore'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extension 'ignore_ament_install'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extensions ['colcon_pkg']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extension 'colcon_pkg'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extensions ['colcon_meta']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extension 'colcon_meta'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extensions ['ament_gradle']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extension 'ament_gradle'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extensions ['ros']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(src/HesaiLidar_ROS_2.0) by extension 'ros'
+[0.451s] DEBUG:colcon.colcon_core.package_identification:Package 'src/HesaiLidar_ROS_2.0' with type 'ros.ament_cmake' and name 'hesai_ros_driver'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extension 'ignore_ament_install'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extensions ['colcon_pkg']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extension 'colcon_pkg'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extensions ['colcon_meta']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extension 'colcon_meta'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extensions ['ament_gradle']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extension 'ament_gradle'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extensions ['ros']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_joy) by extension 'ros'
+[0.454s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cmd_vel_joy' with type 'ros.ament_python' and name 'cmd_vel_joy'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extensions ['ignore', 'ignore_ament_install']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extension 'ignore'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extension 'ignore_ament_install'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extensions ['colcon_pkg']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extension 'colcon_pkg'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extensions ['colcon_meta']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extensions ['ament_gradle']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extension 'ament_gradle'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extensions ['ros']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/hesai_description) by extension 'ros'
+[0.455s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hesai_description' with type 'ros.ament_cmake' and name 'hesai_description'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extension 'colcon_meta'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extensions ['ament_gradle']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extension 'ament_gradle'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extensions ['ros']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/roughness_cul) by extension 'ros'
+[0.457s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roughness_cul' with type 'ros.ament_python' and name 'roughness_cul'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extensions ['ament_gradle']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extension 'ament_gradle'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/scout_gazebo) by extension 'ros'
+[0.459s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scout_gazebo' with type 'ros.ament_cmake' and name 'scout_gazebo'
+[0.459s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.459s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.459s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.459s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.459s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.490s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.490s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.494s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/takuto/scout_ws/install
+[0.495s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/takuto/mecanumrover_ws/install
+[0.496s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/takuto/uros_ws/install
+[0.496s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/takuto/scout_ws/src/install
+[0.498s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 19 installed packages in /home/takuto/turtlebot3_ws/install
+[0.501s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 425 installed packages in /opt/ros/humble
+[0.504s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'ament_gradle_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'ament_gradle_task' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'cmake_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'cmake_target' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'cmake_clean_first' from command line to 'False'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'cmake_force_configure' from command line to 'False'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'gradle_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'gradle_task' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'ament_cmake_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_joy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.574s] DEBUG:colcon.colcon_core.verb:Building package 'cmd_vel_joy' with the following arguments: {'ament_cmake_args': None, 'ament_gradle_args': None, 'ament_gradle_task': None, 'build_base': '/home/takuto/scout_ws/build/cmd_vel_joy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'gradle_args': None, 'gradle_task': None, 'install_base': '/home/takuto/scout_ws/install/cmd_vel_joy', 'merge_install': False, 'path': '/home/takuto/scout_ws/src/cmd_vel_joy', 'symlink_install': False, 'test_result_base': None}
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'ament_gradle_args' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'ament_gradle_task' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'cmake_args' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'cmake_target' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'gradle_args' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'gradle_task' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.575s] Level 5:colcon.colcon_core.verb:set package 'hesai_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.575s] DEBUG:colcon.colcon_core.verb:Building package 'hesai_description' with the following arguments: {'ament_cmake_args': None, 'ament_gradle_args': None, 'ament_gradle_task': None, 'build_base': '/home/takuto/scout_ws/build/hesai_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'gradle_args': None, 'gradle_task': None, 'install_base': '/home/takuto/scout_ws/install/hesai_description', 'merge_install': False, 'path': '/home/takuto/scout_ws/src/hesai_description', 'symlink_install': False, 'test_result_base': None}
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'ament_gradle_args' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'ament_gradle_task' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'cmake_args' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'cmake_target' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'gradle_args' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'gradle_task' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'hesai_ros_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.576s] DEBUG:colcon.colcon_core.verb:Building package 'hesai_ros_driver' with the following arguments: {'ament_cmake_args': None, 'ament_gradle_args': None, 'ament_gradle_task': None, 'build_base': '/home/takuto/scout_ws/build/hesai_ros_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'gradle_args': None, 'gradle_task': None, 'install_base': '/home/takuto/scout_ws/install/hesai_ros_driver', 'merge_install': False, 'path': '/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0', 'symlink_install': False, 'test_result_base': None}
+[0.576s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'ament_gradle_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'ament_gradle_task' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'cmake_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'cmake_target' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'cmake_clean_cache' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'cmake_clean_first' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'cmake_force_configure' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'gradle_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'gradle_task' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'ament_cmake_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'catkin_cmake_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'roughness_cul' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.577s] DEBUG:colcon.colcon_core.verb:Building package 'roughness_cul' with the following arguments: {'ament_cmake_args': None, 'ament_gradle_args': None, 'ament_gradle_task': None, 'build_base': '/home/takuto/scout_ws/build/roughness_cul', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'gradle_args': None, 'gradle_task': None, 'install_base': '/home/takuto/scout_ws/install/roughness_cul', 'merge_install': False, 'path': '/home/takuto/scout_ws/src/roughness_cul', 'symlink_install': False, 'test_result_base': None}
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'ament_gradle_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'ament_gradle_task' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'gradle_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'gradle_task' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'scout_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.578s] DEBUG:colcon.colcon_core.verb:Building package 'scout_gazebo' with the following arguments: {'ament_cmake_args': None, 'ament_gradle_args': None, 'ament_gradle_task': None, 'build_base': '/home/takuto/scout_ws/build/scout_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'gradle_args': None, 'gradle_task': None, 'install_base': '/home/takuto/scout_ws/install/scout_gazebo', 'merge_install': False, 'path': '/home/takuto/scout_ws/src/scout_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.578s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.579s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.580s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/takuto/scout_ws/src/cmd_vel_joy' with build type 'ament_python'
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_joy', 'ament_prefix_path')
+[0.583s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/hook/ament_prefix_path.ps1'
+[0.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/hook/ament_prefix_path.dsv'
+[0.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/hook/ament_prefix_path.sh'
+[0.586s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.586s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.595s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/takuto/scout_ws/src/hesai_description' with build type 'ament_cmake'
+[0.595s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/takuto/scout_ws/src/hesai_description'
+[0.596s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.596s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.605s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0' with build type 'ament_cmake'
+[0.605s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0'
+[0.605s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.605s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.614s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/takuto/scout_ws/src/roughness_cul' with build type 'ament_python'
+[0.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('roughness_cul', 'ament_prefix_path')
+[0.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/ament_prefix_path.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/ament_prefix_path.dsv'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/ament_prefix_path.sh'
+[0.617s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.617s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.626s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/takuto/scout_ws/src/scout_gazebo' with build type 'ament_cmake'
+[0.626s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/takuto/scout_ws/src/scout_gazebo'
+[0.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.627s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.039s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/takuto/scout_ws/src/cmd_vel_joy'
+[1.039s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.039s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/build/hesai_description': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/hesai_description -- -j16 -l16
+[1.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/hesai_ros_driver -- -j16 -l16
+[1.570s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/takuto/scout_ws/src/roughness_cul'
+[1.570s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.570s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/build/hesai_description' returned '0': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/hesai_description -- -j16 -l16
+[1.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/build/hesai_description': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/build/hesai_description
+[1.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/build/scout_gazebo': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/scout_gazebo -- -j16 -l16
+[1.659s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hesai_description)
+[1.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/build/hesai_description' returned '0': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/build/hesai_description
+[1.665s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description' for CMake module files
+[1.666s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description' for CMake config files
+[1.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('hesai_description', 'cmake_prefix_path')
+[1.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/hook/cmake_prefix_path.ps1'
+[1.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/hook/cmake_prefix_path.dsv'
+[1.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/hook/cmake_prefix_path.sh'
+[1.669s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/bin'
+[1.669s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/lib/pkgconfig/hesai_description.pc'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/lib/python3.10/site-packages'
+[1.670s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/bin'
+[1.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.ps1'
+[1.672s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.dsv'
+[1.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.sh'
+[1.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.bash'
+[1.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.zsh'
+[1.677s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/hesai_description/share/colcon-core/packages/hesai_description)
+[1.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hesai_description)
+[1.679s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description' for CMake module files
+[1.680s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description' for CMake config files
+[1.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('hesai_description', 'cmake_prefix_path')
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/hook/cmake_prefix_path.ps1'
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/hook/cmake_prefix_path.dsv'
+[1.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/hook/cmake_prefix_path.sh'
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/bin'
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/lib/pkgconfig/hesai_description.pc'
+[1.684s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/lib/python3.10/site-packages'
+[1.684s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_description/bin'
+[1.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.ps1'
+[1.686s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.dsv'
+[1.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.sh'
+[1.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.bash'
+[1.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.zsh'
+[1.689s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/hesai_description/share/colcon-core/packages/hesai_description)
+[1.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/build/scout_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/scout_gazebo -- -j16 -l16
+[1.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/build/scout_gazebo': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/build/scout_gazebo
+[1.765s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_gazebo)
+[1.766s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo' for CMake module files
+[1.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/build/scout_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/build/scout_gazebo
+[1.768s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo' for CMake config files
+[1.768s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_gazebo', 'cmake_prefix_path')
+[1.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/hook/cmake_prefix_path.ps1'
+[1.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/hook/cmake_prefix_path.dsv'
+[1.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/hook/cmake_prefix_path.sh'
+[1.771s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/bin'
+[1.771s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/lib/pkgconfig/scout_gazebo.pc'
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/lib/python3.10/site-packages'
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/bin'
+[1.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.ps1'
+[1.773s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.dsv'
+[1.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.sh'
+[1.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.bash'
+[1.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.zsh'
+[1.776s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/scout_gazebo/share/colcon-core/packages/scout_gazebo)
+[1.777s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scout_gazebo)
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo' for CMake module files
+[1.778s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo' for CMake config files
+[1.779s] Level 1:colcon.colcon_core.shell:create_environment_hook('scout_gazebo', 'cmake_prefix_path')
+[1.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/hook/cmake_prefix_path.ps1'
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/hook/cmake_prefix_path.dsv'
+[1.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/hook/cmake_prefix_path.sh'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/bin'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/lib/pkgconfig/scout_gazebo.pc'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/lib/python3.10/site-packages'
+[1.782s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/scout_gazebo/bin'
+[1.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.ps1'
+[1.784s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.dsv'
+[1.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.sh'
+[1.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.bash'
+[1.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/scout_gazebo/share/scout_gazebo/package.zsh'
+[1.787s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/scout_gazebo/share/colcon-core/packages/scout_gazebo)
+[1.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --build /home/takuto/scout_ws/build/hesai_ros_driver -- -j16 -l16
+[1.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/build/hesai_ros_driver': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/build/hesai_ros_driver
+[2.013s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hesai_ros_driver)
+[2.014s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver' for CMake module files
+[2.016s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/build/hesai_ros_driver' returned '0': CMAKE_PREFIX_PATH=/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/roughness_cul:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/mecanumrover_ws/install/vs_rover_options_description:/home/takuto/mecanumrover_ws/install/mecanumrover_gazebo:/home/takuto/mecanumrover_ws/install/mecanumrover3:/home/takuto/mecanumrover_ws/install/mecanumrover_description:/home/takuto/mecanumrover_ws/install/mecanumrover3_bringup:/home/takuto/uros_ws/install/micro_ros_setup:/home/takuto/uros_ws/install/micro_ros_agent:/home/takuto/uros_ws/install/micro_ros_msgs:/home/takuto/scout_ws/src/install/scout_gazebo:/home/takuto/scout_ws/src/install/hesai_ros_driver:/home/takuto/turtlebot3_ws/install/turtlebot3:/home/takuto/turtlebot3_ws/install/turtlebot3_simulations:/home/takuto/turtlebot3_ws/install/turtlebot3_bringup:/home/takuto/turtlebot3_ws/install/turtlebot3_node:/home/takuto/turtlebot3_ws/install/turtlebot3_navigation2:/home/takuto/turtlebot3_ws/install/turtlebot3_gazebo:/home/takuto/turtlebot3_ws/install/turtlebot3_fake_node:/home/takuto/turtlebot3_ws/install/turtlebot3_description:/home/takuto/turtlebot3_ws/install/turtlebot3_cartographer:/home/takuto/scout_ws/install/cmd_vel_joy:/home/takuto/scout_ws/src/install/cmd_vel_joy:/home/takuto/turtlebot3_ws/install/turtlebot3_teleop:/home/takuto/turtlebot3_ws/install/turtlebot3_example:/home/takuto/turtlebot3_ws/install/cmd_vel_joy:/opt/ros/humble:/home/takuto/turtlebot3_ws/install/realsense_gazebo_plugin:/home/takuto/turtlebot3_ws/install/realsense2_description:/home/takuto/turtlebot3_ws/install/realsense2_camera:/home/takuto/turtlebot3_ws/install/realsense2_camera_msgs:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_examples:/home/takuto/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/takuto/turtlebot3_ws/install/dynamixel_sdk /usr/bin/cmake --install /home/takuto/scout_ws/build/hesai_ros_driver
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver' for CMake config files
+[2.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('hesai_ros_driver', 'cmake_prefix_path')
+[2.020s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/cmake_prefix_path.ps1'
+[2.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/cmake_prefix_path.dsv'
+[2.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/cmake_prefix_path.sh'
+[2.023s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/lib'
+[2.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('hesai_ros_driver', 'ld_library_path_lib')
+[2.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/ld_library_path_lib.ps1'
+[2.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/ld_library_path_lib.dsv'
+[2.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/ld_library_path_lib.sh'
+[2.026s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/bin'
+[2.027s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/lib/pkgconfig/hesai_ros_driver.pc'
+[2.027s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/lib/python3.10/site-packages'
+[2.028s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/bin'
+[2.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.ps1'
+[2.030s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.dsv'
+[2.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.sh'
+[2.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.bash'
+[2.032s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.zsh'
+[2.033s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/hesai_ros_driver/share/colcon-core/packages/hesai_ros_driver)
+[2.034s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hesai_ros_driver)
+[2.034s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver' for CMake module files
+[2.036s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver' for CMake config files
+[2.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('hesai_ros_driver', 'cmake_prefix_path')
+[2.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/cmake_prefix_path.ps1'
+[2.039s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/cmake_prefix_path.dsv'
+[2.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/cmake_prefix_path.sh'
+[2.041s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/lib'
+[2.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('hesai_ros_driver', 'ld_library_path_lib')
+[2.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/ld_library_path_lib.ps1'
+[2.043s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/ld_library_path_lib.dsv'
+[2.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/hook/ld_library_path_lib.sh'
+[2.045s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/bin'
+[2.045s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/lib/pkgconfig/hesai_ros_driver.pc'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/lib/python3.10/site-packages'
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/hesai_ros_driver/bin'
+[2.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.ps1'
+[2.048s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.dsv'
+[2.049s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.sh'
+[2.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.bash'
+[2.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.zsh'
+[2.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/hesai_ros_driver/share/colcon-core/packages/hesai_ros_driver)
+[2.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/src/cmd_vel_joy': PYTHONPATH=/home/takuto/scout_ws/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cmd_vel_joy build --build-base /home/takuto/scout_ws/build/cmd_vel_joy/build install --record /home/takuto/scout_ws/build/cmd_vel_joy/install.log --single-version-externally-managed install_data
+[2.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/takuto/scout_ws/src/roughness_cul': PYTHONPATH=/home/takuto/scout_ws/build/roughness_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/roughness_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roughness_cul build --build-base /home/takuto/scout_ws/build/roughness_cul/build install --record /home/takuto/scout_ws/build/roughness_cul/install.log --single-version-externally-managed install_data
+[3.043s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/cmd_vel_joy' for CMake module files
+[3.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/src/cmd_vel_joy' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cmd_vel_joy build --build-base /home/takuto/scout_ws/build/cmd_vel_joy/build install --record /home/takuto/scout_ws/build/cmd_vel_joy/install.log --single-version-externally-managed install_data
+[3.045s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/cmd_vel_joy' for CMake config files
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/cmd_vel_joy/lib'
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/cmd_vel_joy/bin'
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/cmd_vel_joy/lib/pkgconfig/cmd_vel_joy.pc'
+[3.047s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages'
+[3.047s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_joy', 'pythonpath')
+[3.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/hook/pythonpath.ps1'
+[3.048s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/hook/pythonpath.dsv'
+[3.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/hook/pythonpath.sh'
+[3.049s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/cmd_vel_joy/bin'
+[3.049s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel_joy)
+[3.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/package.ps1'
+[3.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/package.dsv'
+[3.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/package.sh'
+[3.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/package.bash'
+[3.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy/package.zsh'
+[3.053s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/cmd_vel_joy/share/colcon-core/packages/cmd_vel_joy)
+[3.090s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/roughness_cul' for CMake module files
+[3.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/takuto/scout_ws/src/roughness_cul' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/roughness_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/roughness_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roughness_cul build --build-base /home/takuto/scout_ws/build/roughness_cul/build install --record /home/takuto/scout_ws/build/roughness_cul/install.log --single-version-externally-managed install_data
+[3.092s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/roughness_cul' for CMake config files
+[3.092s] Level 1:colcon.colcon_core.shell:create_environment_hook('roughness_cul', 'cmake_prefix_path')
+[3.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/cmake_prefix_path.ps1'
+[3.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/cmake_prefix_path.dsv'
+[3.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/cmake_prefix_path.sh'
+[3.095s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/roughness_cul/lib'
+[3.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('roughness_cul', 'ld_library_path_lib')
+[3.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/ld_library_path_lib.ps1'
+[3.096s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/ld_library_path_lib.dsv'
+[3.097s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/ld_library_path_lib.sh'
+[3.097s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/roughness_cul/bin'
+[3.097s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/roughness_cul/lib/pkgconfig/roughness_cul.pc'
+[3.098s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/roughness_cul/lib/python3.10/site-packages'
+[3.098s] Level 1:colcon.colcon_core.shell:create_environment_hook('roughness_cul', 'pythonpath')
+[3.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/pythonpath.ps1'
+[3.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/pythonpath.dsv'
+[3.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/hook/pythonpath.sh'
+[3.100s] Level 1:colcon.colcon_core.environment:checking '/home/takuto/scout_ws/install/roughness_cul/bin'
+[3.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roughness_cul)
+[3.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/package.ps1'
+[3.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/package.dsv'
+[3.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/package.sh'
+[3.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/package.bash'
+[3.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/takuto/scout_ws/install/roughness_cul/share/roughness_cul/package.zsh'
+[3.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/takuto/scout_ws/install/roughness_cul/share/colcon-core/packages/roughness_cul)
+[3.105s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.105s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.106s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.115s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.115s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.115s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.133s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.134s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takuto/scout_ws/install/local_setup.ps1'
+[3.135s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/takuto/scout_ws/install/_local_setup_util_ps1.py'
+[3.138s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takuto/scout_ws/install/setup.ps1'
+[3.142s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takuto/scout_ws/install/local_setup.sh'
+[3.143s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/takuto/scout_ws/install/_local_setup_util_sh.py'
+[3.144s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takuto/scout_ws/install/setup.sh'
+[3.148s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takuto/scout_ws/install/local_setup.bash'
+[3.149s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takuto/scout_ws/install/setup.bash'
+[3.152s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/takuto/scout_ws/install/local_setup.zsh'
+[3.153s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/takuto/scout_ws/install/setup.zsh'
