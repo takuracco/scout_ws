@@ -21,7 +21,7 @@ class RoughnessNode(Node):
         super().__init__('roughness_cul')
 
         # パラメータ（必要なら declare_parameter で外部指定可）
-        self.grid_size = 5          # 21 x 21
+        self.grid_size = 9          # 21 x 21
         self.cell_res  = 1.0         # 1 m / cell
         self.radius_m  = (self.grid_size // 2) * self.cell_res  # 10 m
 
@@ -107,8 +107,8 @@ class RoughnessNode(Node):
     def grid_culculate(self):
         """自身の座標から見たグリッドに分ける"""
 
-        local_x_min = - (self.grid_size // 2) * self.cell_res  # -10
-        local_y_min = - (self.grid_size // 2) * self.cell_res  # -10
+        local_x_min = - (self.grid_size / 2) * self.cell_res  # -10
+        local_y_min = - (self.grid_size / 2) * self.cell_res  # -10
 
         x = self.points[:, 0]
         y = self.points[:, 1]
@@ -231,9 +231,11 @@ class RoughnessNode(Node):
         frame = "base_link"
 
         marker_id = 0
+        
 
         for i in range(self.grid_size):
             for j in range(self.grid_size):
+                non_deta = 0
                 
                 data = np.sqrt(self.grid_var[i][j])
                 if data > 10 :
@@ -258,14 +260,21 @@ class RoughnessNode(Node):
                 val = self.grid_var[i][j]
                 if val is None or np.isnan(val):
                     val = 0.0
+                    non_deta = 1
                 std = float(np.sqrt(max(val, 0.0)))  # 分散→標準偏差
                 std = min(std, 10.0)                 # 上限クリップ
-                intensity = std / 10.0               # 0.0〜1.0 に正規化
+                intensity = 1 - std               # 0.0〜1.0 に正規化
 
-                marker.color.r = intensity
-                marker.color.g = 1.0
+                marker.color.r = 0.0
+                marker.color.g = intensity
                 marker.color.b = 0.0
                 marker.color.a = 0.6
+
+                if non_deta :
+                    marker.color.r = 1.0
+                    marker.color.g = 1.0
+                    marker.color.b = 1.0
+                    marker.color.a = 0.6
 
                 marker.lifetime = Duration(sec=0, nanosec=0)
                 

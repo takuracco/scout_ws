@@ -260,12 +260,12 @@ class RoughnessNode(Node):
                     val = 0.0
                 std = float(np.sqrt(max(val, 0.0)))  # 分散→標準偏差
                 std = min(std, 10.0)                 # 上限クリップ
-                intensity = std / 10.0               # 0.0〜1.0 に正規化
+                intensity = std               # 0.0〜1.0 に正規化
 
-                marker.color.r = intensity
-                marker.color.g = 1.0
+                marker.color.r = 0
+                marker.color.g = intensity
                 marker.color.b = 0.0
-                marker.color.a = 1.0
+                marker.color.a = 0.6
 
                 marker.lifetime = Duration(sec=0, nanosec=0)
                 
