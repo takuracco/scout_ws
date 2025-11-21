@@ -1,0 +1,1 @@
+/home/takuto/scout_ws/src/scout_gazebo/launch/launch2.py
