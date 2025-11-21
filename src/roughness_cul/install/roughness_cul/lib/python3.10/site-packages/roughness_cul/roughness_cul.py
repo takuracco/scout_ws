@@ -5,6 +5,9 @@ import sensor_msgs_py.point_cloud2 as pc2
 import numpy as np
 from std_msgs.msg import Float32MultiArray
 from std_msgs.msg import MultiArrayLayout, MultiArrayDimension
+from visualization_msgs.msg import MarkerArray, Marker
+from builtin_interfaces.msg import Duration
+from geometry_msgs.msg import Point
 import pyransac3d as pyrsc
 
 class Pose3D:
@@ -13,94 +16,26 @@ class Pose3D:
         self.y = float(y)
         self.z = float(z)
 
-class RoughnessNode(Node):
+class Roughness_cul():
     def __init__(self):
-        super().__init__('roughness_cul')
 
         # パラメータ（必要なら declare_parameter で外部指定可）
-        self.grid_size = 5          # 21 x 21
+        self.grid_size = 9          # 21 x 21
         self.cell_res  = 1.0         # 1 m / cell
         self.radius_m  = (self.grid_size // 2) * self.cell_res  # 10 m
 
         # 初期化
         self.points = np.empty((0, 3), dtype=np.float32)
-        self.grid_plane = [[None for _ in range(self.grid_size)] for _ in range(self.grid_size)]
-        self.grid_var = np.full((self.grid_size, self.grid_size), np.nan, dtype=np.float32)
+        # self.grid_var = np.full((self.grid_size, self.grid_size), np.nan, dtype=np.float32)
 
         # ロボット現在地（本当はTFやOdomで更新するはず。ここでは固定 or 別APIから更新）
         # self.pose = Pose3D(0., 0., 0.)
 
-        # Publisher / Subscriber
-        self.sub = self.create_subscription(PointCloud2, '/scan', self.callback, 10)
-        self.pub = self.create_publisher(Float32MultiArray, '/roughness', 10)
-
-        self.get_logger().info('roughness_cul node is up.')
-
-    # --- 外部から位置更新したい場合に呼ぶ ---
-    # def set_pose(self, x, y, z=0.0):
-    #     self.pose.x = float(x)
-    #     self.pose.y = float(y)
-    #     self.pose.z = float(z)
-    
-    def callback(self,scan):
-        """LiDARのデータの"""
-        self.get_logger().info('scanデータ受信')
-        points = self.cloud2_to_xyz(scan)
-
-        if points.size == 0:
-            self.get_logger().warn("ポイントが 0 件")
-            return
-
-        self.points = points
-        self.get_logger().info(f"変換後の点群 shape={points.shape}")
-        # self.get_logger().info(f"サンプル: {points[:500]}")
-        self.grid_culculate()
-        self.Plane_culculate()
-        self.roughness_culculate()
-        self.publish_roughness()
-
-    def cloud2_to_xyz(self,msg: PointCloud2) -> np.ndarray:
-        """
-        PointCloud2 -> (N,3) float32 の np.ndarray に安全変換
-        x,y,z 以外は捨てる。NaN はスキップ。
-        """
-        try:
-            # まずは numpy 版で試す（速い）
-            arr = pc2.read_points_numpy(msg, field_names=("x", "y", "z"), skip_nans=True)
-            if isinstance(arr, np.ndarray):
-                # 構造化配列か？
-                if isinstance(arr, np.ndarray) and arr.dtype.fields is not None:
-                    return np.stack([
-                        arr['x'].astype(np.float32, copy=False),
-                        arr['y'].astype(np.float32, copy=False),
-                        arr['z'].astype(np.float32, copy=False)
-                    ], axis=-1)
-                else:
-                    # すでに (N,3) ならそのまま
-                    if arr.ndim == 2 and arr.shape[1] >= 3:
-                        return arr[:, :3].astype(np.float32, copy=False)
-                    # 形が想定外ならフォールバックへ
-        except Exception:
-            pass
-
-        # フォールバック：ジェネレータ経由（遅いが確実）
-        pts = np.array(
-            list(pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True)),
-            dtype=np.float32
-        )
-        # 形を (N,3) にそろえる
-        if pts.ndim == 1:
-            pts = pts.reshape(-1, 3)
-        elif pts.ndim == 2 and pts.shape[1] > 3:
-            pts = pts[:, :3]
-        return pts
-        
-
     def grid_culculate(self):
         """自身の座標から見たグリッドに分ける"""
 
-        local_x_min = - (self.grid_size // 2) * self.cell_res  # -10
-        local_y_min = - (self.grid_size // 2) * self.cell_res  # -10
+        local_x_min = - (self.grid_size / 2) * self.cell_res  # -10
+        local_y_min = - (self.grid_size / 2) * self.cell_res  # -10
 
         x = self.points[:, 0]
         y = self.points[:, 1]
@@ -115,6 +50,7 @@ class RoughnessNode(Node):
         pts_in = self.points[mask]
 
         # まず「リストの二重配列」を作る
+        # self.grid_points = None
         self.grid_points = [[[] for _ in range(self.grid_size)] for _ in range(self.grid_size)]
 
         # >>> ここで各セルに点を追加（これが抜けてた）
@@ -154,22 +90,134 @@ class RoughnessNode(Node):
 
     def Plane_culculate(self):
         """平面推定プログラム"""
-        plane = pyrsc.Plane()
+        self.grid_plane = [[None for _ in range(self.grid_size)] for _ in range(self.grid_size)]
+        self.get_logger().info("平面推定開始")
+
+        MAX_POINTS = 100
 
         for i in range(self.grid_size):
             for j in range(self.grid_size):
                 pts = self.grid_points[i][j]
 
                 if pts.shape[0] < 3:
-                    # self.get_logger().warn(f"({i},{j}) セルに十分な点がありません")
                     continue
+
+                # サンプリング
+                if pts.shape[0] > MAX_POINTS:
+                    idx = np.random.choice(pts.shape[0], MAX_POINTS, replace=False)
+                    pts_use = pts[idx]
+                else:
+                    pts_use = pts
+
                 try:
-                    equation, inliers = plane.fit(pts, 0.01)
+                    plane = pyrsc.Plane()
+
+                    equation, inliers = plane.fit(pts_use, 0.01)  
                     self.grid_plane[i][j] = equation
-                    # self.get_logger().info(f"({i},{j}) 平面推定完了")
+
                 except Exception as e:
                     self.get_logger().error(f"({i},{j}) 平面推定エラー: {e}")
+
         self.get_logger().info("平面推定完了")
+
+    def fit_plane_pca(self, pts: np.ndarray):
+        """
+        pts: shape (N, 3)
+        戻り値:
+            plane_eq: np.array([a, b, c, d])  (ax + by + cz + d = 0)
+            roughness: float
+        """
+        # 重心
+        c = pts.mean(axis=0)  # (3,)
+        X = pts - c           # (N,3)
+
+        # 共分散行列 (3x3)
+        # Nで割るか(N-1)で割るかは好み。ここではNで割る。
+        cov = (X.T @ X) / pts.shape[0]
+
+        # 固有値・固有ベクトル
+        # w: 固有値 (3,), v: 列が固有ベクトル (3,3)
+        w, v = np.linalg.eigh(cov)  # 対称行列なのでeighでOK (速い)
+
+        # 固有値は昇順に並ぶ: w[0] <= w[1] <= w[2]
+        # 最小固有値の固有ベクトルが「平面の法線」
+        normal = v[:, 0]
+        d = -np.dot(normal, c)
+
+        # 粗さの指標（例）：最小固有値 / 全体
+        lam1, lam2, lam3 = w[2], w[1], w[0]  # 大きい順に並べ直すならこう
+        roughness = lam3 / (lam1 + lam2 + lam3 + 1e-9)  # 0除算防止
+
+        plane_eq = np.array([normal[0], normal[1], normal[2], d], dtype=np.float32)
+        return plane_eq, float(roughness)
+    
+    def Plane_culculate_PCA(self):
+        """平面推定＋粗さ推定（PCA版）"""
+        self.grid_plane = [[None for _ in range(self.grid_size)] for _ in range(self.grid_size)]
+        self.get_logger().info("平面推定(PCA)開始")
+
+        for i in range(self.grid_size):
+            for j in range(self.grid_size):
+                pts = self.grid_points[i][j]  # shape=(N,3)
+
+                if pts.shape[0] < 3:
+                    # 点が少なすぎるセルはスキップ or 前の値を流用とか
+                    continue
+
+                # 点が多すぎる場合だけ、軽くサンプリング（先頭だけ使う例）
+                MAX_POINTS = 500
+                if pts.shape[0] > MAX_POINTS:
+                    pts_use = pts[:MAX_POINTS]
+                else:
+                    pts_use = pts
+
+                try:
+                    plane_eq, roughness = self.fit_plane_pca(pts_use)
+
+                    # 平面の係数を保存
+                    self.grid_plane[i][j] = plane_eq
+
+                    # 粗さマップ用の配列があるならそこに保存
+                    # 例: self.grid_roughness[i][j] = roughness
+                    # self.grid_roughness[i][j] = roughness
+
+                except Exception as e:
+                    self.get_logger().error(f"({i},{j}) 平面推定(PCA)エラー: {e}")
+
+        self.get_logger().info("平面推定(PCA)完了")
+
+
+    # def Plane_culculate(self):
+    #     """平面推定プログラム"""
+    #     plane = pyrsc.Plane()
+    #     self.get_logger().info("平面推定開始")
+    #     MAX_POINTS = 500
+
+    #     for i in range(self.grid_size):
+    #         for j in range(self.grid_size):
+    #             pts = self.grid_points[i][j]
+
+    #             if pts.shape[0] < 3:
+    #                 # self.get_logger().warn(f"({i},{j}) セルに十分な点がありません")
+    #                 continue
+    #             if pts.shape[0] > MAX_POINTS:
+    #                 idx = np.random.choice(pts.shape[0], MAX_POINTS, replace=False)
+    #                 pts_use = pts[idx]
+    #             else:
+    #                 pts_use = pts
+
+    #             try:
+    #                 equation, inliers = plane.fit(pts_use, 0.01)
+    #                 self.grid_plane[i][j] = equation
+    #             except Exception as e:
+    #                 self.get_logger().error(f"({i},{j}) 平面推定エラー: {e}")
+    #             # try:
+    #             #     equation, inliers = plane.fit(pts, 0.01)
+    #             #     self.grid_plane[i][j] = equation
+    #             #     # self.get_logger().info(f"({i},{j}) 平面推定完了")
+    #             # except Exception as e:
+    #             #     self.get_logger().error(f"({i},{j}) 平面推定エラー: {e}")
+    #     self.get_logger().info("平面推定完了")
 
     def convert_plane_high(self, x, y, i, j):
         """セル(i,j)の平面から高さ(z)を求める"""
@@ -186,6 +234,7 @@ class RoughnessNode(Node):
 
     def roughness_culculate(self):
         """分散から粗さを計測する"""
+        self.grid_var = np.full((self.grid_size, self.grid_size), np.nan, dtype=np.float32)
 
         for i in range (self.grid_size):
             for j in range(self.grid_size):
@@ -199,34 +248,12 @@ class RoughnessNode(Node):
                     self.grid_var[i][j] = roughness
         self.get_logger().info("粗さ推定完了")
 
-    def publish_roughness(self):
-        """計算済み self.grid_var を /roughness に配信"""
-        if not hasattr(self, "grid_var"):
-            self.get_logger().warn("grid_var が存在しません。")
-            return
+    
 
-        msg = Float32MultiArray()
-        msg.data = self.grid_var.flatten().tolist()
+    
 
-        msg.layout.dim.append(MultiArrayDimension(label="rows", size=self.grid_size, stride=self.grid_size * self.grid_size))
-        msg.layout.dim.append(MultiArrayDimension(label="cols", size=self.grid_size, stride=self.grid_size))
-        msg.layout.data_offset = 0
-
-        self.pub.publish(msg)
-        self.get_logger().info("粗さマップを Publish しました")
+        
                 
         
 
-def main(args=None):
-    rclpy.init(args=args)
-    node = RoughnessNode()
-    try:
-        rclpy.spin_once(node)
-    except KeyboardInterrupt:
-        pass
-    node.destroy_node()
-    rclpy.shutdown()
 
-
-if __name__ == '__main__':
-    main()
