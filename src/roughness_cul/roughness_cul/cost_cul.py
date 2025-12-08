@@ -10,26 +10,29 @@ from builtin_interfaces.msg import Duration
 from geometry_msgs.msg import Point
 
 
-from roughness_cul import Roughness_cul
+from roughness_cost import roughness_cost
+from slope_cul import slope_cul
 
 class Cost_Node(Node):
     def __init__(self):
         super().__init__('cost_cul')
 
         # パラメータ（必要なら declare_parameter で外部指定可）
-        self.grid_size = 9          # 21 x 21
+        self.grid_size = 9          # 9 x 9
         self.cell_res  = 1.0         # 1 m / cell
         self.radius_m  = (self.grid_size // 2) * self.cell_res  # 10 m
 
         # 初期化
         self.points = np.empty((0, 3), dtype=np.float32)
+        self.slope_cost = [[None for _ in range(self.grid_size)] for _ in range(self.grid_size)]
         # self.grid_var = np.full((self.grid_size, self.grid_size), np.nan, dtype=np.float32)
 
         # ロボット現在地（本当はTFやOdomで更新するはず。ここでは固定 or 別APIから更新）
         # self.pose = Pose3D(0., 0., 0.)
 
         # class定義
-        self.roughness = Roughness_cul(self.grid_size, self.cell_res, self.get_logger())
+        self.roughness = roughness_cost(self.grid_size, self.cell_res, self.get_logger())
+        self.slopecost = slope_cul(self.grid_size, self.cell_res, self.get_logger())
 
         # Publisher / Subscriber
         self.sub = self.create_subscription(PointCloud2, '/scan', self.callback, 10)
@@ -55,6 +58,9 @@ class Cost_Node(Node):
         self.get_logger().info(f"変換後の点群 shape={points.shape}")
         # self.get_logger().info(f"サンプル: {points[:500]}")
         self.roughness.roughness_cul(self.points)
+        self.slopecost.set_grid_plane(self.roughness.grid_plane)
+        self.slope_cost = self.slopecost.all_slope_cul()
+        self.get_logger().info(f"slope_cost:{self.slope_cost}")
         self.publish_roughness()
         self.publish_grid()
 
@@ -212,8 +218,8 @@ class Cost_Node(Node):
         # 水平線 j = 0..N
         for j in range(N + 1):
             y = y0 + j * res
-            p1 = Point(x=x0,       y=y, z=z)
-            p2 = Point(x=x0+width, y=y, z=z)
+            p1 = Point(x = x0,         y = y, z = z)
+            p2 = Point(x = x0 + width, y = y, z = z)
             lines.points.append(p1)
             lines.points.append(p2)
 

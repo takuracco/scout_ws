@@ -1,5 +1,5 @@
 import numpy as np
-import pyransac3d as pyrsc
+# import pyransac3d as pyrsc
 
 class Pose3D:
     def __init__(self, x=0., y=0., z=0.):
@@ -7,7 +7,7 @@ class Pose3D:
         self.y = float(y)
         self.z = float(z)
 
-class Roughness_cul():
+class roughness_cost():
     def __init__(self, grid_size, cell_res, logger):
 
         # パラメータ（必要なら declare_parameter で外部指定可）
@@ -86,37 +86,37 @@ class Roughness_cul():
         #             self.grid_points[i][j] = np.empty((0,3), dtype = np.float32)
 
 
-    def Plane_culculate(self):
-        """平面推定プログラム"""
-        self.grid_plane = [[None for _ in range(self.grid_size)] for _ in range(self.grid_size)]
-        self.get_logger().info("平面推定開始")
+    # def Plane_culculate(self):
+    #     """平面推定プログラム"""
+    #     self.grid_plane = [[None for _ in range(self.grid_size)] for _ in range(self.grid_size)]
+    #     self.get_logger().info("平面推定開始")
 
-        MAX_POINTS = 500
+    #     MAX_POINTS = 500
 
-        for i in range(self.grid_size):
-            for j in range(self.grid_size):
-                pts = self.grid_points[i][j]
+    #     for i in range(self.grid_size):
+    #         for j in range(self.grid_size):
+    #             pts = self.grid_points[i][j]
 
-                if pts.shape[0] < 3:
-                    continue
+    #             if pts.shape[0] < 3:
+    #                 continue
 
-                # サンプリング
-                if pts.shape[0] > MAX_POINTS:
-                    idx = np.random.choice(pts.shape[0], MAX_POINTS, replace=False)
-                    pts_use = pts[idx]
-                else:
-                    pts_use = pts
+    #             # サンプリング
+    #             if pts.shape[0] > MAX_POINTS:
+    #                 idx = np.random.choice(pts.shape[0], MAX_POINTS, replace=False)
+    #                 pts_use = pts[idx]
+    #             else:
+    #                 pts_use = pts
 
-                try:
-                    plane = pyrsc.Plane()
+    #             try:
+    #                 plane = pyrsc.Plane()
 
-                    equation, inliers = plane.fit(pts_use, 0.01)  
-                    self.grid_plane[i][j] = equation
+    #                 equation, inliers = plane.fit(pts_use, 0.01)  
+    #                 self.grid_plane[i][j] = equation
 
-                except Exception as e:
-                    self.get_logger().error(f"({i},{j}) 平面推定エラー: {e}")
+    #             except Exception as e:
+    #                 self.get_logger().error(f"({i},{j}) 平面推定エラー: {e}")
 
-        self.get_logger().info("平面推定完了")
+    #     self.get_logger().info("平面推定完了")
 
     def fit_plane_pca(self, pts: np.ndarray):
         """
