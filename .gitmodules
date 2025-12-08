@@ -1,0 +1,3 @@
+[submodule "src/scout_mini_ROS2"]
+	path = src/scout_mini_ROS2
+	url = https://github.com/takuracco/scout_mini_ROS2.git

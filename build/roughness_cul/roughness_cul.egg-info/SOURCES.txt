@@ -10,7 +10,9 @@ setup.py
 ../../build/roughness_cul/roughness_cul.egg-info/zip-safe
 resource/roughness_cul
 roughness_cul/__init__.py
-roughness_cul/roughness_cul.py
+roughness_cul/cost_cul.py
+roughness_cul/roughness_cost.py
+roughness_cul/slope_cul.py
 roughness_cul/test.py
 test/test_copyright.py
 test/test_flake8.py
