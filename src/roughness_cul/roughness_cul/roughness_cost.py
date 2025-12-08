@@ -255,6 +255,3 @@ class roughness_cost():
 
         
                 
-        
-
-

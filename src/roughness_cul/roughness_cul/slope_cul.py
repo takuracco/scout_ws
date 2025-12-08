@@ -86,4 +86,3 @@ class slope_cul():
         return self.slope_cost
     
                 
-
