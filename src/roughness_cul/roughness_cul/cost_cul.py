@@ -1,7 +1,6 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2
-import sensor_msgs_py.point_cloud2 as pc2
 import numpy as np
 from std_msgs.msg import Float32MultiArray
 from std_msgs.msg import MultiArrayLayout, MultiArrayDimension
@@ -64,41 +63,7 @@ class Cost_Node(Node):
         self.publish_roughness()
         self.publish_grid()
 
-    def cloud2_to_xyz(self,msg: PointCloud2) -> np.ndarray:
-        """
-        PointCloud2 -> (N,3) float32 の np.ndarray に安全変換
-        x,y,z 以外は捨てる。NaN はスキップ。
-        """
-        try:
-            # まずは numpy 版で試す（速い）
-            arr = pc2.read_points_numpy(msg, field_names=("x", "y", "z"), skip_nans=True)
-            if isinstance(arr, np.ndarray):
-                # 構造化配列か？
-                if isinstance(arr, np.ndarray) and arr.dtype.fields is not None:
-                    return np.stack([
-                        arr['x'].astype(np.float32, copy=False),
-                        arr['y'].astype(np.float32, copy=False),
-                        arr['z'].astype(np.float32, copy=False)
-                    ], axis=-1)
-                else:
-                    # すでに (N,3) ならそのまま
-                    if arr.ndim == 2 and arr.shape[1] >= 3:
-                        return arr[:, :3].astype(np.float32, copy=False)
-                    # 形が想定外ならフォールバックへ
-        except Exception:
-            pass
-
-        # フォールバック：ジェネレータ経由（遅いが確実）
-        pts = np.array(
-            list(pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True)),
-            dtype=np.float32
-        )
-        # 形を (N,3) にそろえる
-        if pts.ndim == 1:
-            pts = pts.reshape(-1, 3)
-        elif pts.ndim == 2 and pts.shape[1] > 3:
-            pts = pts[:, :3]
-        return pts
+    
     
 
 

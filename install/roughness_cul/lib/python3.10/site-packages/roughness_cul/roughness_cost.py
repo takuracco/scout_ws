@@ -29,44 +29,7 @@ class roughness_cost():
         self.Plane_culculate_PCA()
 
 
-    def grid_culculate(self, points):
-        """自身の座標から見たグリッドに分ける"""
-
-        local_x_min = - (self.grid_size / 2) * self.cell_res  # -10
-        local_y_min = - (self.grid_size / 2) * self.cell_res  # -10
-
-        x = points[:, 0]
-        y = points[:, 1]
-
-        # 各点がどのセルに入るかのデータ配列
-        ix = np.floor((x - local_x_min) / self.cell_res).astype(np.int32)
-        iy = np.floor((y - local_y_min) / self.cell_res).astype(np.int32)
-
-        mask = (ix >= 0) & (ix < self.grid_size) & (iy >= 0) & (iy < self.grid_size)
-        ix = ix[mask]
-        iy = iy[mask]
-        pts_in = points[mask]
-
-        # まず「リストの二重配列」を作る
-        # self.grid_points = None
-        self.grid_points = [[[] for _ in range(self.grid_size)] for _ in range(self.grid_size)]
-
-        # >>> ここで各セルに点を追加（これが抜けてた）
-        for k in range(len(ix)):
-            self.grid_points[ix[k]][iy[k]].append(pts_in[k])
-
-        # 各セルを numpy 配列化（空セルは (0,3)）
-        for i in range(self.grid_size):
-            for j in range(self.grid_size):
-                if self.grid_points[i][j]:
-                    self.grid_points[i][j] = np.vstack(self.grid_points[i][j]).astype(np.float32)
-                else:
-                    self.grid_points[i][j] = np.empty((0, 3), dtype=np.float32)
-
-        # デバッグ（点が入ってるセル数を数える）
-        filled = sum(1 for i in range(self.grid_size) for j in range(self.grid_size)
-                    if self.grid_points[i][j].shape[0] > 0)
-        self.get_logger().info(f"グリッド分割: 点が入ったセル {filled}/{self.grid_size*self.grid_size}")
+    
 
         # mask = (ix >=0) & (ix < self.grid_size) & (iy >=0) & (iy<self.grid_size)
         # ix = ix[mask]
