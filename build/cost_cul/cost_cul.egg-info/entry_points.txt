@@ -1,0 +1,3 @@
+[console_scripts]
+cost_cul_node = cost_cul.cost_cul_main:main
+

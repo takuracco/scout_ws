@@ -315,17 +315,17 @@ hesai_ros_driver__rosidl_typesupport_cpp/fast:
 .PHONY : hesai_ros_driver__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_hesai_ros_driver
+# Target rules for targets named ament_cmake_python_copy_hesai_ros_driver
 
 # Build rule for target.
-ament_cmake_python_symlink_hesai_ros_driver: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_hesai_ros_driver
-.PHONY : ament_cmake_python_symlink_hesai_ros_driver
+ament_cmake_python_copy_hesai_ros_driver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_hesai_ros_driver
+.PHONY : ament_cmake_python_copy_hesai_ros_driver
 
 # fast build rule for target.
-ament_cmake_python_symlink_hesai_ros_driver/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_hesai_ros_driver.dir/build.make CMakeFiles/ament_cmake_python_symlink_hesai_ros_driver.dir/build
-.PHONY : ament_cmake_python_symlink_hesai_ros_driver/fast
+ament_cmake_python_copy_hesai_ros_driver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_hesai_ros_driver.dir/build.make CMakeFiles/ament_cmake_python_copy_hesai_ros_driver.dir/build
+.PHONY : ament_cmake_python_copy_hesai_ros_driver/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_hesai_ros_driver_egg
@@ -1616,7 +1616,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_hesai_ros_driver_egg"
-	@echo "... ament_cmake_python_symlink_hesai_ros_driver"
+	@echo "... ament_cmake_python_copy_hesai_ros_driver"
 	@echo "... hesai_ros_driver"
 	@echo "... hesai_ros_driver__cpp"
 	@echo "... hesai_ros_driver__py"

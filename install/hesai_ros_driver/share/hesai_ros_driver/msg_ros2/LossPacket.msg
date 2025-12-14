@@ -1,1 +1,2 @@
-/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0/msg/msg_ros2/LossPacket.msg
+uint32 total_packet_count
+uint32 total_packet_loss_count

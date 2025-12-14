@@ -1,6 +1,0 @@
-source;share/roughness_cul/hook/pythonpath.ps1
-source;share/roughness_cul/hook/pythonpath.dsv
-source;share/roughness_cul/hook/pythonpath.sh
-source;share/roughness_cul/hook/ament_prefix_path.ps1
-source;share/roughness_cul/hook/ament_prefix_path.dsv
-source;share/roughness_cul/hook/ament_prefix_path.sh

@@ -1,1 +1,12 @@
-/home/takuto/scout_ws/build/hesai_ros_driver/rosidl_generator_c/hesai_ros_driver/msg/udp_packet.h
+// generated from rosidl_generator_c/resource/idl.h.em
+// with input from hesai_ros_driver:msg/UdpPacket.idl
+// generated code does not contain a copyright notice
+
+#ifndef HESAI_ROS_DRIVER__MSG__UDP_PACKET_H_
+#define HESAI_ROS_DRIVER__MSG__UDP_PACKET_H_
+
+#include "hesai_ros_driver/msg/detail/udp_packet__struct.h"
+#include "hesai_ros_driver/msg/detail/udp_packet__functions.h"
+#include "hesai_ros_driver/msg/detail/udp_packet__type_support.h"
+
+#endif  // HESAI_ROS_DRIVER__MSG__UDP_PACKET_H_

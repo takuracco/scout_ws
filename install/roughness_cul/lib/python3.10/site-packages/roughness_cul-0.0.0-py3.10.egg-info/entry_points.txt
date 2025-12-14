@@ -1,3 +1,0 @@
-[console_scripts]
-roughness_cul = roughness_cul.roughness_cul:main
-

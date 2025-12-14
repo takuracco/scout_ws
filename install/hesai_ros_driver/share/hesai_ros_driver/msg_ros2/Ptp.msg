@@ -1,1 +1,2 @@
-/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0/msg/msg_ros2/Ptp.msg
+uint8 ptp_lock_offset
+uint8[16] ptp_status

@@ -337,15 +337,6 @@ scout_mini_ROS2_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 scout_mini_ROS2_SOURCE_DIR:STATIC=/home/takuto/scout_ws/src/scout_mini_ROS2
 
-//Value Computed by CMake
-scout_mini_ros2_BINARY_DIR:STATIC=/home/takuto/scout_ws/build/scout_mini_ROS2
-
-//Value Computed by CMake
-scout_mini_ros2_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-scout_mini_ros2_SOURCE_DIR:STATIC=/home/takuto/scout_ws/src/scout_mini_ROS2
-
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
 
