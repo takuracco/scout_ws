@@ -1,5 +1,8 @@
 import numpy as np
 
+from parameter import Parameter
+
+
 DIRECTIONS = [
     (1, 0),   # 0: 右
     (1, 1),   # 1: 右上
@@ -12,8 +15,9 @@ DIRECTIONS = [
 ]
 
 class slope_cul():
-    def __init__(self, cell_res, logger, origin_x = 0.0, origin_y = 0.0):
-        self.cell_res = cell_res
+    def __init__(self, logger, origin_x = 0.0, origin_y = 0.0):
+        param = Parameter()
+        self.cell_res = param.cell_res
         self._logger = logger
         self.origin_x = float(origin_x)
         self.origin_y = float(origin_y)
@@ -26,6 +30,7 @@ class slope_cul():
 
     def set_grid_plane(self, grid_plane):
         self.grid_plane = grid_plane
+        return grid_plane
 
     def get_cell_center(self, i, j):
         """セル(i,j)の中心のz座標を返す関数"""

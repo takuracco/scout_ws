@@ -1,12 +1,13 @@
 import numpy as np
 # import pyransac3d as pyrsc
+from parameter import Parameter
 
 class roughness_cost():
-    def __init__(self, cell_res, logger):
+    def __init__(self, logger):
 
         # パラメータ（必要なら declare_parameter で外部指定可）
-        self.cell_res  = cell_res         # 1 m / cell
-        self.radius_m  = (self.grid_size // 2) * self.cell_res  # 10 m
+        param = Parameter()
+        self.cell_res = param.cell_res
         # self.grid_var = np.full((self.grid_size, self.grid_size), np.nan, dtype=np.float32)
         self._logger = logger
         # ロボット現在地（本当はTFやOdomで更新するはず。ここでは固定 or 別APIから更新）
@@ -20,6 +21,7 @@ class roughness_cost():
         """計算"""
         self.grid_points = points
         self.Plane_culculate_PCA()
+        return self.grid_var
 
     def fit_plane_pca(self, pts: np.ndarray):
         """
@@ -58,11 +60,16 @@ class roughness_cost():
         self.grid_var = {}    # (i,j) -> roughness
         self.get_logger().info("平面推定(PCA)開始")
 
-        for (i, j), pts in self.grid_points.items():
-            pts = self.grid_points[(i,j)]  # shape=(N,3)
+        for (i, j), pts_list in self.grid_points.items():
+
+            # ここが重要：list -> (N,3) ndarray にする
+            pts = np.asarray(pts_list, dtype=np.float32)
+
+            if pts.ndim != 2 or pts.shape[1] != 3:
+                # self.get_logger().warn(f"({i},{j}) pts shape invalid: {pts.shape}")
+                continue
 
             if pts.shape[0] < 3:
-                # 点が少なすぎるセルはスキップ or 前の値を流用とか
                 continue
 
             # 点が多すぎる場合だけ、軽くサンプリング（先頭だけ使う例）

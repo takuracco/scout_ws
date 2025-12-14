@@ -286,48 +286,6 @@
         <child link="laser_link" />
     </joint>
 
- <!-- <link name="camera_link">
-        <inertial>
-            <origin
-                xyz="0.0 0.0 0.0"
-                rpy="0 0 0" />
-            <mass
-                value="0.1" />
-            <inertia
-                ixx="0.0088463"
-                ixy="2.0356E-05"
-                ixz="-0.00047464"
-                iyy="0.0066478"
-                iyz="-6.9288E-06"
-                izz="0.01219" />
-        </inertial>
-        <visual>
-            <origin
-                    xyz="0.0 0.0 0.0"
-                    rpy="0.0 0.0 0.0" />
-            <geometry>
-                    <box size="0.01 0.01 0.01"/>
-            </geometry>
-            <material name = "red">
-            <color rgba="1 1 1 1" />
-            </material>
-        </visual>
-        <collision>
-            <origin
-                    xyz="0 0 0.31"
-                    rpy="0 0 0" />
-          <geometry>
-                    <box size="0.01 0.01 0.01"/>
-          </geometry>
-        </collision>
-    </link>
-
-    <joint name="camera_joint" type="fixed">
-        <origin xyz="0.2 0 0.2" rpy="0 0 0" />
-        <parent link="base_link" />
-        <child link="camera_link" />
-    </joint> -->
-
   <gazebo reference="laser_link">
     <sensor type="ray" name="laser_sensor">
       <pose>0 0 0 0 0 0</pose>

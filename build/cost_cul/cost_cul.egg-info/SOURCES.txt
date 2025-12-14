@@ -11,6 +11,7 @@ setup.py
 cost_cul/__init__.py
 cost_cul/cost_cul_main.py
 cost_cul/grid_manage.py
+cost_cul/parameter.py
 cost_cul/roughness_cost.py
 cost_cul/slope_cul.py
 cost_cul/test.py

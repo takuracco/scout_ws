@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/cost_cul/cost_cul.egg-info/PKG-INFO
+writing dependency_links to ../../build/cost_cul/cost_cul.egg-info/dependency_links.txt
+writing entry points to ../../build/cost_cul/cost_cul.egg-info/entry_points.txt
+writing requirements to ../../build/cost_cul/cost_cul.egg-info/requires.txt
+writing top-level names to ../../build/cost_cul/cost_cul.egg-info/top_level.txt
+reading manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+writing manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+running build
+running build_py
+copying cost_cul/grid_manage.py -> /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul
+running install
+running install_lib
+copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/grid_manage.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/grid_manage.py to grid_manage.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/cost_cul/cost_cul.egg-info to /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cost_cul_node script to /home/takuto/scout_ws/install/cost_cul/lib/cost_cul
+writing list of installed files to '/home/takuto/scout_ws/build/cost_cul/install.log'

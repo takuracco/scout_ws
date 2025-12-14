@@ -1,0 +1,30 @@
+[1.515s] Invoking command in '/home/takuto/scout_ws/src/cost_cul': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cost_cul build --build-base /home/takuto/scout_ws/build/cost_cul/build install --record /home/takuto/scout_ws/build/cost_cul/install.log --single-version-externally-managed install_data
+[1.900s] running egg_info
+[1.901s] writing ../../build/cost_cul/cost_cul.egg-info/PKG-INFO
+[1.901s] writing dependency_links to ../../build/cost_cul/cost_cul.egg-info/dependency_links.txt
+[1.902s] writing entry points to ../../build/cost_cul/cost_cul.egg-info/entry_points.txt
+[1.902s] writing requirements to ../../build/cost_cul/cost_cul.egg-info/requires.txt
+[1.902s] writing top-level names to ../../build/cost_cul/cost_cul.egg-info/top_level.txt
+[1.904s] reading manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+[1.905s] writing manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+[1.906s] running build
+[1.906s] running build_py
+[1.906s] copying cost_cul/cost_cul_main.py -> /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul
+[1.906s] copying cost_cul/roughness_cost.py -> /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul
+[1.907s] copying cost_cul/test.py -> /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul
+[1.907s] running install
+[1.907s] running install_lib
+[1.908s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/cost_cul_main.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[1.908s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/roughness_cost.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[1.909s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/test.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[1.910s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/cost_cul_main.py to cost_cul_main.cpython-310.pyc
+[1.912s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/roughness_cost.py to roughness_cost.cpython-310.pyc
+[1.913s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/test.py to test.cpython-310.pyc
+[1.913s] running install_data
+[1.914s] running install_egg_info
+[1.917s] removing '/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info' (and everything under it)
+[1.917s] Copying ../../build/cost_cul/cost_cul.egg-info to /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info
+[1.918s] running install_scripts
+[1.950s] Installing cost_cul_node script to /home/takuto/scout_ws/install/cost_cul/lib/cost_cul
+[1.951s] writing list of installed files to '/home/takuto/scout_ws/build/cost_cul/install.log'
+[2.000s] Invoked command in '/home/takuto/scout_ws/src/cost_cul' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cost_cul build --build-base /home/takuto/scout_ws/build/cost_cul/build install --record /home/takuto/scout_ws/build/cost_cul/install.log --single-version-externally-managed install_data
