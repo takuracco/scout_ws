@@ -1,6 +1,6 @@
 import numpy as np
 # import pyransac3d as pyrsc
-from parameter import Parameter
+from .parameter import Parameter
 
 class roughness_cost():
     def __init__(self, logger):

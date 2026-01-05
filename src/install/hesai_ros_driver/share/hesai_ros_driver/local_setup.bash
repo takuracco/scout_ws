@@ -1,1 +1,0 @@
-/home/takuto/scout_ws/src/build/hesai_ros_driver/ament_cmake_environment_hooks/local_setup.bash

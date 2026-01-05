@@ -13,7 +13,7 @@ class joy_cmd(Node):
             self.joy_callback,
             10
         )
-        self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.cmd_pub = self.create_publisher(Twist, '/diff_drive_controller/cmd_vel_unstamped', 10)
 
         self.joy = None
 
@@ -25,7 +25,7 @@ class joy_cmd(Node):
     def set_cmd(self):
         cmd_msg = Twist()
 
-        cmd_msg.linear.x = self.joy.axes[1] * 5
+        cmd_msg.linear.x = self.joy.axes[1] * 10
         # cmd_msg.linear.y = self.joy.axes[1]
         cmd_msg.angular.z = self.joy.axes[3] * 5
 

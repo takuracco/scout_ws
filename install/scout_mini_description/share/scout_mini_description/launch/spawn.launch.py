@@ -1,0 +1,1 @@
+/home/takuto/scout_ws/src/scout_mini_description/launch/spawn.launch.py

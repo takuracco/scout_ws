@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing cost_cul.egg-info/PKG-INFO
+writing dependency_links to cost_cul.egg-info/dependency_links.txt
+writing entry points to cost_cul.egg-info/entry_points.txt
+writing requirements to cost_cul.egg-info/requires.txt
+writing top-level names to cost_cul.egg-info/top_level.txt
+reading manifest file 'cost_cul.egg-info/SOURCES.txt'
+writing manifest file 'cost_cul.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost-cul.egg-link (link to .)
+Installing cost_cul_node script to /home/takuto/scout_ws/install/cost_cul/lib/cost_cul
+
+Installed /home/takuto/scout_ws/build/cost_cul
+running symlink_data

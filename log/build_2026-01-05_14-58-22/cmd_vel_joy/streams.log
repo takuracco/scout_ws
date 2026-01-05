@@ -1,0 +1,24 @@
+[0.969s] Invoking command in '/home/takuto/scout_ws/src/cmd_vel_joy': PYTHONPATH=/home/takuto/scout_ws/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cmd_vel_joy build --build-base /home/takuto/scout_ws/build/cmd_vel_joy/build install --record /home/takuto/scout_ws/build/cmd_vel_joy/install.log --single-version-externally-managed install_data
+[1.244s] running egg_info
+[1.245s] writing ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/PKG-INFO
+[1.245s] writing dependency_links to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/dependency_links.txt
+[1.245s] writing entry points to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/entry_points.txt
+[1.245s] writing requirements to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/requires.txt
+[1.246s] writing top-level names to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/top_level.txt
+[1.248s] reading manifest file '../../build/cmd_vel_joy/cmd_vel_joy.egg-info/SOURCES.txt'
+[1.249s] writing manifest file '../../build/cmd_vel_joy/cmd_vel_joy.egg-info/SOURCES.txt'
+[1.250s] running build
+[1.250s] running build_py
+[1.250s] copying cmd_vel_joy/joy_cmd.py -> /home/takuto/scout_ws/build/cmd_vel_joy/build/lib/cmd_vel_joy
+[1.250s] running install
+[1.251s] running install_lib
+[1.252s] copying /home/takuto/scout_ws/build/cmd_vel_joy/build/lib/cmd_vel_joy/joy_cmd.py -> /home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy
+[1.253s] byte-compiling /home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy/joy_cmd.py to joy_cmd.cpython-310.pyc
+[1.254s] running install_data
+[1.254s] running install_egg_info
+[1.256s] removing '/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy-0.0.0-py3.10.egg-info' (and everything under it)
+[1.257s] Copying ../../build/cmd_vel_joy/cmd_vel_joy.egg-info to /home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy-0.0.0-py3.10.egg-info
+[1.259s] running install_scripts
+[1.286s] Installing joy_cmd script to /home/takuto/scout_ws/install/cmd_vel_joy/lib/cmd_vel_joy
+[1.286s] writing list of installed files to '/home/takuto/scout_ws/build/cmd_vel_joy/install.log'
+[1.328s] Invoked command in '/home/takuto/scout_ws/src/cmd_vel_joy' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cmd_vel_joy build --build-base /home/takuto/scout_ws/build/cmd_vel_joy/build install --record /home/takuto/scout_ws/build/cmd_vel_joy/install.log --single-version-externally-managed install_data

@@ -1,5 +1,1 @@
-from hesai_ros_driver.msg._firetime import Firetime  # noqa: F401
-from hesai_ros_driver.msg._loss_packet import LossPacket  # noqa: F401
-from hesai_ros_driver.msg._ptp import Ptp  # noqa: F401
-from hesai_ros_driver.msg._udp_frame import UdpFrame  # noqa: F401
-from hesai_ros_driver.msg._udp_packet import UdpPacket  # noqa: F401
+/home/takuto/scout_ws/build/hesai_ros_driver/rosidl_generator_py/hesai_ros_driver/msg/__init__.py

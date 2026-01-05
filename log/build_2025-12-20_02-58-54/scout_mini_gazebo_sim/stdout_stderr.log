@@ -1,0 +1,28 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/takuto/scout_ws/build/scout_mini_gazebo_sim
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/launch/sim.launch.py
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/worlds/testworld.world
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/models/testworld/meshes/world.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/models/testworld/meshes/world.stl
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/models/testworld/model.config
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/models/testworld/model.sdf
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/ament_index/resource_index/package_run_dependencies/scout_mini_gazebo_sim
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/ament_index/resource_index/parent_prefix_path/scout_mini_gazebo_sim
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/environment/ament_prefix_path.sh
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/environment/ament_prefix_path.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/environment/path.sh
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/environment/path.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/local_setup.bash
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/local_setup.sh
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/local_setup.zsh
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/local_setup.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/package.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/ament_index/resource_index/packages/scout_mini_gazebo_sim
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/cmake/scout_mini_gazebo_simConfig.cmake
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/cmake/scout_mini_gazebo_simConfig-version.cmake
+-- Symlinking: /home/takuto/scout_ws/install/scout_mini_gazebo_sim/share/scout_mini_gazebo_sim/package.xml

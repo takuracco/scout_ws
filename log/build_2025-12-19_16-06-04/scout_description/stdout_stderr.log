@@ -1,0 +1,33 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/urdf/scout.urdf
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/1_Link.STL
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/2_Link.STL
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/3_Link.STL
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/4_Link.STL
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/base_link.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/base_link_full.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/box_link.STL
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/scout_mini_base_link.STL
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/scout_mini_base_link.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/scout_mini_base_link2.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/scout_mini_base_link2.stl
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/wheel.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/wheel_type1.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/meshes/wheel_type2.dae
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/rviz/scout_gazebo.rviz
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/ament_index/resource_index/package_run_dependencies/scout_description
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/ament_index/resource_index/parent_prefix_path/scout_description
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/environment/path.sh
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/environment/path.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/local_setup.bash
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/local_setup.sh
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/local_setup.zsh
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/local_setup.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/package.dsv
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/ament_index/resource_index/packages/scout_description
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig.cmake
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig-version.cmake
+-- Symlinking: /home/takuto/scout_ws/install/scout_description/share/scout_description/package.xml

@@ -1,0 +1,16 @@
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/config/scout_mini_control.yaml
+/home/takuto/scout_ws/install/scout_mini_control/share/ament_index/resource_index/package_run_dependencies/scout_mini_control
+/home/takuto/scout_ws/install/scout_mini_control/share/ament_index/resource_index/parent_prefix_path/scout_mini_control
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/environment/ament_prefix_path.sh
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/environment/ament_prefix_path.dsv
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/environment/path.sh
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/environment/path.dsv
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/local_setup.bash
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/local_setup.sh
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/local_setup.zsh
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/local_setup.dsv
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/package.dsv
+/home/takuto/scout_ws/install/scout_mini_control/share/ament_index/resource_index/packages/scout_mini_control
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/cmake/scout_mini_controlConfig.cmake
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/cmake/scout_mini_controlConfig-version.cmake
+/home/takuto/scout_ws/install/scout_mini_control/share/scout_mini_control/package.xml

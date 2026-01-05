@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>scout_mini_gazebo_sim</name>
+  <version>0.0.0</version>
+  <description>Gazebo Classic worlds/models and launch for Scout Mini.</description>
+
+  <maintainer email="takuto.ii29.mail@gmail.com">takuto</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- launch -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- gazebo classic + gazebo_ros_pkgs -->
+  <exec_depend>gazebo_ros</exec_depend>
+
+  <!-- robot spawn uses robot_description published by scout_mini_description -->
+  <exec_depend>scout_mini_description</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,11 +1,13 @@
 
 class Parameter():
     def __init__(self):
+        # セルの大きさ
+        self.cell_res  = 1.0         # 1 m / cell
+
+        
         # 表示サイズ
         self.grid_size = 9          # 9 x 9
         self.radius_m  = (self.grid_size // 2) * self.cell_res  # 10 m
-        # セルの大きさ
-        self.cell_res  = 1.0         # 1 m / cell
 
         # ロボットの初期位置
         self.robot_x     = 0.0

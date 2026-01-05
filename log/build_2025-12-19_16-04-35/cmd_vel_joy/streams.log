@@ -1,0 +1,18 @@
+[1.510s] Invoking command in '/home/takuto/scout_ws/build/cmd_vel_joy': PYTHONPATH=/home/takuto/scout_ws/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/takuto/scout_ws/build/cmd_vel_joy/build --no-deps symlink_data --force
+[1.853s] running develop
+[2.085s] running egg_info
+[2.086s] writing cmd_vel_joy.egg-info/PKG-INFO
+[2.086s] writing dependency_links to cmd_vel_joy.egg-info/dependency_links.txt
+[2.086s] writing entry points to cmd_vel_joy.egg-info/entry_points.txt
+[2.086s] writing requirements to cmd_vel_joy.egg-info/requires.txt
+[2.087s] writing top-level names to cmd_vel_joy.egg-info/top_level.txt
+[2.091s] reading manifest file 'cmd_vel_joy.egg-info/SOURCES.txt'
+[2.092s] writing manifest file 'cmd_vel_joy.egg-info/SOURCES.txt'
+[2.094s] running build_ext
+[2.094s] Creating /home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd-vel-joy.egg-link (link to .)
+[2.095s] Installing joy_cmd script to /home/takuto/scout_ws/install/cmd_vel_joy/lib/cmd_vel_joy
+[2.096s] 
+[2.096s] Installed /home/takuto/scout_ws/build/cmd_vel_joy
+[2.096s] running symlink_data
+[2.096s] symbolically linking /home/takuto/scout_ws/build/cmd_vel_joy/resource/cmd_vel_joy -> /home/takuto/scout_ws/install/cmd_vel_joy/share/ament_index/resource_index/packages
+[2.096s] symbolically linking /home/takuto/scout_ws/build/cmd_vel_joy/package.xml -> /home/takuto/scout_ws/install/cmd_vel_joy/share/cmd_vel_joy

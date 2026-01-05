@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/takuto/scout_ws/build/scout_gazebo/ament_cmake_environment_hooks/path.dsv

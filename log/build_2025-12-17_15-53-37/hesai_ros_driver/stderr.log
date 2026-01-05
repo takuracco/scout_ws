@@ -1,0 +1,11 @@
+[0m=============================================================[0m
+[0m-- ROS_VERSION is 2[0m
+[0m=============================================================[0m
+[0m=============================================================[0m
+[0m-- ROS2 Found. ROS2 Support is turned On.[0m
+[0m=============================================================[0m
+failed to create symbolic link '/home/takuto/scout_ws/build/hesai_ros_driver/ament_cmake_python/hesai_ros_driver/hesai_ros_driver' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_hesai_ros_driver.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_hesai_ros_driver] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:470: CMakeFiles/ament_cmake_python_symlink_hesai_ros_driver.dir/all] エラー 2
+gmake[1]: *** 未完了のジョブを待っています....
+gmake: *** [Makefile:146: all] エラー 2

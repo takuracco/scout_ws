@@ -2,7 +2,7 @@ import numpy as np
 from sensor_msgs.msg import PointCloud2
 import sensor_msgs_py.point_cloud2 as pc2
 
-from parameter import Parameter
+from .parameter import Parameter
 
 class grid_management:
     """グリッドの管理用クラス"""
@@ -68,7 +68,7 @@ class grid_management:
             pts = pts[:, :3]
         return pts
     
-    def rpy_to_R(roll, pitch, yaw):
+    def rpy_to_R(self, roll, pitch, yaw):
         cr, sr = np.cos(roll),  np.sin(roll)
         cp, sp = np.cos(pitch), np.sin(pitch)
         cy, sy = np.cos(yaw),   np.sin(yaw)
@@ -77,10 +77,10 @@ class grid_management:
         return np.array([
             [cy*cp, cy*sp*sr - sy*cr, cy*sp*cr + sy*sr],
             [sy*cp, sy*sp*sr + cy*cr, sy*sp*cr - cy*sr],
-            [-sp,   cp*sr,            cp*cr]
+            [-sp  ,   cp*sr         ,            cp*cr]
         ], dtype=np.float32)
 
-    def get_point(self, msg, robot_x, robot_y, robot_z, robot_yaw, robot_roll, robot_pitch):
+    def get_point(self, msg, robot_x, robot_y, robot_z, robot_roll, robot_pitch, robot_yaw):
         """点群と現在値を受け取って保存する関数"""
         # PCLから配列に変換
         points = self.cloud2_to_xyz(msg)

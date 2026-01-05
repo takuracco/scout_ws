@@ -1,0 +1,21 @@
+[0.989s] Invoking command in '/home/takuto/scout_ws/src/cost_cul': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cost_cul build --build-base /home/takuto/scout_ws/build/cost_cul/build install --record /home/takuto/scout_ws/build/cost_cul/install.log --single-version-externally-managed install_data
+[1.227s] running egg_info
+[1.227s] writing ../../build/cost_cul/cost_cul.egg-info/PKG-INFO
+[1.228s] writing dependency_links to ../../build/cost_cul/cost_cul.egg-info/dependency_links.txt
+[1.228s] writing entry points to ../../build/cost_cul/cost_cul.egg-info/entry_points.txt
+[1.228s] writing requirements to ../../build/cost_cul/cost_cul.egg-info/requires.txt
+[1.228s] writing top-level names to ../../build/cost_cul/cost_cul.egg-info/top_level.txt
+[1.230s] reading manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+[1.230s] writing manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+[1.230s] running build
+[1.230s] running build_py
+[1.231s] running install
+[1.231s] running install_lib
+[1.232s] running install_data
+[1.233s] running install_egg_info
+[1.234s] removing '/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info' (and everything under it)
+[1.235s] Copying ../../build/cost_cul/cost_cul.egg-info to /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info
+[1.236s] running install_scripts
+[1.254s] Installing cost_cul_node script to /home/takuto/scout_ws/install/cost_cul/lib/cost_cul
+[1.254s] writing list of installed files to '/home/takuto/scout_ws/build/cost_cul/install.log'
+[1.277s] Invoked command in '/home/takuto/scout_ws/src/cost_cul' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cost_cul build --build-base /home/takuto/scout_ws/build/cost_cul/build install --record /home/takuto/scout_ws/build/cost_cul/install.log --single-version-externally-managed install_data

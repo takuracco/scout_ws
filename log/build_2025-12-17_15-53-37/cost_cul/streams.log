@@ -1,0 +1,20 @@
+[0.860s] Invoking command in '/home/takuto/scout_ws/build/cost_cul': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/takuto/scout_ws/build/cost_cul/build --no-deps symlink_data --force
+[1.168s] running develop
+[1.359s] running egg_info
+[1.360s] writing cost_cul.egg-info/PKG-INFO
+[1.360s] writing dependency_links to cost_cul.egg-info/dependency_links.txt
+[1.360s] writing entry points to cost_cul.egg-info/entry_points.txt
+[1.360s] writing requirements to cost_cul.egg-info/requires.txt
+[1.360s] writing top-level names to cost_cul.egg-info/top_level.txt
+[1.363s] reading manifest file 'cost_cul.egg-info/SOURCES.txt'
+[1.364s] writing manifest file 'cost_cul.egg-info/SOURCES.txt'
+[1.365s] running build_ext
+[1.365s] Creating /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost-cul.egg-link (link to .)
+[1.366s] Installing cost_cul_node script to /home/takuto/scout_ws/install/cost_cul/lib/cost_cul
+[1.366s] 
+[1.366s] Installed /home/takuto/scout_ws/build/cost_cul
+[1.367s] running symlink_data
+[1.367s] symbolically linking /home/takuto/scout_ws/build/cost_cul/resource/cost_cul -> /home/takuto/scout_ws/install/cost_cul/share/ament_index/resource_index/packages
+[1.367s] symbolically linking /home/takuto/scout_ws/build/cost_cul/package.xml -> /home/takuto/scout_ws/install/cost_cul/share/cost_cul
+[1.367s] symbolically linking /home/takuto/scout_ws/build/cost_cul/launch/launch.py -> /home/takuto/scout_ws/install/cost_cul/share/cost_cul/launch
+[1.410s] Invoked command in '/home/takuto/scout_ws/build/cost_cul' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/takuto/scout_ws/build/cost_cul/build --no-deps symlink_data --force

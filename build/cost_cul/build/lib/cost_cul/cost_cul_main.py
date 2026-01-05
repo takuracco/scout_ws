@@ -84,7 +84,7 @@ class Cost_Node(Node):
     def callback(self, scan):
         """LiDARのデータの"""
         self.get_logger().info('scanデータ受信')
-        self.grid_manege.get_point(scan, self.pose.x, self.pose.y, self.pose.yaw)
+        self.grid_manege.get_point(scan, self.pose.x, self.pose.y, self.pose.z, self.pose.roll, self.pose.pitch, self.pose.yaw)
         points = self.grid_manege.Cell_point
 
         if points is None or points == 0:
@@ -194,6 +194,7 @@ class Cost_Node(Node):
         # ロボットの現在セル（世界座標セルindex）
         now_i = int(np.floor(self.pose.x / self.cell_res))
         now_j = int(np.floor(self.pose.y / self.cell_res))
+        self.get_logger().info(f"現在のセル{now_i},{now_j}")
 
         N = int(self.grid_size)
         half = N / 2.0
@@ -246,10 +247,11 @@ class Cost_Node(Node):
                     # 粗いほど赤（std:0→緑, std:10→赤）
                     t = std / 10.0          # 0..1
                     t = max(0.0, min(1.0, t))
-                    marker.color.r = t
+                    marker.color.r = 0.0
                     marker.color.g = 1.0 - t
                     marker.color.b = 0.0
                     marker.color.a = 0.6
+                    self.get_logger().info(f"({gi},{gj})の粗さ{std}")
 
                 marker.lifetime = Duration(sec=0, nanosec=0)
                 msg.markers.append(marker)

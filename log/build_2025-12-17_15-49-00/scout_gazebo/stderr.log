@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/assert_file_exists.cmake:20 (message):
+  ament_environment_hooks() the passed hook file 'ament_prepend_unique_value'
+  does not exist
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:35 (assert_file_exists)
+  CMakeLists.txt:27 (ament_environment_hooks)
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] エラー 1

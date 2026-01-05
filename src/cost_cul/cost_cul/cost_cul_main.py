@@ -72,11 +72,10 @@ class Cost_Node(Node):
         # Publisher / Subscriber
         self.sub = self.create_subscription(PointCloud2, '/scan', self.callback, 10)
         self.odomsub = self.create_subscription(Odometry, '/odom', self.odomcallback, 10)
-        self.pub = self.create_publisher(Float32MultiArray, '/roughness', 10)
+        self.pub = self.create_publisher(Float32MultiArray, '/roughness_cost', 10)
+        self.slope_pub = self.create_publisher(Float32MultiArray, '/slope_cost', 10)
         self.grid_pub = self.create_publisher(MarkerArray, "/grid", 10)
 
-        # timer
-        self.Timer = self.create_timer(100, self.timer_callback)
 
         self.get_logger().info('cost_cul node is up.')
 
@@ -84,7 +83,7 @@ class Cost_Node(Node):
     def callback(self, scan):
         """LiDARのデータの"""
         self.get_logger().info('scanデータ受信')
-        self.grid_manege.get_point(scan, self.pose.x, self.pose.y, self.pose.yaw)
+        self.grid_manege.get_point(scan, self.pose.x, self.pose.y, self.pose.z, self.pose.roll, self.pose.pitch, self.pose.yaw)
         points = self.grid_manege.Cell_point
 
         if points is None or points == 0:
@@ -99,6 +98,7 @@ class Cost_Node(Node):
         self.grid_manege.slope_cost = self.slopecost.all_slope_cul()
         # self.get_logger().info(f"slope_cost:{self.slope_cost}")
         self.publish_grid()
+        self.publish_cost()
 
     def odomcallback(self, odom):
         """自己位置の処理"""
@@ -106,18 +106,16 @@ class Cost_Node(Node):
         self.pose.y = odom.pose.pose.position.y
         self.pose.z = odom.pose.pose.position.z
         self.pose.get_rotation(odom.pose.pose.orientation.x, odom.pose.pose.orientation.y, odom.pose.pose.orientation.z, odom.pose.pose.orientation.w)
-
-    def timer_callback(self):
-        """周期的にやること(publish)"""
-        self.publish_cost()
+        
 
     def publish_cost(self):
         """pubするのをまとめる"""
         self.publish_roughness()
+        self.publish_slope_cost()
 
     def publish_slope_cost(self):
         """slope_cost (dict: (i,j)->np.array(8)) を /slope_cost に配信"""
-        slope = getattr(self.roughness, "slope_cost", None)
+        slope = getattr(self.grid_manege, "slope_cost", None)
         if not slope:
             self.get_logger().warn("slope_cost が空です。")
             return
@@ -194,6 +192,7 @@ class Cost_Node(Node):
         # ロボットの現在セル（世界座標セルindex）
         now_i = int(np.floor(self.pose.x / self.cell_res))
         now_j = int(np.floor(self.pose.y / self.cell_res))
+        self.get_logger().info(f"現在のセル{now_i},{now_j}")
 
         N = int(self.grid_size)
         half = N / 2.0
@@ -246,10 +245,11 @@ class Cost_Node(Node):
                     # 粗いほど赤（std:0→緑, std:10→赤）
                     t = std / 10.0          # 0..1
                     t = max(0.0, min(1.0, t))
-                    marker.color.r = t
+                    marker.color.r = 0.0
                     marker.color.g = 1.0 - t
                     marker.color.b = 0.0
                     marker.color.a = 0.6
+                    self.get_logger().info(f"({gi},{gj})の粗さ{std}")
 
                 marker.lifetime = Duration(sec=0, nanosec=0)
                 msg.markers.append(marker)

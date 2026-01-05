@@ -1,6 +1,6 @@
 import numpy as np
 
-from parameter import Parameter
+from .parameter import Parameter
 
 
 DIRECTIONS = [

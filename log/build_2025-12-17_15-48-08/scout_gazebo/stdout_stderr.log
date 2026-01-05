@@ -1,0 +1,7 @@
+[31mCMake Error at CMakeLists.txt:27:
+  Parse error.  Expected "(", got identifier with text "GAZEBO_MODEL_PATH".
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/takuto/scout_ws/build/scout_gazebo/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:226: cmake_check_build_system] エラー 1

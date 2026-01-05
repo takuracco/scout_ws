@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing cmd_vel_joy.egg-info/PKG-INFO
+writing dependency_links to cmd_vel_joy.egg-info/dependency_links.txt
+writing entry points to cmd_vel_joy.egg-info/entry_points.txt
+writing requirements to cmd_vel_joy.egg-info/requires.txt
+writing top-level names to cmd_vel_joy.egg-info/top_level.txt
+reading manifest file 'cmd_vel_joy.egg-info/SOURCES.txt'
+writing manifest file 'cmd_vel_joy.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd-vel-joy.egg-link (link to .)
+Installing joy_cmd script to /home/takuto/scout_ws/install/cmd_vel_joy/lib/cmd_vel_joy
+
+Installed /home/takuto/scout_ws/build/cmd_vel_joy
+running symlink_data

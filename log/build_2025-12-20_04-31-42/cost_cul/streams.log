@@ -1,0 +1,42 @@
+[1.134s] Invoking command in '/home/takuto/scout_ws/build/cost_cul': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/takuto/scout_ws/build/cost_cul/build
+[1.457s] running develop
+[1.682s] Removing /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost-cul.egg-link (link to .)
+[1.733s] Invoked command in '/home/takuto/scout_ws/build/cost_cul' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/takuto/scout_ws/build/cost_cul/build
+[1.735s] Invoking command in '/home/takuto/scout_ws/src/cost_cul': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cost_cul build --build-base /home/takuto/scout_ws/build/cost_cul/build install --record /home/takuto/scout_ws/build/cost_cul/install.log --single-version-externally-managed install_data --force
+[2.021s] running egg_info
+[2.022s] writing ../../build/cost_cul/cost_cul.egg-info/PKG-INFO
+[2.022s] writing dependency_links to ../../build/cost_cul/cost_cul.egg-info/dependency_links.txt
+[2.022s] writing entry points to ../../build/cost_cul/cost_cul.egg-info/entry_points.txt
+[2.022s] writing requirements to ../../build/cost_cul/cost_cul.egg-info/requires.txt
+[2.023s] writing top-level names to ../../build/cost_cul/cost_cul.egg-info/top_level.txt
+[2.024s] reading manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+[2.025s] writing manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'
+[2.025s] running build
+[2.025s] running build_py
+[2.026s] running install
+[2.026s] running install_lib
+[2.027s] creating /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.027s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/parameter.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.027s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/grid_manage.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.027s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/slope_cul.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.028s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/cost_cul_main.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.028s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/__init__.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.028s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/roughness_cost.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.028s] copying /home/takuto/scout_ws/build/cost_cul/build/lib/cost_cul/test.py -> /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul
+[2.029s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/parameter.py to parameter.cpython-310.pyc
+[2.029s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/grid_manage.py to grid_manage.cpython-310.pyc
+[2.030s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/slope_cul.py to slope_cul.cpython-310.pyc
+[2.031s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/cost_cul_main.py to cost_cul_main.cpython-310.pyc
+[2.033s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/__init__.py to __init__.cpython-310.pyc
+[2.033s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/roughness_cost.py to roughness_cost.cpython-310.pyc
+[2.034s] byte-compiling /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul/test.py to test.cpython-310.pyc
+[2.034s] running install_data
+[2.034s] copying resource/cost_cul -> /home/takuto/scout_ws/install/cost_cul/share/ament_index/resource_index/packages
+[2.034s] copying package.xml -> /home/takuto/scout_ws/install/cost_cul/share/cost_cul
+[2.034s] copying launch/launch.py -> /home/takuto/scout_ws/install/cost_cul/share/cost_cul/launch
+[2.035s] running install_egg_info
+[2.037s] Copying ../../build/cost_cul/cost_cul.egg-info to /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info
+[2.038s] running install_scripts
+[2.062s] Installing cost_cul_node script to /home/takuto/scout_ws/install/cost_cul/lib/cost_cul
+[2.063s] writing list of installed files to '/home/takuto/scout_ws/build/cost_cul/install.log'
+[2.103s] Invoked command in '/home/takuto/scout_ws/src/cost_cul' returned '0': PYTHONPATH=/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cost_cul build --build-base /home/takuto/scout_ws/build/cost_cul/build install --record /home/takuto/scout_ws/build/cost_cul/install.log --single-version-externally-managed install_data --force

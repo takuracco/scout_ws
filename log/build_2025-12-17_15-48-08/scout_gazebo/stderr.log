@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:27:
+  Parse error.  Expected "(", got identifier with text "GAZEBO_MODEL_PATH".
+
+[0m
+gmake: *** [Makefile:226: cmake_check_build_system] エラー 1

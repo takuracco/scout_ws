@@ -1,1 +1,0 @@
-/home/takuto/scout_ws/src/build/scout_gazebo/ament_cmake_environment_hooks/local_setup.zsh

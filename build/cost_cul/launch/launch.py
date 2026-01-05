@@ -1,0 +1,1 @@
+/home/takuto/scout_ws/src/cost_cul/launch/launch.py

@@ -1,0 +1,1 @@
+/home/takuto/scout_ws/build/scout_mini_control/ament_cmake_core/scout_mini_controlConfig-version.cmake

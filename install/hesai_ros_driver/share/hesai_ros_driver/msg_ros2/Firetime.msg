@@ -1,1 +1,1 @@
-float64[512] data
+/home/takuto/scout_ws/src/HesaiLidar_ROS_2.0/msg/msg_ros2/Firetime.msg
