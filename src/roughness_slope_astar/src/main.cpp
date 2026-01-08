@@ -1,5 +1,5 @@
 #include <rclcpp/rclcpp.hpp>
-#include "src/roughness_slope_astar/roughness_slope_astar.hpp"
+#include "RoughnessSlopeAstar/RoughnessSlopeAstar.hpp"
 
 int main(int argc, char **argv)
 {

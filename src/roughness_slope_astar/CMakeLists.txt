@@ -24,4 +24,21 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(roughness_slope_astar_node
+  src/main.cpp
+  src/roughness_slope_astar/roughness_slope_astar.cpp
+  src/AstarPlanner/AstarPlanner.cpp
+  src/RobotController/RobotController.cpp
+  src/AutoControlSequence/AutoControlSequence.cpp
+)
+
+target_include_directories(roughness_slope_astar_node
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
+
+ament_target_dependencies(roughness_slope_astar_node
+  rclcpp geometry_msgs nav_msgs std_msgs
+)
+
 ament_package()
