@@ -19,7 +19,7 @@ enum MovingState{
     rotation,
     moving,
     finish
-}
+};
 
 class RobotController{
     private:
@@ -61,4 +61,4 @@ class RobotController{
         bool Turn_Robot();
         bool Straight_Robot();
         void Stop_Robot();
-}
+};

@@ -83,8 +83,10 @@ class AstarPlanner{
         //odom
         void set_odom(nav_msgs::msg::Odometry msg);
         
-        //Astarを支持する
+        //Astar
         void Astar_Plan();
+
+        std::vector<Cell> get_path();
         
     private:
         //Astar

@@ -90,6 +90,10 @@ void AstarPlanner::Astar_Plan(){
     Astar();
 }
 
+std::vector<Cell> AstarPlanner::get_path(){
+    return path;
+}
+
 
 
 CostFG AstarPlanner::culculate_cost(size_t now, size_t next, float now_cost){
@@ -122,16 +126,16 @@ CostFG AstarPlanner::culculate_cost(size_t now, size_t next, float now_cost){
     float f_cost;
 
     switch(cost_mode){
-        case cost_mode.DIST_ONLY:
+        case CostMode::DIST_ONLY:
             //一旦後で実装----------------------------------
             g_cost = 0;
             f_cost = 0;
             break;
-        case cost_mode.ROUGHNESS_ONLY:
+        case CostMode::ROUGHNESS_ONLY:
             g_cost = now_cost + dis * roughness;
             f_cost = h_cost + g_cost;
             break;
-        case cost_mode.ROUGHNESS_SLOPE:
+        case CostMode::ROUGHNESS_SLOPE:
             g_cost = now_cost + dis * roughness * slope;
             f_cost = h_cost + g_cost;
             break;
