@@ -5,23 +5,16 @@ RobotController::RobotController(float _t):TurnPID(_t),StraightPID(_t){
     moving_state = path_planning;
 }
 
-void RobotController::set_target_cell(Cell target){
-    //目標値の設定
-    if(!path_get){
-        target_cell = target;
-        path_get = true;
-    }
-}
 
-void RobotController::set_odom(nav_msgs::msg::Odometry msg){
+void RobotController::set_odom(nav_msgs::msg::Odometry::SharedPtr& msg){
     //自己位置の取得
-    odom.x = msg.pose.pose.position.x;
-    odom.y = msg.pose.pose.position.y;
-    odom.z = msg.pose.pose.position.z;
-    float x = msg.pose.pose.orientation.x;
-    float y = msg.pose.pose.orientation.y;
-    float z = msg.pose.pose.orientation.z;
-    float w = msg.pose.pose.orientation.w;
+    odom.x = msg->pose.pose.position.x;
+    odom.y = msg->pose.pose.position.y;
+    odom.z = msg->pose.pose.position.z;
+    float x = msg->pose.pose.orientation.x;
+    float y = msg->pose.pose.orientation.y;
+    float z = msg->pose.pose.orientation.z;
+    float w = msg->pose.pose.orientation.w;
 
     odom.yaw   = std::atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
     odom.roll  = std::atan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));
@@ -33,37 +26,50 @@ void RobotController::setup(){
     StraightPID.SetParam(1, 0, 0);
 }
 
-void RobotController::Moving_Robot(){
+void RobotController::Moving_Robot(Cell target){
     //ロボットを動かす
     switch(moving_state){
         case path_planning:
+            set_target_cell(target); 
             Stop_Robot();
             if(path_get){
                 moving_state = rotation;
             }
             break;
         
-        case rotation:
+            case rotation:
             if(Turn_Robot()){
                 moving_state = moving;
             }
             break;
         
         case moving:
-            if(Straight_Robot()){
-                moving_state = finish;
-            }
-            break;
-
+        if(Straight_Robot()){
+            moving_state = finish;
+        }
+        break;
+        
         case finish:
-            path_get = false;
-            Stop_Robot();
+        path_get = false;
+        Stop_Robot();
             break;
     }
 }
 
 Pose2D RobotController::get_vel_cmd(){
     return vel_cmd;
+}
+
+bool RobotController::is_finished(){
+    return moving_state == finish;
+}
+
+void RobotController::set_target_cell(Cell target){
+    //目標値の設定
+    if(!path_get){
+        target_cell = target;
+        path_get = true;
+    }
 }
 
 float RobotController::normalize_angle(float angle){

@@ -1,10 +1,18 @@
 /*-------------------------------------------------------------------------
 ロボットを動かす計算をするクラス
 
+setup()を実行してから動かす
+
 入力
+実行周期 秒(float)                 　・・・(インスタンス)
+目標のCell番号(Cell)               　・・・Moving_Robot
+自己位置(nav_msgs::msg::Odometry)　　・・・set_odom
 
 出力
-/cmd_vel
+cmd_vel(Pose2D)　　　　　            ・・・get_vel_cmd
+
+実行部
+MovingRobot()
 -------------------------------------------------------------------------*/
 #include <vector>
 #include <cmath>
@@ -44,20 +52,22 @@ class RobotController{
     public:
         RobotController(float _t);
 
-        void set_target_cell(Cell target);
-
-        void set_odom(nav_msgs::msg::Odometry msg);
-
+        
+        void set_odom(nav_msgs::msg::Odometry::SharedPtr& msg);
+        
         void setup();
-
-        void Moving_Robot();
-
+        
+        void Moving_Robot(Cell target);
         
         Pose2D get_vel_cmd();
+
+        bool is_finished();
         
     private:
+        void set_target_cell(Cell target);
         float normalize_angle(float angle);
         float get_yaw_err();
+        float get_err();
         bool Turn_Robot();
         bool Straight_Robot();
         void Stop_Robot();

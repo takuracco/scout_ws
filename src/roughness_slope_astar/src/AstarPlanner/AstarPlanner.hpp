@@ -4,11 +4,24 @@ Astarの経路計画を行うクラス
 cost_modeで切り替える
 dist_costのみ，dist_costとroughness_costのみ，dist_costとslope_costとroughness_cost
 入力
- roughness_cost
- slope_cost
- dist_cost
+セルの横の最大数{W}(int)                            ・・・インスタンス
+セルの縦の最大数{H}(int)                            ・・・インスタンス
+
+コストの使用の仕方(CostMode)                  　　　 ・・・set_cost_mode
+
+ゴールのCellの番号(Cell)                            ・・・set_goal_cell
+
+dist_cost?? 未実装
+roughness_cost(std_msgs::msg::Float32_MultiArray)  ・・・set_roughness_cost
+slope_cost(std_msgs::msg::Float32_MultiArray)      ・・・set_slope_cost
+
+自己位置(nav_msgs::msg::Odometry)                   ・・・set_odom
+
 出力
- path
+path(std::vector<Cell>)                            ・・・get_path
+
+実行部
+Astar_Plan()
 ----------------------------------------------------------------------------*/
 #include <vector>
 #include <queue>
@@ -75,20 +88,22 @@ class AstarPlanner{
         void set_cost_mode(CostMode m);
         void set_goal_cell(Cell goal);
         //現在のセルを確認する関数
-        void set_now_cell();
         //コスト
         void set_dist_cost();
-        void set_roughness_cost(std_msgs::msg::Float32MultiArray msg);
-        void set_slope_cost(std_msgs::msg::Float32MultiArray msg);
+        void set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg);
+        void set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg);
         //odom
-        void set_odom(nav_msgs::msg::Odometry msg);
+        void set_odom(nav_msgs::msg::Odometry::SharedPtr& msg);
         
         //Astar
         void Astar_Plan();
-
+        
         std::vector<Cell> get_path();
+
+        bool get_no_path();
         
     private:
+        void set_now_cell();
         //Astar
         CostFG culculate_cost(size_t now, size_t next, float now_cost);
         float heuristic(int x1, int y1, int x2, int y2);

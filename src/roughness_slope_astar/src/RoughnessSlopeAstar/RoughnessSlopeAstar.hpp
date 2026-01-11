@@ -9,10 +9,19 @@
 #include <optional>
 #include <vector>
 #include <cmath>
+#include <functional>
 
 #include "AstarPlanner/AstarPlanner.hpp"
 #include "RobotController/RobotController.hpp"
 #include "Library.hpp"
+
+using std::placeholders::_1;
+
+enum RobotState{
+    Start,
+    Moving,
+    Goal
+};
 
 
 class RoughnessSlopeAstarNode : public rclcpp::Node {
@@ -37,33 +46,36 @@ class RoughnessSlopeAstarNode : public rclcpp::Node {
 
 
         std::vector<Cell> path_;
+        Pose2D vel;
+        geometry_msgs::msg::Twist cmd_vel;
 
         //インスタンス
         RobotController robot;
         AstarPlanner astar_plan;
+
+        RobotState State;
+
+        bool get_path = false;
+        int path_i = 1;//pathの経路用
         
 
     public:
         RoughnessSlopeAstarNode();
     
     
-    
     //各クラスのインスタンス
     
     private:
         //callback
-        void on_odom(const nav_msgs::msg::Odometry & msg);
-        void on_roughness_cost(const std_msgs::msg::Float32MultiArray & msg);
-        void on_slope_cost(const std_msgs::msg::Float32MultiArray & msg);
+        void on_odom(const nav_msgs::msg::Odometry::SharedPtr msg);
+        void on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+        void on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
 
         // timers
         void plan_tick();
         void control_tick();
 
         //helpers
-        void publish_stop();
-            
-        //クラスのセッターまとめ
-        void set_odom();
+        // void publish_stop();
 
 };

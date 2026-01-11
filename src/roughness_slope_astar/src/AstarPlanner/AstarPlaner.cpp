@@ -17,21 +17,15 @@ void AstarPlanner::set_goal_cell(Cell goal){
     goal_idx = (goal.x + center_cell_x) + (goal.y + center_cell_y) * W;
 }
 
-void AstarPlanner::set_now_cell(){
-    int i = static_cast<int>(floor(odom.x)) + center_cell_x;
-    int j = static_cast<int>(floor(odom.y)) + center_cell_y;
-
-    now_idx = static_cast<size_t>(j) * static_cast<size_t>(W) + static_cast<size_t>(i);
-}
 
 void AstarPlanner::set_dist_cost(){
     return;
 }
 
-void AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray msg){
+void AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg){
     roughness_cost.assign(static_cast<size_t>(W) * static_cast<size_t>(H), std::numeric_limits<float>::quiet_NaN());
 
-    const auto& d = msg.data;
+    const auto& d = msg->data;
     const size_t n = d.size();
 
     for(int k = 0; k + 2 < n; k += 3){
@@ -47,10 +41,10 @@ void AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray msg){
 
 }
 
-void AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray msg){
-    slope_cost = .assign(static_cast<size_t>(W) * static_cast<size_t>(H), std::vector<float>(8, std::numeric_limits<float>::quiet_NaN()));
+void AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+    slope_cost.assign(static_cast<size_t>(W) * static_cast<size_t>(H), std::vector<float>(8, std::numeric_limits<float>::quiet_NaN()));
 
-    const auto& d = msg.data;
+    const auto& d = msg->data;
     const size_t n = d.size();
 
     for(int k = 0; k + 9 < n; k += 10){
@@ -70,18 +64,18 @@ void AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray msg){
     }
 }
 
-void AstarPlanner::set_odom(nav_msgs::msg::Odometry msg){
-    odom.x = msg.pose.pose.position.x;
-    odom.y = msg.pose.pose.position.y;
-    odom.z = msg.pose.pose.position.z;
-    float x = msg.pose.pose.orientation.x;
-    float y = msg.pose.pose.orientation.y;
-    float z = msg.pose.pose.orientation.z;
-    float w = msg.pose.pose.orientation.w;
+void AstarPlanner::set_odom(nav_msgs::msg::Odometry::SharedPtr& msg){
+    odom.x = msg->pose.pose.position.x;
+    odom.y = msg->pose.pose.position.y;
+    odom.z = msg->pose.pose.position.z;
+    float x = msg->pose.pose.orientation.x;
+    float y = msg->pose.pose.orientation.y;
+    float z = msg->pose.pose.orientation.z;
+    float w = msg->pose.pose.orientation.w;
 
-    odom.yaw   = arctan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
-    odom.roll  = arctan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));
-    odom.pitch = arcsin(2.0 * (w * y - z * x));
+    odom.yaw   = std::atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
+    odom.roll  = std::atan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));
+    odom.pitch = std::asin(2.0 * (w * y - z * x));
 }
 
 void AstarPlanner::Astar_Plan(){
@@ -94,7 +88,16 @@ std::vector<Cell> AstarPlanner::get_path(){
     return path;
 }
 
+bool AstarPlanner::get_no_path(){
+    return no_path;
+}
 
+void AstarPlanner::set_now_cell(){
+    int i = static_cast<int>(floor(odom.x)) + center_cell_x;
+    int j = static_cast<int>(floor(odom.y)) + center_cell_y;
+
+    now_idx = static_cast<size_t>(j) * static_cast<size_t>(W) + static_cast<size_t>(i);
+}
 
 CostFG AstarPlanner::culculate_cost(size_t now, size_t next, float now_cost){
     int now_x = now % W;
@@ -278,4 +281,5 @@ void AstarPlanner::Astar(){
     }
 
     no_path = false;
+    path.clear();
 }
