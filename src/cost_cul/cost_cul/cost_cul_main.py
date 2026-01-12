@@ -71,7 +71,7 @@ class Cost_Node(Node):
 
         # Publisher / Subscriber
         self.sub = self.create_subscription(PointCloud2, '/scan', self.callback, 10)
-        self.odomsub = self.create_subscription(Odometry, '/odom', self.odomcallback, 10)
+        self.odomsub = self.create_subscription(Odometry, '/diff_drive_controller/odom', self.odomcallback, 10)
         self.pub = self.create_publisher(Float32MultiArray, '/roughness_cost', 10)
         self.slope_pub = self.create_publisher(Float32MultiArray, '/slope_cost', 10)
         self.grid_pub = self.create_publisher(MarkerArray, "/grid", 10)

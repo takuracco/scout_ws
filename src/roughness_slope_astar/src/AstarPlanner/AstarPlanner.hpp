@@ -97,7 +97,7 @@ class AstarPlanner{
         void set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg);
         void set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg);
         //odom
-        void set_odom(nav_msgs::msg::Odometry::SharedPtr msg);
+        void set_odom(Odometry msg);
         
         //Astar
         void Astar_Plan();

@@ -32,6 +32,13 @@ class RoughnessSlopeAstarNode : public rclcpp::Node {
         int W = 50;
         int H = 50;
         Cell center = {1, 1};
+        Cell goal   = {0,32};
+        CostMode cost_mode = CostMode::ROUGHNESS_SLOPE;
+
+        //初期座標
+        float start_x = 0.5;
+        float start_y = 0.5;
+        float start_z = 0.2;
 
         //ROS
         //subscription
@@ -57,7 +64,10 @@ class RoughnessSlopeAstarNode : public rclcpp::Node {
         AstarPlanner astar_plan;
 
         RobotState State;
+        Odometry odom;
 
+        bool get_roughness = false;
+        bool get_slope = false;
         bool get_path = false;
         int path_i = 1;//pathの経路用
         
@@ -80,6 +90,8 @@ class RoughnessSlopeAstarNode : public rclcpp::Node {
 
         //helpers
         // void publish_stop();
+
+        void get_odom(nav_msgs::msg::Odometry::SharedPtr msg);
 
 };
 

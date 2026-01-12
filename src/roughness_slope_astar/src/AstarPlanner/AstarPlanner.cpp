@@ -64,18 +64,8 @@ void AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr ms
     }
 }
 
-void AstarPlanner::set_odom(nav_msgs::msg::Odometry::SharedPtr msg){
-    odom.x = msg->pose.pose.position.x;
-    odom.y = msg->pose.pose.position.y;
-    odom.z = msg->pose.pose.position.z;
-    float x = msg->pose.pose.orientation.x;
-    float y = msg->pose.pose.orientation.y;
-    float z = msg->pose.pose.orientation.z;
-    float w = msg->pose.pose.orientation.w;
-
-    odom.yaw   = std::atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
-    odom.roll  = std::atan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));
-    odom.pitch = std::asin(2.0 * (w * y - z * x));
+void AstarPlanner::set_odom(Odometry msg){
+    odom = msg;
 }
 
 void AstarPlanner::Astar_Plan(){
@@ -195,6 +185,8 @@ void AstarPlanner::Astar(){
     int nx, ny;//経路探索中の now_cell のx,yの値
     //この辺の変数名は割とごみではある
 
+    path.clear();
+
     //経路生成の初期位置の処理
     open_node.state_id.cell = now_idx;
     open_node.state_id.dir_in = 8;
@@ -281,5 +273,4 @@ void AstarPlanner::Astar(){
     }
 
     no_path = false;
-    path.clear();
 }

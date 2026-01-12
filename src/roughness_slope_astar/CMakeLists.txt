@@ -40,4 +40,8 @@ ament_target_dependencies(roughness_slope_astar_node
   rclcpp geometry_msgs nav_msgs std_msgs
 )
 
+install(TARGETS roughness_slope_astar_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()

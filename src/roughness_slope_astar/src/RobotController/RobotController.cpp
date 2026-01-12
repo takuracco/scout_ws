@@ -2,34 +2,24 @@
 
 RobotController::RobotController(float _t):TurnPID(_t),StraightPID(_t){
     //インスタンス
-    moving_state = path_planning;
+    moving_state = MovingState::path_planning;
 }
 
 
-void RobotController::set_odom(nav_msgs::msg::Odometry::SharedPtr msg){
+void RobotController::set_odom(Odometry msg){
     //自己位置の取得
-    odom.x = msg->pose.pose.position.x;
-    odom.y = msg->pose.pose.position.y;
-    odom.z = msg->pose.pose.position.z;
-    float x = msg->pose.pose.orientation.x;
-    float y = msg->pose.pose.orientation.y;
-    float z = msg->pose.pose.orientation.z;
-    float w = msg->pose.pose.orientation.w;
-
-    odom.yaw   = std::atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
-    odom.roll  = std::atan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));
-    odom.pitch = std::asin(2.0 * (w * y - z * x));
+    odom = msg;
 }
 
 void RobotController::setup(){
-    TurnPID.SetParam(1, 0, 0);
+    TurnPID.SetParam(0.1, 0.02, 0.0);
     StraightPID.SetParam(1, 0, 0);
 }
 
 void RobotController::Moving_Robot(Cell target){
     //ロボットを動かす
     switch(moving_state){
-        case path_planning:
+        case MovingState::path_planning:
             set_target_cell(target); 
             Stop_Robot();
             if(path_get){
@@ -37,19 +27,19 @@ void RobotController::Moving_Robot(Cell target){
             }
             break;
         
-            case rotation:
+        case MovingState::rotation:
             if(Turn_Robot()){
                 moving_state = moving;
             }
             break;
         
-        case moving:
+        case MovingState::moving:
         if(Straight_Robot()){
             moving_state = finish;
         }
         break;
         
-        case finish:
+        case MovingState::finish:
         path_get = false;
         Stop_Robot();
             break;
@@ -60,8 +50,16 @@ Pose2D RobotController::get_vel_cmd(){
     return vel_cmd;
 }
 
+MovingState RobotController::get_move_state(){
+    return moving_state;
+}
+
 bool RobotController::is_finished(){
     return moving_state == finish;
+}
+
+Odometry RobotController::get_odom(){
+    return odom;
 }
 
 void RobotController::set_target_cell(Cell target){

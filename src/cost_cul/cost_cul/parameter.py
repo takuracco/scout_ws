@@ -11,7 +11,7 @@ class Parameter():
         self.radius_m  = (self.grid_size // 2) * self.cell_res  # 10 m
 
         # ロボットの上がれる最大角度(0~2πまで)
-        self.max_rad = np.pi()/2
+        self.max_rad = np.pi/2
 
         # ロボットの初期位置
         self.robot_x     = 0.0

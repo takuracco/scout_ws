@@ -45,8 +45,8 @@ class RobotController{
         MovingState moving_state;
 
 
-        float yaw_err_max = 3;    //角度誤差(度数法)
-        float W_MAX = 1.2f;       //角速度最大値(rad/s)
+        float yaw_err_max = 10;    //角度誤差(度数法)
+        float W_MAX = 3.0f;       //角速度最大値(rad/s)
         float vel_err_max = 0.01f;//距離の誤差(m)
         float D_MAX = 5.0f;       //最大速度(m/s)
 
@@ -56,7 +56,7 @@ class RobotController{
         RobotController(float _t);
 
         
-        void set_odom(nav_msgs::msg::Odometry::SharedPtr msg);
+        void set_odom(Odometry msg);
         
         void setup();
         
@@ -64,8 +64,11 @@ class RobotController{
         
         Pose2D get_vel_cmd();
 
+        MovingState get_move_state();
+
         bool is_finished();
         
+        Odometry get_odom();
     private:
         void set_target_cell(Cell target);
         float normalize_angle(float angle);
