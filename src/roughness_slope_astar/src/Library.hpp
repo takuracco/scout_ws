@@ -1,15 +1,17 @@
-
-
+#ifndef __Library_hpp__
+#define __Library_hpp__
 
 struct Pose2D {
-  double x{0}, y{0}, yaw{0};
+  float x{0};
+  float y{0}; 
+  float yaw{0};
 };
 
 struct Odometry{
     float x{0}, y{0}, z{0};
     float roll{0}, pitch{0}, yaw{0};
     //　　x軸回り , y軸回り , z軸回り
-}
+};
 
 enum class CostMode : int {
   DIST_ONLY = 0,
@@ -39,29 +41,30 @@ inline int dir_from_dxdy(int dx, int dy)
 inline int dx_from_dir(int dir)
 {
   // dx,dy は -1,0,1 のどれか（8近傍前提）
-  if (dir = 0) return 1;
-  if (dir = 1) return 1;
-  if (dir = 2) return 0;
-  if (dir = 3) return -1;
-  if (dir = 4) return -1;
-  if (dir = 5) return -1;
-  if (dir = 6) return 0;
-  if (dir = 7) return 1;
+  if (dir == 0) return 1;
+  if (dir == 1) return 1;
+  if (dir == 2) return 0;
+  if (dir == 3) return -1;
+  if (dir == 4) return -1;
+  if (dir == 5) return -1;
+  if (dir == 6) return 0;
+  if (dir == 7) return 1;
   return 0;
 }
 
 inline int dy_from_dir(int dir)
 {
   // dx,dy は -1,0,1 のどれか（8近傍前提）
-  if (dir = 0) return 0;
-  if (dir = 1) return 1;
-  if (dir = 2) return 1;
-  if (dir = 3) return 1;
-  if (dir = 4) return 0;
-  if (dir = 5) return -1;
-  if (dir = 6) return -1;
-  if (dir = 7) return -1;
+  if (dir == 0) return 0;
+  if (dir == 1) return 1;
+  if (dir == 2) return 1;
+  if (dir == 3) return 1;
+  if (dir == 4) return 0;
+  if (dir == 5) return -1;
+  if (dir == 6) return -1;
+  if (dir == 7) return -1;
   return 0;
 }
 
 
+#endif

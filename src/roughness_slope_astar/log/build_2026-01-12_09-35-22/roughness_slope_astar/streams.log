@@ -1,0 +1,875 @@
+[0.009s] Invoking command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takuto/scout_ws/src/roughness_slope_astar -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar
+[0.020s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.119s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.144s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.146s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.151s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.158s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.167s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.192s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.193s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.298s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.336s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.345s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.361s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.456s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.456s] -- Configured cppcheck include dirs: /home/takuto/scout_ws/src/roughness_slope_astar/src
+[0.456s] -- Configured cppcheck exclude dirs and/or files: 
+[0.457s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.459s] -- Added test 'lint_cmake' to check CMake code style
+[0.460s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.469s] -- Added test 'uncrustify' to check C / C++ code style
+[0.469s] -- Configured uncrustify additional arguments: 
+[0.470s] -- Added test 'xmllint' to check XML markup files
+[0.471s] -- Configuring done
+[0.482s] -- Generating done
+[0.485s] -- Build files have been written to: /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar
+[0.493s] Invoked command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takuto/scout_ws/src/roughness_slope_astar -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar
+[0.494s] Invoking command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar -- -j16 -l16
+[0.543s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o[0m
+[0.543s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/AstarPlanner/AstarPlanner.cpp.o[0m
+[0.544s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o[0m
+[0.544s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o[0m
+[0.784s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[0.785s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:1[m[K:
+[0.785s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+[0.785s]    12 | }
+[0.785s]       |  [01;31m[K^[m[K
+[0.785s]       |  [32m[K;[m[K
+[0.787s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[0.787s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.787s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[0.787s]       |       [01;35m[K~~~~^~~[m[K
+[0.787s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.787s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[0.788s]       |       [01;35m[K~~~~^~~[m[K
+[0.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.788s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[0.788s]       |       [01;35m[K~~~~^~~[m[K
+[0.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.788s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[0.788s]       |       [01;35m[K~~~~^~~[m[K
+[0.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.788s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[0.788s]       |       [01;35m[K~~~~^~~[m[K
+[0.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.789s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[0.789s]       |       [01;35m[K~~~~^~~[m[K
+[0.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.789s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[0.789s]       |       [01;35m[K~~~~^~~[m[K
+[0.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.789s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[0.789s]       |       [01;35m[K~~~~^~~[m[K
+[0.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[0.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.789s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[0.789s]       |       [01;35m[K~~~~^~~[m[K
+[0.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.789s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[0.789s]       |       [01;35m[K~~~~^~~[m[K
+[0.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.790s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[0.790s]       |       [01;35m[K~~~~^~~[m[K
+[0.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.790s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[0.790s]       |       [01;35m[K~~~~^~~[m[K
+[0.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.790s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[0.790s]       |       [01;35m[K~~~~^~~[m[K
+[0.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.790s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[0.790s]       |       [01;35m[K~~~~^~~[m[K
+[0.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.790s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[0.790s]       |       [01;35m[K~~~~^~~[m[K
+[0.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[0.790s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[0.790s]       |       [01;35m[K~~~~^~~[m[K
+[1.104s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[1.104s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.cpp:1[m[K:
+[1.104s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+[1.105s]    12 | }
+[1.105s]       |  [01;31m[K^[m[K
+[1.105s]       |  [32m[K;[m[K
+[1.105s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[1.105s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.105s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[1.105s]       |       [01;35m[K~~~~^~~[m[K
+[1.105s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.105s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[1.105s]       |       [01;35m[K~~~~^~~[m[K
+[1.105s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.105s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[1.105s]       |       [01;35m[K~~~~^~~[m[K
+[1.105s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.105s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[1.106s]       |       [01;35m[K~~~~^~~[m[K
+[1.106s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.106s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[1.106s]       |       [01;35m[K~~~~^~~[m[K
+[1.106s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.106s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[1.106s]       |       [01;35m[K~~~~^~~[m[K
+[1.106s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.106s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[1.106s]       |       [01;35m[K~~~~^~~[m[K
+[1.106s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.106s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[1.106s]       |       [01;35m[K~~~~^~~[m[K
+[1.106s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[1.107s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.107s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[1.107s]       |       [01;35m[K~~~~^~~[m[K
+[1.107s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.107s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[1.107s]       |       [01;35m[K~~~~^~~[m[K
+[1.107s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.107s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[1.107s]       |       [01;35m[K~~~~^~~[m[K
+[1.107s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.107s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[1.107s]       |       [01;35m[K~~~~^~~[m[K
+[1.107s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.107s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[1.107s]       |       [01;35m[K~~~~^~~[m[K
+[1.107s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.107s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[1.107s]       |       [01;35m[K~~~~^~~[m[K
+[1.108s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.108s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[1.108s]       |       [01;35m[K~~~~^~~[m[K
+[1.108s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[1.108s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[1.108s]       |       [01;35m[K~~~~^~~[m[K
+[1.147s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:[m[K In member function ‘[01m[Kvoid AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr&)[m[K’:
+[1.148s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:31:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.148s]    31 |     for(int k = 0; [01;35m[Kk + 2 < n[m[K; k += 3){
+[1.148s]       |                    [01;35m[K~~~~~~^~~[m[K
+[1.148s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:[m[K In member function ‘[01m[Kvoid AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr&)[m[K’:
+[1.148s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:50:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[1.148s]    50 |     for(int k = 0; [01;35m[Kk + 9 < n[m[K; k += 10){
+[1.148s]       |                    [01;35m[K~~~~~~^~~[m[K
+[1.191s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:118: CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o] エラー 1
+[1.192s] gmake[2]: *** 未完了のジョブを待っています....
+[1.309s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:104: CMakeFiles/roughness_slope_astar_node.dir/src/AstarPlanner/AstarPlanner.cpp.o] エラー 1
+[2.747s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.747s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.747s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.747s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+[2.747s]    12 | }
+[2.747s]       |  [01;31m[K^[m[K
+[2.747s]       |  [32m[K;[m[K
+[2.747s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[2.747s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.748s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[2.748s]       |       [01;35m[K~~~~^~~[m[K
+[2.748s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.748s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.748s]       |       [01;35m[K~~~~^~~[m[K
+[2.748s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.748s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[2.748s]       |       [01;35m[K~~~~^~~[m[K
+[2.748s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.748s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[2.748s]       |       [01;35m[K~~~~^~~[m[K
+[2.748s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.748s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[2.748s]       |       [01;35m[K~~~~^~~[m[K
+[2.748s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.748s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.748s]       |       [01;35m[K~~~~^~~[m[K
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.749s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[2.749s]       |       [01;35m[K~~~~^~~[m[K
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.749s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[2.749s]       |       [01;35m[K~~~~^~~[m[K
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.749s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[2.749s]       |       [01;35m[K~~~~^~~[m[K
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.749s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.749s]       |       [01;35m[K~~~~^~~[m[K
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.749s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[2.749s]       |       [01;35m[K~~~~^~~[m[K
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.749s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[2.749s]       |       [01;35m[K~~~~^~~[m[K
+[2.749s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.750s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[2.750s]       |       [01;35m[K~~~~^~~[m[K
+[2.750s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.750s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.750s]       |       [01;35m[K~~~~^~~[m[K
+[2.750s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.750s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[2.750s]       |       [01;35m[K~~~~^~~[m[K
+[2.750s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.750s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[2.750s]       |       [01;35m[K~~~~^~~[m[K
+[2.751s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.751s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.751s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.751s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.751s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.751s]     4 | struct [01;31m[KPose2D[m[K {
+[2.751s]       |        [01;31m[K^~~~~~[m[K
+[2.751s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.751s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.751s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.751s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.752s]     4 | struct [01;36m[KPose2D[m[K {
+[2.752s]       |        [01;36m[K^~~~~~[m[K
+[2.752s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.753s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.753s]     8 | struct [01;31m[KOdometry[m[K{
+[2.753s]       |        [01;31m[K^~~~~~~~[m[K
+[2.753s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.753s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.753s]     8 | struct [01;36m[KOdometry[m[K{
+[2.753s]       |        [01;36m[K^~~~~~~~[m[K
+[2.753s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.753s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.753s]    14 | enum class [01;31m[KCostMode[m[K : int {
+[2.753s]       |            [01;31m[K^~~~~~~~[m[K
+[2.753s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.753s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.754s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.754s]    14 | enum class [01;36m[KCostMode[m[K : int {
+[2.754s]       |            [01;36m[K^~~~~~~~[m[K
+[2.754s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.754s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.754s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.754s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[2.754s]     8 | [01;31m[Kstruct[m[K Odometry{
+[2.754s]       | [01;31m[K^~~~~~[m[K
+[2.754s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.754s]    20 | struct [01;31m[KCell[m[K{
+[2.754s]       |        [01;31m[K^~~~[m[K
+[2.754s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.754s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.754s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.754s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.754s]    20 | struct [01;36m[KCell[m[K{
+[2.754s]       |        [01;36m[K^~~~[m[K
+[2.754s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.754s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.755s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.755s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.755s]    25 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.755s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.755s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.755s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.755s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.755s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.755s]    25 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.755s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.755s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.755s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.755s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.755s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.755s]    39 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.755s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.755s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.755s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.755s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.755s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.755s]    39 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.755s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.756s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.756s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.756s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.756s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[2.756s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.756s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[2.756s]       |       [01;35m[K~~~~^~~[m[K
+[2.756s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.756s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.756s]       |       [01;35m[K~~~~^~~[m[K
+[2.756s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.756s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[2.756s]       |       [01;35m[K~~~~^~~[m[K
+[2.756s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.756s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[2.756s]       |       [01;35m[K~~~~^~~[m[K
+[2.756s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.756s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[2.756s]       |       [01;35m[K~~~~^~~[m[K
+[2.756s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.757s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.757s]       |       [01;35m[K~~~~^~~[m[K
+[2.757s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.757s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[2.757s]       |       [01;35m[K~~~~^~~[m[K
+[2.757s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.757s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[2.757s]       |       [01;35m[K~~~~^~~[m[K
+[2.757s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.757s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.757s]    53 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.757s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.757s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.757s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.757s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.757s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.757s]    53 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.757s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.758s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.758s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.758s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.758s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[2.758s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.758s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[2.758s]       |       [01;35m[K~~~~^~~[m[K
+[2.758s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.758s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.758s]       |       [01;35m[K~~~~^~~[m[K
+[2.758s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.758s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[2.758s]       |       [01;35m[K~~~~^~~[m[K
+[2.758s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.758s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[2.758s]       |       [01;35m[K~~~~^~~[m[K
+[2.758s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.758s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[2.758s]       |       [01;35m[K~~~~^~~[m[K
+[2.759s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.759s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.759s]       |       [01;35m[K~~~~^~~[m[K
+[2.759s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.759s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[2.759s]       |       [01;35m[K~~~~^~~[m[K
+[2.759s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.759s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[2.759s]       |       [01;35m[K~~~~^~~[m[K
+[2.759s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.759s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.759s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.759s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.759s]     4 | struct [01;31m[KPose2D[m[K {
+[2.759s]       |        [01;31m[K^~~~~~[m[K
+[2.759s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.759s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.759s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.759s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.759s]     4 | struct [01;36m[KPose2D[m[K {
+[2.759s]       |        [01;36m[K^~~~~~[m[K
+[2.760s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.760s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.760s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.760s]     8 | struct [01;31m[KOdometry[m[K{
+[2.760s]       |        [01;31m[K^~~~~~~~[m[K
+[2.760s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.760s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.760s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.760s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.760s]     8 | struct [01;36m[KOdometry[m[K{
+[2.760s]       |        [01;36m[K^~~~~~~~[m[K
+[2.760s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.760s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.760s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.760s]    14 | enum class [01;31m[KCostMode[m[K : int {
+[2.760s]       |            [01;31m[K^~~~~~~~[m[K
+[2.760s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.760s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.760s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.760s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.760s]    14 | enum class [01;36m[KCostMode[m[K : int {
+[2.760s]       |            [01;36m[K^~~~~~~~[m[K
+[2.761s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.761s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.761s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[2.761s]     8 | [01;31m[Kstruct[m[K Odometry{
+[2.761s]       | [01;31m[K^~~~~~[m[K
+[2.761s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.761s]    20 | struct [01;31m[KCell[m[K{
+[2.761s]       |        [01;31m[K^~~~[m[K
+[2.761s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.761s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.761s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.761s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.761s]    20 | struct [01;36m[KCell[m[K{
+[2.761s]       |        [01;36m[K^~~~[m[K
+[2.761s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.761s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.761s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.761s]    25 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.761s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.761s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.761s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.761s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.762s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.762s]    25 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.762s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.762s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.762s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.762s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.762s]    39 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.762s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.762s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.762s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.762s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.762s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.762s]    39 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.762s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.762s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.762s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.762s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[2.762s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.762s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[2.762s]       |       [01;35m[K~~~~^~~[m[K
+[2.762s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.762s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.763s]       |       [01;35m[K~~~~^~~[m[K
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.763s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[2.763s]       |       [01;35m[K~~~~^~~[m[K
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.763s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[2.763s]       |       [01;35m[K~~~~^~~[m[K
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.763s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[2.763s]       |       [01;35m[K~~~~^~~[m[K
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.763s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.763s]       |       [01;35m[K~~~~^~~[m[K
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.763s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[2.763s]       |       [01;35m[K~~~~^~~[m[K
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.763s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[2.763s]       |       [01;35m[K~~~~^~~[m[K
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.763s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.763s]    53 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.764s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.764s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.764s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.764s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.764s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.764s]    53 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.764s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.764s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.764s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.764s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[2.764s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.764s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[2.764s]       |       [01;35m[K~~~~^~~[m[K
+[2.764s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.764s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.764s]       |       [01;35m[K~~~~^~~[m[K
+[2.764s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.764s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[2.764s]       |       [01;35m[K~~~~^~~[m[K
+[2.764s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.764s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[2.765s]       |       [01;35m[K~~~~^~~[m[K
+[2.765s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.765s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[2.765s]       |       [01;35m[K~~~~^~~[m[K
+[2.765s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.765s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.765s]       |       [01;35m[K~~~~^~~[m[K
+[2.765s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.765s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[2.765s]       |       [01;35m[K~~~~^~~[m[K
+[2.765s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.765s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[2.765s]       |       [01;35m[K~~~~^~~[m[K
+[2.779s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.779s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.779s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.779s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after struct definition
+[2.779s]    12 | }
+[2.779s]       |  [01;31m[K^[m[K
+[2.779s]       |  [32m[K;[m[K
+[2.780s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[2.780s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.780s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[2.780s]       |       [01;35m[K~~~~^~~[m[K
+[2.780s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.780s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.780s]       |       [01;35m[K~~~~^~~[m[K
+[2.780s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.780s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[2.780s]       |       [01;35m[K~~~~^~~[m[K
+[2.780s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.781s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[2.781s]       |       [01;35m[K~~~~^~~[m[K
+[2.781s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.781s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[2.781s]       |       [01;35m[K~~~~^~~[m[K
+[2.781s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.781s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.781s]       |       [01;35m[K~~~~^~~[m[K
+[2.781s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.781s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[2.781s]       |       [01;35m[K~~~~^~~[m[K
+[2.782s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.782s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[2.782s]       |       [01;35m[K~~~~^~~[m[K
+[2.782s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[2.782s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.782s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[2.782s]       |       [01;35m[K~~~~^~~[m[K
+[2.782s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.782s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.782s]       |       [01;35m[K~~~~^~~[m[K
+[2.782s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.782s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[2.782s]       |       [01;35m[K~~~~^~~[m[K
+[2.782s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.783s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[2.783s]       |       [01;35m[K~~~~^~~[m[K
+[2.783s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.783s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[2.783s]       |       [01;35m[K~~~~^~~[m[K
+[2.783s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.783s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.783s]       |       [01;35m[K~~~~^~~[m[K
+[2.783s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.783s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[2.783s]       |       [01;35m[K~~~~^~~[m[K
+[2.784s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.784s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[2.784s]       |       [01;35m[K~~~~^~~[m[K
+[2.784s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.784s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.784s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.784s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.784s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.785s]     4 | struct [01;31m[KPose2D[m[K {
+[2.785s]       |        [01;31m[K^~~~~~[m[K
+[2.785s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.785s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.785s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.785s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.785s]     4 | struct [01;36m[KPose2D[m[K {
+[2.785s]       |        [01;36m[K^~~~~~[m[K
+[2.785s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.785s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.785s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.785s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.785s]     8 | struct [01;31m[KOdometry[m[K{
+[2.785s]       |        [01;31m[K^~~~~~~~[m[K
+[2.785s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.785s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.785s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.785s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.785s]     8 | struct [01;36m[KOdometry[m[K{
+[2.785s]       |        [01;36m[K^~~~~~~~[m[K
+[2.786s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.786s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.786s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.786s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.786s]    14 | enum class [01;31m[KCostMode[m[K : int {
+[2.786s]       |            [01;31m[K^~~~~~~~[m[K
+[2.786s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.786s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.786s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.786s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.786s]    14 | enum class [01;36m[KCostMode[m[K : int {
+[2.786s]       |            [01;36m[K^~~~~~~~[m[K
+[2.786s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.786s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.786s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.786s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[2.786s]     8 | [01;31m[Kstruct[m[K Odometry{
+[2.786s]       | [01;31m[K^~~~~~[m[K
+[2.786s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.786s]    20 | struct [01;31m[KCell[m[K{
+[2.786s]       |        [01;31m[K^~~~[m[K
+[2.786s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.787s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.787s]    20 | struct [01;36m[KCell[m[K{
+[2.787s]       |        [01;36m[K^~~~[m[K
+[2.787s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.787s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.787s]    25 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.787s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.787s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.787s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.787s]    25 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.787s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.787s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.787s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.787s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.788s]    39 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.788s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.788s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.788s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.788s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.788s]    39 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.788s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.788s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.788s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.788s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[2.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.788s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[2.788s]       |       [01;35m[K~~~~^~~[m[K
+[2.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.788s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.788s]       |       [01;35m[K~~~~^~~[m[K
+[2.788s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.788s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[2.788s]       |       [01;35m[K~~~~^~~[m[K
+[2.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.789s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[2.789s]       |       [01;35m[K~~~~^~~[m[K
+[2.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.789s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[2.789s]       |       [01;35m[K~~~~^~~[m[K
+[2.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.789s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.789s]       |       [01;35m[K~~~~^~~[m[K
+[2.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.789s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[2.789s]       |       [01;35m[K~~~~^~~[m[K
+[2.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.789s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[2.789s]       |       [01;35m[K~~~~^~~[m[K
+[2.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.789s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.789s]    53 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.789s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.789s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.789s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.789s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.790s]    53 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.790s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.790s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.790s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.790s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[2.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.790s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[2.790s]       |       [01;35m[K~~~~^~~[m[K
+[2.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.790s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.790s]       |       [01;35m[K~~~~^~~[m[K
+[2.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.790s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[2.790s]       |       [01;35m[K~~~~^~~[m[K
+[2.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.790s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[2.790s]       |       [01;35m[K~~~~^~~[m[K
+[2.790s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.790s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[2.790s]       |       [01;35m[K~~~~^~~[m[K
+[2.791s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.791s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.791s]       |       [01;35m[K~~~~^~~[m[K
+[2.791s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.791s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[2.791s]       |       [01;35m[K~~~~^~~[m[K
+[2.791s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.791s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[2.791s]       |       [01;35m[K~~~~^~~[m[K
+[2.791s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.791s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.791s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.791s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.791s]     4 | struct [01;31m[KPose2D[m[K {
+[2.791s]       |        [01;31m[K^~~~~~[m[K
+[2.791s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.791s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.791s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.791s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.791s]     4 | struct [01;36m[KPose2D[m[K {
+[2.791s]       |        [01;36m[K^~~~~~[m[K
+[2.791s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.792s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.792s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.792s]     8 | struct [01;31m[KOdometry[m[K{
+[2.792s]       |        [01;31m[K^~~~~~~~[m[K
+[2.792s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.792s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.792s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.792s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.792s]     8 | struct [01;36m[KOdometry[m[K{
+[2.792s]       |        [01;36m[K^~~~~~~~[m[K
+[2.792s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.792s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.792s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.792s]    14 | enum class [01;31m[KCostMode[m[K : int {
+[2.792s]       |            [01;31m[K^~~~~~~~[m[K
+[2.792s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.792s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.792s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.792s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.792s]    14 | enum class [01;36m[KCostMode[m[K : int {
+[2.792s]       |            [01;36m[K^~~~~~~~[m[K
+[2.792s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.793s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.793s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:[m[K [01;31m[Kerror: [m[Kmultiple types in one declaration
+[2.793s]     8 | [01;31m[Kstruct[m[K Odometry{
+[2.793s]       | [01;31m[K^~~~~~[m[K
+[2.793s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.793s]    20 | struct [01;31m[KCell[m[K{
+[2.793s]       |        [01;31m[K^~~~[m[K
+[2.793s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.793s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.793s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.793s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.793s]    20 | struct [01;36m[KCell[m[K{
+[2.793s]       |        [01;36m[K^~~~[m[K
+[2.793s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.793s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.793s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.793s]    25 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.793s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.793s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.793s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.793s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.794s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.794s]    25 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.794s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.794s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.794s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.794s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.794s]    39 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.794s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.794s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.794s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.794s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.794s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.794s]    39 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.794s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.794s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.794s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.794s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dx_from_dir(int)[m[K’:
+[2.794s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.794s]    42 |   if ([01;35m[Kdir = 0[m[K) return 1;
+[2.794s]       |       [01;35m[K~~~~^~~[m[K
+[2.794s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.794s]    43 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.795s]       |       [01;35m[K~~~~^~~[m[K
+[2.795s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.795s]    44 |   if ([01;35m[Kdir = 2[m[K) return 0;
+[2.795s]       |       [01;35m[K~~~~^~~[m[K
+[2.795s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.795s]    45 |   if ([01;35m[Kdir = 3[m[K) return -1;
+[2.795s]       |       [01;35m[K~~~~^~~[m[K
+[2.795s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.795s]    46 |   if ([01;35m[Kdir = 4[m[K) return -1;
+[2.795s]       |       [01;35m[K~~~~^~~[m[K
+[2.795s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.795s]    47 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.795s]       |       [01;35m[K~~~~^~~[m[K
+[2.795s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.795s]    48 |   if ([01;35m[Kdir = 6[m[K) return 0;
+[2.795s]       |       [01;35m[K~~~~^~~[m[K
+[2.795s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.795s]    49 |   if ([01;35m[Kdir = 7[m[K) return 1;
+[2.795s]       |       [01;35m[K~~~~^~~[m[K
+[2.795s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K At global scope:
+[2.796s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.796s]    53 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.796s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.796s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.796s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.796s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.796s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.796s]    53 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.796s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.796s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.796s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.796s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:[m[K In function ‘[01m[Kint dy_from_dir(int)[m[K’:
+[2.796s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.796s]    56 |   if ([01;35m[Kdir = 0[m[K) return 0;
+[2.796s]       |       [01;35m[K~~~~^~~[m[K
+[2.796s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.796s]    57 |   if ([01;35m[Kdir = 1[m[K) return 1;
+[2.796s]       |       [01;35m[K~~~~^~~[m[K
+[2.796s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.796s]    58 |   if ([01;35m[Kdir = 2[m[K) return 1;
+[2.796s]       |       [01;35m[K~~~~^~~[m[K
+[2.797s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.797s]    59 |   if ([01;35m[Kdir = 3[m[K) return 1;
+[2.797s]       |       [01;35m[K~~~~^~~[m[K
+[2.797s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.797s]    60 |   if ([01;35m[Kdir = 4[m[K) return 0;
+[2.797s]       |       [01;35m[K~~~~^~~[m[K
+[2.797s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.797s]    61 |   if ([01;35m[Kdir = 5[m[K) return -1;
+[2.797s]       |       [01;35m[K~~~~^~~[m[K
+[2.797s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.797s]    62 |   if ([01;35m[Kdir = 6[m[K) return -1;
+[2.797s]       |       [01;35m[K~~~~^~~[m[K
+[2.797s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.797s]    63 |   if ([01;35m[Kdir = 7[m[K) return -1;
+[2.797s]       |       [01;35m[K~~~~^~~[m[K
+[2.828s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.828s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:7:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kroughness_slope_Astar_node[m[K’ was not declared in this scope; did you mean ‘[01m[KRoughnessSlopeAstarNode[m[K’?
+[2.828s]     7 |   rclcpp::spin(std::make_shared<[01;31m[Kroughness_slope_Astar_node[m[K>());
+[2.828s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.828s]       |                                 [32m[KRoughnessSlopeAstarNode[m[K
+[2.829s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:7:60:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[2.829s]     7 |   rclcpp::spin([01;31m[Kstd::make_shared<roughness_slope_Astar_node>()[m[K);
+[2.829s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.829s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[2.829s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[2.829s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:1[m[K:
+[2.829s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[2.829s]   875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[2.829s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.830s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.830s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:7:60:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.830s]     7 |   rclcpp::spin([01;31m[Kstd::make_shared<roughness_slope_Astar_node>()[m[K);
+[2.830s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.876s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:[m[K At global scope:
+[2.876s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:20:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_odom(const SharedPtr&)[m[K’
+[2.876s]    20 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_odom(const nav_msgs::msg::Odometry::SharedPtr& msg){
+[2.876s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.876s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.876s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:70:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’
+[2.876s]    70 |         void [01;36m[Kon_odom[m[K(const nav_msgs::msg::Odometry::SharedPtr msg);
+[2.876s]       |              [01;36m[K^~~~~~~[m[K
+[2.876s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.876s]    27 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.876s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.876s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:25:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(const SharedPtr&)[m[K’
+[2.876s]    25 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+[2.877s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.877s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.877s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:71:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’
+[2.877s]    71 |         void [01;36m[Kon_roughness_cost[m[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+[2.877s]       |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[2.877s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.877s]    27 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.877s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.877s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:29:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_slope_cost(const SharedPtr&)[m[K’
+[2.877s]    29 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+[2.877s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.877s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.877s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:72:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_slope_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’
+[2.877s]    72 |         void [01;36m[Kon_slope_cost[m[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+[2.877s]       |              [01;36m[K^~~~~~~~~~~~~[m[K
+[2.877s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.877s]    27 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.877s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.207s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:76: CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o] エラー 1
+[5.456s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:90: CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o] エラー 1
+[5.457s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roughness_slope_astar_node.dir/all] エラー 2
+[5.457s] gmake: *** [Makefile:146: all] エラー 2
+[5.460s] Invoked command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar -- -j16 -l16

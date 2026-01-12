@@ -17,16 +17,16 @@ RoughnessSlopeAstarNode::RoughnessSlopeAstarNode(): Node("roughness_slope_astar_
 }
 
 // callback処理
-void RoughnessSlopeAstarNode::on_odom(const nav_msgs::msg::Odometry::SharedPtr& msg){
+void RoughnessSlopeAstarNode::on_odom(nav_msgs::msg::Odometry::SharedPtr msg){
     astar_plan.set_odom(msg);
     robot.set_odom(msg);
 }
 
-void RoughnessSlopeAstarNode::on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+void RoughnessSlopeAstarNode::on_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg){
     astar_plan.set_roughness_cost(msg);
 }
 
-void RoughnessSlopeAstarNode::on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+void RoughnessSlopeAstarNode::on_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg){
     astar_plan.set_slope_cost(msg);
 }
 

@@ -22,13 +22,13 @@ void AstarPlanner::set_dist_cost(){
     return;
 }
 
-void AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+void AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg){
     roughness_cost.assign(static_cast<size_t>(W) * static_cast<size_t>(H), std::numeric_limits<float>::quiet_NaN());
 
     const auto& d = msg->data;
     const size_t n = d.size();
 
-    for(int k = 0; k + 2 < n; k += 3){
+    for(int k = 0; k + 2 < int(n); k += 3){
         int i = static_cast<int>(std::lround(d[k])) + center_cell_x;
         int j = static_cast<int>(std::lround(d[k + 1])) + center_cell_y;
         float v = d[k + 2];
@@ -41,13 +41,13 @@ void AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPt
 
 }
 
-void AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+void AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg){
     slope_cost.assign(static_cast<size_t>(W) * static_cast<size_t>(H), std::vector<float>(8, std::numeric_limits<float>::quiet_NaN()));
 
     const auto& d = msg->data;
     const size_t n = d.size();
 
-    for(int k = 0; k + 9 < n; k += 10){
+    for(int k = 0; k + 9 < int(n); k += 10){
         int i = static_cast<int>(std::lround(d[k])) + center_cell_x;
         int j = static_cast<int>(std::lround(d[k + 1])) + center_cell_y;
 
@@ -64,7 +64,7 @@ void AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr& m
     }
 }
 
-void AstarPlanner::set_odom(nav_msgs::msg::Odometry::SharedPtr& msg){
+void AstarPlanner::set_odom(nav_msgs::msg::Odometry::SharedPtr msg){
     odom.x = msg->pose.pose.position.x;
     odom.y = msg->pose.pose.position.y;
     odom.z = msg->pose.pose.position.z;

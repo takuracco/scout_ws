@@ -1,0 +1,138 @@
+[0.000000] (-) TimerEvent: {}
+[0.000570] (roughness_slope_astar) JobQueued: {'identifier': 'roughness_slope_astar', 'dependencies': OrderedDict()}
+[0.000619] (roughness_slope_astar) JobStarted: {'identifier': 'roughness_slope_astar'}
+[0.008286] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'cmake'}
+[0.008978] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'build'}
+[0.009715] (roughness_slope_astar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', '--', '-j16', '-l16'], 'cwd': '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto/scout_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1829'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1803,unix/takuto-PC:/tmp/.ICE-unix/1803'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b14b899b_c2a7_42e8_b4c7_fea667c29d1d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G99WI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.053860] (roughness_slope_astar) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node\x1b[0m\n'}
+[0.076129] (roughness_slope_astar) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o\x1b[0m\n'}
+[0.076348] (roughness_slope_astar) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.099763] (-) TimerEvent: {}
+[0.200043] (-) TimerEvent: {}
+[0.300341] (-) TimerEvent: {}
+[0.400700] (-) TimerEvent: {}
+[0.501089] (-) TimerEvent: {}
+[0.601436] (-) TimerEvent: {}
+[0.701748] (-) TimerEvent: {}
+[0.802053] (-) TimerEvent: {}
+[0.902357] (-) TimerEvent: {}
+[1.002668] (-) TimerEvent: {}
+[1.102974] (-) TimerEvent: {}
+[1.203280] (-) TimerEvent: {}
+[1.303614] (-) TimerEvent: {}
+[1.403979] (-) TimerEvent: {}
+[1.504306] (-) TimerEvent: {}
+[1.604634] (-) TimerEvent: {}
+[1.705006] (-) TimerEvent: {}
+[1.805318] (-) TimerEvent: {}
+[1.905642] (-) TimerEvent: {}
+[2.005937] (-) TimerEvent: {}
+[2.106256] (-) TimerEvent: {}
+[2.206609] (-) TimerEvent: {}
+[2.306928] (-) TimerEvent: {}
+[2.407230] (-) TimerEvent: {}
+[2.507554] (-) TimerEvent: {}
+[2.607852] (-) TimerEvent: {}
+[2.708178] (-) TimerEvent: {}
+[2.808464] (-) TimerEvent: {}
+[2.908750] (-) TimerEvent: {}
+[3.009209] (-) TimerEvent: {}
+[3.109560] (-) TimerEvent: {}
+[3.209853] (-) TimerEvent: {}
+[3.310149] (-) TimerEvent: {}
+[3.410430] (-) TimerEvent: {}
+[3.510712] (-) TimerEvent: {}
+[3.610993] (-) TimerEvent: {}
+[3.711270] (-) TimerEvent: {}
+[3.811572] (-) TimerEvent: {}
+[3.911855] (-) TimerEvent: {}
+[4.012140] (-) TimerEvent: {}
+[4.112429] (-) TimerEvent: {}
+[4.212715] (-) TimerEvent: {}
+[4.313010] (-) TimerEvent: {}
+[4.413292] (-) TimerEvent: {}
+[4.513586] (-) TimerEvent: {}
+[4.613874] (-) TimerEvent: {}
+[4.714155] (-) TimerEvent: {}
+[4.814452] (-) TimerEvent: {}
+[4.914888] (-) TimerEvent: {}
+[5.015217] (-) TimerEvent: {}
+[5.115519] (-) TimerEvent: {}
+[5.215798] (-) TimerEvent: {}
+[5.316116] (-) TimerEvent: {}
+[5.416403] (-) TimerEvent: {}
+[5.516677] (-) TimerEvent: {}
+[5.616958] (-) TimerEvent: {}
+[5.717236] (-) TimerEvent: {}
+[5.817524] (-) TimerEvent: {}
+[5.917806] (-) TimerEvent: {}
+[6.018086] (-) TimerEvent: {}
+[6.118380] (-) TimerEvent: {}
+[6.218649] (-) TimerEvent: {}
+[6.318997] (-) TimerEvent: {}
+[6.419275] (-) TimerEvent: {}
+[6.519563] (-) TimerEvent: {}
+[6.619845] (-) TimerEvent: {}
+[6.720415] (-) TimerEvent: {}
+[6.820717] (-) TimerEvent: {}
+[6.920992] (-) TimerEvent: {}
+[7.021269] (-) TimerEvent: {}
+[7.121557] (-) TimerEvent: {}
+[7.221823] (-) TimerEvent: {}
+[7.322103] (-) TimerEvent: {}
+[7.422386] (-) TimerEvent: {}
+[7.522664] (-) TimerEvent: {}
+[7.623004] (-) TimerEvent: {}
+[7.723271] (-) TimerEvent: {}
+[7.823639] (-) TimerEvent: {}
+[7.923925] (-) TimerEvent: {}
+[8.024211] (-) TimerEvent: {}
+[8.124504] (-) TimerEvent: {}
+[8.224798] (-) TimerEvent: {}
+[8.325089] (-) TimerEvent: {}
+[8.425385] (-) TimerEvent: {}
+[8.525675] (-) TimerEvent: {}
+[8.625961] (-) TimerEvent: {}
+[8.726237] (-) TimerEvent: {}
+[8.826558] (-) TimerEvent: {}
+[8.926855] (-) TimerEvent: {}
+[9.027148] (-) TimerEvent: {}
+[9.127430] (-) TimerEvent: {}
+[9.224498] (roughness_slope_astar) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable roughness_slope_astar_node\x1b[0m\n'}
+[9.227507] (-) TimerEvent: {}
+[9.327808] (-) TimerEvent: {}
+[9.428209] (-) TimerEvent: {}
+[9.528501] (-) TimerEvent: {}
+[9.628855] (-) TimerEvent: {}
+[9.729350] (-) TimerEvent: {}
+[9.829814] (-) TimerEvent: {}
+[9.930162] (-) TimerEvent: {}
+[10.030764] (-) TimerEvent: {}
+[10.138818] (-) TimerEvent: {}
+[10.239231] (-) TimerEvent: {}
+[10.339545] (-) TimerEvent: {}
+[10.439888] (-) TimerEvent: {}
+[10.516087] (roughness_slope_astar) StdoutLine: {'line': b'[100%] Built target roughness_slope_astar_node\n'}
+[10.527295] (roughness_slope_astar) CommandEnded: {'returncode': 0}
+[10.527915] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'install'}
+[10.537016] (roughness_slope_astar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar'], 'cwd': '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto/scout_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1829'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1803,unix/takuto-PC:/tmp/.ICE-unix/1803'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b14b899b_c2a7_42e8_b4c7_fea667c29d1d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G99WI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.539965] (-) TimerEvent: {}
+[10.543857] (roughness_slope_astar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.544041] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/ament_index/resource_index/package_run_dependencies/roughness_slope_astar\n'}
+[10.544280] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/ament_index/resource_index/parent_prefix_path/roughness_slope_astar\n'}
+[10.544471] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.sh\n'}
+[10.544642] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.dsv\n'}
+[10.544783] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.sh\n'}
+[10.544909] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.dsv\n'}
+[10.545090] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.bash\n'}
+[10.545225] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.sh\n'}
+[10.545393] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.zsh\n'}
+[10.545567] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.dsv\n'}
+[10.545736] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/package.dsv\n'}
+[10.545965] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/ament_index/resource_index/packages/roughness_slope_astar\n'}
+[10.546161] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig.cmake\n'}
+[10.546291] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig-version.cmake\n'}
+[10.546427] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/package.xml\n'}
+[10.548392] (roughness_slope_astar) CommandEnded: {'returncode': 0}
+[10.561672] (roughness_slope_astar) JobEnded: {'identifier': 'roughness_slope_astar', 'rc': 0}
+[10.562333] (-) EventReactorShutdown: {}

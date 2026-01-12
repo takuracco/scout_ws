@@ -1,0 +1,8 @@
+source;share/roughness_slope_astar/hook/cmake_prefix_path.ps1
+source;share/roughness_slope_astar/hook/cmake_prefix_path.dsv
+source;share/roughness_slope_astar/hook/cmake_prefix_path.sh
+source;share/roughness_slope_astar/local_setup.bash
+source;share/roughness_slope_astar/local_setup.dsv
+source;share/roughness_slope_astar/local_setup.ps1
+source;share/roughness_slope_astar/local_setup.sh
+source;share/roughness_slope_astar/local_setup.zsh

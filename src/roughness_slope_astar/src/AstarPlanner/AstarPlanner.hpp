@@ -23,6 +23,10 @@ path(std::vector<Cell>)                            ・・・get_path
 実行部
 Astar_Plan()
 ----------------------------------------------------------------------------*/
+#ifndef __AstarPlanner_HPP__
+#define __AstarPlanner_HPP__
+
+
 #include <vector>
 #include <queue>
 #include "Library.hpp"
@@ -90,10 +94,10 @@ class AstarPlanner{
         //現在のセルを確認する関数
         //コスト
         void set_dist_cost();
-        void set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg);
-        void set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr& msg);
+        void set_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg);
+        void set_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg);
         //odom
-        void set_odom(nav_msgs::msg::Odometry::SharedPtr& msg);
+        void set_odom(nav_msgs::msg::Odometry::SharedPtr msg);
         
         //Astar
         void Astar_Plan();
@@ -109,3 +113,6 @@ class AstarPlanner{
         float heuristic(int x1, int y1, int x2, int y2);
         void Astar();
     };
+
+
+    #endif

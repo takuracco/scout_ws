@@ -1,0 +1,430 @@
+[0.000000] (-) TimerEvent: {}
+[0.000480] (roughness_slope_astar) JobQueued: {'identifier': 'roughness_slope_astar', 'dependencies': OrderedDict()}
+[0.000543] (roughness_slope_astar) JobStarted: {'identifier': 'roughness_slope_astar'}
+[0.006940] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'cmake'}
+[0.007485] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'build'}
+[0.008252] (roughness_slope_astar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', '--', '-j16', '-l16'], 'cwd': '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto/scout_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1829'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1803,unix/takuto-PC:/tmp/.ICE-unix/1803'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b14b899b_c2a7_42e8_b4c7_fea667c29d1d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G99WI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.054035] (roughness_slope_astar) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node\x1b[0m\n'}
+[0.080979] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o\x1b[0m\n'}
+[0.081185] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.081259] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/AstarPlanner/AstarPlanner.cpp.o\x1b[0m\n'}
+[0.081324] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o\x1b[0m\n'}
+[0.099413] (-) TimerEvent: {}
+[0.199775] (-) TimerEvent: {}
+[0.300208] (-) TimerEvent: {}
+[0.400704] (-) TimerEvent: {}
+[0.501087] (-) TimerEvent: {}
+[0.601401] (-) TimerEvent: {}
+[0.701735] (-) TimerEvent: {}
+[0.802063] (-) TimerEvent: {}
+[0.902375] (-) TimerEvent: {}
+[1.002720] (-) TimerEvent: {}
+[1.103034] (-) TimerEvent: {}
+[1.210805] (-) TimerEvent: {}
+[1.311153] (-) TimerEvent: {}
+[1.411446] (-) TimerEvent: {}
+[1.511774] (-) TimerEvent: {}
+[1.612088] (-) TimerEvent: {}
+[1.712392] (-) TimerEvent: {}
+[1.812775] (-) TimerEvent: {}
+[1.913074] (-) TimerEvent: {}
+[2.013387] (-) TimerEvent: {}
+[2.113721] (-) TimerEvent: {}
+[2.214022] (-) TimerEvent: {}
+[2.314307] (-) TimerEvent: {}
+[2.414616] (-) TimerEvent: {}
+[2.514934] (-) TimerEvent: {}
+[2.557214] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.557784] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.557878] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.557943] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.558010] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.558069] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.558160] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.558253] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.558328] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.558390] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.559316] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.559437] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.559526] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.559594] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.559650] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.559699] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.559749] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.559797] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.559845] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.559892] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.559938] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.559985] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.560071] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.560142] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.560195] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.560244] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.560294] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.560343] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.560406] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.560456] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.560532] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.560582] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.560639] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.560694] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.560740] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.560785] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.560841] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.560911] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.560997] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.561048] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.561095] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.561141] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.561187] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.561232] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.561278] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.561323] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.561368] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.561416] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.561470] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.561541] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.561590] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.561636] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.561683] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.561731] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.561789] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.561838] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.561884] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.561929] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.561977] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.562022] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.562072] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.562120] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.562166] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.562218] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.562267] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.562316] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.562362] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.562408] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.562454] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.562523] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.562586] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.562633] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.562679] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.562724] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.562770] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.562832] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.562881] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.562927] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.562972] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.563017] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.563063] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.563108] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.563154] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.563199] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.563243] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.563288] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.563333] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.563382] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.563428] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.563482] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.563547] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.563595] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.563641] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.563688] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.563734] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.563779] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.563824] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.563885] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.563934] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.563983] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.564028] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.564072] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.564118] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.564163] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.564209] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.564256] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.564302] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.564348] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.564394] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.564447] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.564508] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.564572] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.564619] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.564666] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.564720] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.564767] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.564813] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.564859] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.564904] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.564957] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.565004] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.565049] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.565094] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.565139] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.565184] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.565228] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.565273] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.565317] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.565361] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.565406] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.565451] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.565511] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.565566] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.565612] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.565663] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.565711] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.565755] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.565801] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.565845] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.565890] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.565942] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.565987] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.566038] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.566113] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.566181] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.566247] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.566308] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.566364] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.566410] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.566456] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.566523] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.566573] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.566628] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.566676] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.566722] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.566767] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.566812] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.566858] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.566903] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.566949] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.566994] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.615057] (-) TimerEvent: {}
+[2.628349] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.628939] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.629064] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.629179] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.629311] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.629429] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.629836] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.629972] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.630082] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.630190] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.630296] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.630399] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.630516] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.630645] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.630752] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.630856] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.630958] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.631051] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.631140] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.631230] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.631318] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.631404] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.631537] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.631639] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.631743] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.631856] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.631956] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.632052] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.632151] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.632247] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.632357] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.632457] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.632580] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.632681] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.632777] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.632874] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.632984] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.633078] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.633171] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.633268] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.633364] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.633469] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.633586] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.633685] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.633800] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.633897] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.634003] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.634101] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.634193] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.634289] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.634387] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.634482] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.634631] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.634731] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.634825] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.634920] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.635040] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.635143] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.635232] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.635319] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.635416] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.635517] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.635626] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.635722] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.635832] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.635926] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.636024] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.636122] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.636238] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.636339] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.636442] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.636566] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.636659] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.636750] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.636844] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.636936] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.637012] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.637116] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.637219] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.637307] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.637407] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.637544] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.637637] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.637718] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.637812] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.637910] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.637988] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.638085] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.638175] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.638264] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.638375] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.638481] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.638601] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.638703] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.638832] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.638932] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.639040] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.639113] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.639182] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.639248] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.639314] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.639390] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.639462] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.639559] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.639645] (roughness_slope_astar) StderrLine: {'line': b'   10 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.639726] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.639808] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.639898] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.639996] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.640110] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.640206] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.640304] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.640416] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.640558] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.640689] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.640771] (roughness_slope_astar) StderrLine: {'line': b'   16 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.640888] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.641008] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.641160] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.641261] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.641361] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.641458] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.641584] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.641680] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.641775] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.641875] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.642012] (roughness_slope_astar) StderrLine: {'line': b'   22 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.642127] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.642310] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.642498] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.642614] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.642700] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.642784] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.642858] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.642946] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.643042] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.643108] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.643179] (roughness_slope_astar) StderrLine: {'line': b'   27 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.643249] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.643320] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.643388] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.643454] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.643559] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.643619] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.643670] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.643734] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.643786] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.643837] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.643890] (roughness_slope_astar) StderrLine: {'line': b'   41 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.643941] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.643993] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.644052] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.644116] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.644171] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.644244] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.644297] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.644348] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.644424] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.644485] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.644569] (roughness_slope_astar) StderrLine: {'line': b'   55 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.644620] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673386] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:20:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_odom(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673624] (roughness_slope_astar) StderrLine: {'line': b'   20 | void \x1b[01;31m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K::on_odom(const nav_msgs::msg::Odometry::SharedPtr& msg){\n'}
+[2.673708] (roughness_slope_astar) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.673775] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.673851] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:70:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.673927] (roughness_slope_astar) StderrLine: {'line': b'   70 |         void \x1b[01;36m\x1b[Kon_odom\x1b[m\x1b[K(const nav_msgs::msg::Odometry::SharedPtr msg);\n'}
+[2.673994] (roughness_slope_astar) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.674063] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RoughnessSlopeAstarNode\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.674127] (roughness_slope_astar) StderrLine: {'line': b'   27 | class \x1b[01;36m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[2.674206] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.674283] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:25:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.674366] (roughness_slope_astar) StderrLine: {'line': b'   25 | void \x1b[01;31m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K::on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){\n'}
+[2.674429] (roughness_slope_astar) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.674509] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.674593] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:71:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.674674] (roughness_slope_astar) StderrLine: {'line': b'   71 |         void \x1b[01;36m\x1b[Kon_roughness_cost\x1b[m\x1b[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);\n'}
+[2.674735] (roughness_slope_astar) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.674794] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RoughnessSlopeAstarNode\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.674928] (roughness_slope_astar) StderrLine: {'line': b'   27 | class \x1b[01;36m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[2.675031] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.675116] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:29:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_slope_cost(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.675254] (roughness_slope_astar) StderrLine: {'line': b'   29 | void \x1b[01;31m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K::on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){\n'}
+[2.675621] (roughness_slope_astar) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.675750] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.675891] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:72:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_slope_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.675985] (roughness_slope_astar) StderrLine: {'line': b'   72 |         void \x1b[01;36m\x1b[Kon_slope_cost\x1b[m\x1b[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);\n'}
+[2.676081] (roughness_slope_astar) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.676156] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RoughnessSlopeAstarNode\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.676227] (roughness_slope_astar) StderrLine: {'line': b'   27 | class \x1b[01;36m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[2.676293] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.715173] (-) TimerEvent: {}
+[2.815497] (-) TimerEvent: {}
+[2.915818] (-) TimerEvent: {}
+[3.016074] (-) TimerEvent: {}
+[3.116416] (-) TimerEvent: {}
+[3.216810] (-) TimerEvent: {}
+[3.271429] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:76: CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[3.271686] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** \xe6\x9c\xaa\xe5\xae\x8c\xe4\xba\x86\xe3\x81\xae\xe3\x82\xb8\xe3\x83\xa7\xe3\x83\x96\xe3\x82\x92\xe5\xbe\x85\xe3\x81\xa3\xe3\x81\xa6\xe3\x81\x84\xe3\x81\xbe\xe3\x81\x99....\n'}
+[3.316925] (-) TimerEvent: {}
+[3.417228] (-) TimerEvent: {}
+[3.517530] (-) TimerEvent: {}
+[3.617822] (-) TimerEvent: {}
+[3.718140] (-) TimerEvent: {}
+[3.818426] (-) TimerEvent: {}
+[3.918753] (-) TimerEvent: {}
+[4.019052] (-) TimerEvent: {}
+[4.119462] (-) TimerEvent: {}
+[4.219749] (-) TimerEvent: {}
+[4.320062] (-) TimerEvent: {}
+[4.420354] (-) TimerEvent: {}
+[4.520672] (-) TimerEvent: {}
+[4.620956] (-) TimerEvent: {}
+[4.721249] (-) TimerEvent: {}
+[4.821556] (-) TimerEvent: {}
+[4.921866] (-) TimerEvent: {}
+[5.022158] (-) TimerEvent: {}
+[5.122456] (-) TimerEvent: {}
+[5.222801] (-) TimerEvent: {}
+[5.323083] (-) TimerEvent: {}
+[5.423370] (-) TimerEvent: {}
+[5.523675] (-) TimerEvent: {}
+[5.623982] (-) TimerEvent: {}
+[5.724302] (-) TimerEvent: {}
+[5.824678] (-) TimerEvent: {}
+[5.925172] (-) TimerEvent: {}
+[5.948919] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:90: CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[5.949403] (roughness_slope_astar) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roughness_slope_astar_node.dir/all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[5.949741] (roughness_slope_astar) StderrLine: {'line': b'gmake: *** [Makefile:146: all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[5.952640] (roughness_slope_astar) CommandEnded: {'returncode': 2}
+[5.960488] (roughness_slope_astar) JobEnded: {'identifier': 'roughness_slope_astar', 'rc': 2}
+[5.971343] (-) EventReactorShutdown: {}

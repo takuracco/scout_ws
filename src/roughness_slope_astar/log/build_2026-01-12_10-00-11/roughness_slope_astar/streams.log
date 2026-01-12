@@ -1,0 +1,364 @@
+[0.010s] Invoking command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar -- -j16 -l16
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node[0m
+[0.081s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o[0m
+[0.081s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o[0m
+[0.081s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/AstarPlanner/AstarPlanner.cpp.o[0m
+[0.081s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o[0m
+[2.557s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.557s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.557s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.557s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.557s]     4 | struct [01;31m[KPose2D[m[K {
+[2.558s]       |        [01;31m[K^~~~~~[m[K
+[2.558s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.558s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.558s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.559s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.559s]     4 | struct [01;36m[KPose2D[m[K {
+[2.559s]       |        [01;36m[K^~~~~~[m[K
+[2.559s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.559s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.559s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.559s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.559s]    10 | struct [01;31m[KOdometry[m[K{
+[2.559s]       |        [01;31m[K^~~~~~~~[m[K
+[2.559s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.559s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.559s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.559s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.560s]    10 | struct [01;36m[KOdometry[m[K{
+[2.560s]       |        [01;36m[K^~~~~~~~[m[K
+[2.560s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.560s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.560s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.560s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.560s]    16 | enum class [01;31m[KCostMode[m[K : int {
+[2.560s]       |            [01;31m[K^~~~~~~~[m[K
+[2.560s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.560s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.560s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.560s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.560s]    16 | enum class [01;36m[KCostMode[m[K : int {
+[2.560s]       |            [01;36m[K^~~~~~~~[m[K
+[2.560s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.560s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.560s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.561s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.561s]    22 | struct [01;31m[KCell[m[K{
+[2.561s]       |        [01;31m[K^~~~[m[K
+[2.561s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.561s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.561s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.561s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.561s]    22 | struct [01;36m[KCell[m[K{
+[2.561s]       |        [01;36m[K^~~~[m[K
+[2.561s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.561s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.561s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.561s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.561s]    27 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.561s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.561s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.561s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.561s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.561s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.561s]    27 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.562s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.562s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.562s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.562s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.562s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.562s]    41 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.562s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.562s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.562s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.562s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.562s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.562s]    41 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.562s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.562s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.562s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.562s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.562s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.562s]    55 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.562s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.562s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.562s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.563s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.563s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.563s]    55 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.563s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.563s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.563s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.563s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.563s]     4 | struct [01;31m[KPose2D[m[K {
+[2.563s]       |        [01;31m[K^~~~~~[m[K
+[2.563s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.563s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.563s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.563s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.563s]     4 | struct [01;36m[KPose2D[m[K {
+[2.563s]       |        [01;36m[K^~~~~~[m[K
+[2.563s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.563s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.563s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.563s]    10 | struct [01;31m[KOdometry[m[K{
+[2.563s]       |        [01;31m[K^~~~~~~~[m[K
+[2.564s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.564s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.564s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.564s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.564s]    10 | struct [01;36m[KOdometry[m[K{
+[2.564s]       |        [01;36m[K^~~~~~~~[m[K
+[2.564s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.564s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.564s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.564s]    16 | enum class [01;31m[KCostMode[m[K : int {
+[2.564s]       |            [01;31m[K^~~~~~~~[m[K
+[2.564s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.564s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.564s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.564s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.564s]    16 | enum class [01;36m[KCostMode[m[K : int {
+[2.564s]       |            [01;36m[K^~~~~~~~[m[K
+[2.564s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.564s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.564s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.564s]    22 | struct [01;31m[KCell[m[K{
+[2.565s]       |        [01;31m[K^~~~[m[K
+[2.565s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.565s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.565s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.565s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.565s]    22 | struct [01;36m[KCell[m[K{
+[2.565s]       |        [01;36m[K^~~~[m[K
+[2.565s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.565s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.565s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.565s]    27 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.565s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.565s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.565s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.565s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.565s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.565s]    27 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.565s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.565s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.565s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.565s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.566s]    41 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.566s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.566s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.566s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.566s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.566s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.566s]    41 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.566s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.566s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.566s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.566s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.566s]    55 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.566s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.566s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.566s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.566s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.566s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.566s]    55 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.566s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.628s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.628s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.629s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.629s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.629s]     4 | struct [01;31m[KPose2D[m[K {
+[2.629s]       |        [01;31m[K^~~~~~[m[K
+[2.629s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.629s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.630s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.630s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.630s]     4 | struct [01;36m[KPose2D[m[K {
+[2.630s]       |        [01;36m[K^~~~~~[m[K
+[2.630s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.630s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.630s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.630s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.630s]    10 | struct [01;31m[KOdometry[m[K{
+[2.631s]       |        [01;31m[K^~~~~~~~[m[K
+[2.631s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.631s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.631s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.631s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.631s]    10 | struct [01;36m[KOdometry[m[K{
+[2.631s]       |        [01;36m[K^~~~~~~~[m[K
+[2.631s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.631s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.631s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.632s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.632s]    16 | enum class [01;31m[KCostMode[m[K : int {
+[2.632s]       |            [01;31m[K^~~~~~~~[m[K
+[2.632s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.632s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.632s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.632s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.632s]    16 | enum class [01;36m[KCostMode[m[K : int {
+[2.632s]       |            [01;36m[K^~~~~~~~[m[K
+[2.632s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.633s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.633s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.633s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.633s]    22 | struct [01;31m[KCell[m[K{
+[2.633s]       |        [01;31m[K^~~~[m[K
+[2.633s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.633s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.633s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.633s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.634s]    22 | struct [01;36m[KCell[m[K{
+[2.634s]       |        [01;36m[K^~~~[m[K
+[2.634s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.634s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.634s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.634s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.634s]    27 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.634s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.634s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.634s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.635s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.635s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.635s]    27 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.635s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.635s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.635s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.635s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.635s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.635s]    41 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.635s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.636s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.636s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.636s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.636s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.636s]    41 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.636s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.636s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22[m[K,
+[2.636s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15[m[K,
+[2.636s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.636s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.637s]    55 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.637s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.637s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.637s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.637s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.637s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.637s]    55 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.637s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.637s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.637s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.638s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Pose2D[m[K’
+[2.638s]     4 | struct [01;31m[KPose2D[m[K {
+[2.638s]       |        [01;31m[K^~~~~~[m[K
+[2.638s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.638s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.638s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.638s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Pose2D[m[K’
+[2.638s]     4 | struct [01;36m[KPose2D[m[K {
+[2.638s]       |        [01;36m[K^~~~~~[m[K
+[2.638s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.639s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.639s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Odometry[m[K’
+[2.639s]    10 | struct [01;31m[KOdometry[m[K{
+[2.639s]       |        [01;31m[K^~~~~~~~[m[K
+[2.639s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.639s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.639s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.639s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:10:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Odometry[m[K’
+[2.639s]    10 | struct [01;36m[KOdometry[m[K{
+[2.639s]       |        [01;36m[K^~~~~~~~[m[K
+[2.639s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.639s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.640s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class CostMode[m[K’
+[2.640s]    16 | enum class [01;31m[KCostMode[m[K : int {
+[2.640s]       |            [01;31m[K^~~~~~~~[m[K
+[2.640s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.640s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.640s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.640s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:16:12:[m[K [01;36m[Knote: [m[Kprevious definition here
+[2.640s]    16 | enum class [01;36m[KCostMode[m[K : int {
+[2.640s]       |            [01;36m[K^~~~~~~~[m[K
+[2.641s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.641s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.641s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Cell[m[K’
+[2.641s]    22 | struct [01;31m[KCell[m[K{
+[2.641s]       |        [01;31m[K^~~~[m[K
+[2.641s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.641s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.641s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.641s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:22:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Cell[m[K’
+[2.642s]    22 | struct [01;36m[KCell[m[K{
+[2.642s]       |        [01;36m[K^~~~[m[K
+[2.642s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.642s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.642s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dir_from_dxdy(int, int)[m[K’
+[2.642s]    27 | inline int [01;31m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.642s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.642s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.642s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.643s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.643s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:27:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dir_from_dxdy(int, int)[m[K’ previously defined here
+[2.643s]    27 | inline int [01;36m[Kdir_from_dxdy[m[K(int dx, int dy)
+[2.643s]       |            [01;36m[K^~~~~~~~~~~~~[m[K
+[2.643s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.643s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.643s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dx_from_dir(int)[m[K’
+[2.643s]    41 | inline int [01;31m[Kdx_from_dir[m[K(int dir)
+[2.643s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.643s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.643s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.643s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.643s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:41:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dx_from_dir(int)[m[K’ previously defined here
+[2.643s]    41 | inline int [01;36m[Kdx_from_dir[m[K(int dir)
+[2.643s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.643s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16[m[K,
+[2.644s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.644s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint dy_from_dir(int)[m[K’
+[2.644s]    55 | inline int [01;31m[Kdy_from_dir[m[K(int dir)
+[2.644s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.644s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28[m[K,
+[2.644s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14[m[K,
+[2.644s]                  from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2[m[K:
+[2.644s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:55:12:[m[K [01;36m[Knote: [m[K‘[01m[Kint dy_from_dir(int)[m[K’ previously defined here
+[2.644s]    55 | inline int [01;36m[Kdy_from_dir[m[K(int dir)
+[2.644s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[2.673s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:20:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_odom(const SharedPtr&)[m[K’
+[2.673s]    20 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_odom(const nav_msgs::msg::Odometry::SharedPtr& msg){
+[2.673s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.673s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.673s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:70:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’
+[2.673s]    70 |         void [01;36m[Kon_odom[m[K(const nav_msgs::msg::Odometry::SharedPtr msg);
+[2.673s]       |              [01;36m[K^~~~~~~[m[K
+[2.674s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.674s]    27 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.674s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.674s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:25:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(const SharedPtr&)[m[K’
+[2.674s]    25 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+[2.674s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.674s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.674s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:71:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’
+[2.674s]    71 |         void [01;36m[Kon_roughness_cost[m[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+[2.674s]       |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[2.674s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.674s]    27 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.675s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.675s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:29:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_slope_cost(const SharedPtr&)[m[K’
+[2.675s]    29 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+[2.675s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.675s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.675s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:72:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_slope_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’
+[2.676s]    72 |         void [01;36m[Kon_slope_cost[m[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+[2.676s]       |              [01;36m[K^~~~~~~~~~~~~[m[K
+[2.676s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.676s]    27 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.676s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.271s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:76: CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o] エラー 1
+[3.271s] gmake[2]: *** 未完了のジョブを待っています....
+[5.949s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:90: CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o] エラー 1
+[5.949s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roughness_slope_astar_node.dir/all] エラー 2
+[5.949s] gmake: *** [Makefile:146: all] エラー 2
+[5.952s] Invoked command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar -- -j16 -l16

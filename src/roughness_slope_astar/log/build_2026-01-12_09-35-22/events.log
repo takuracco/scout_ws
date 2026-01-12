@@ -1,0 +1,936 @@
+[0.000000] (-) TimerEvent: {}
+[0.000701] (roughness_slope_astar) JobQueued: {'identifier': 'roughness_slope_astar', 'dependencies': OrderedDict()}
+[0.000760] (roughness_slope_astar) JobStarted: {'identifier': 'roughness_slope_astar'}
+[0.007057] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'cmake'}
+[0.007656] (roughness_slope_astar) Command: {'cmd': ['/usr/bin/cmake', '/home/takuto/scout_ws/src/roughness_slope_astar', '-DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar'], 'cwd': '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto/scout_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1829'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1803,unix/takuto-PC:/tmp/.ICE-unix/1803'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b14b899b_c2a7_42e8_b4c7_fea667c29d1d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G99WI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.020685] (roughness_slope_astar) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099758] (-) TimerEvent: {}
+[0.119563] (roughness_slope_astar) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.144595] (roughness_slope_astar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.146771] (roughness_slope_astar) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.151360] (roughness_slope_astar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.158269] (roughness_slope_astar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.167689] (roughness_slope_astar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.192172] (roughness_slope_astar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.193208] (roughness_slope_astar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199840] (-) TimerEvent: {}
+[0.298493] (roughness_slope_astar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.299929] (-) TimerEvent: {}
+[0.336460] (roughness_slope_astar) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.345682] (roughness_slope_astar) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.361793] (roughness_slope_astar) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.400087] (-) TimerEvent: {}
+[0.456198] (roughness_slope_astar) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.456468] (roughness_slope_astar) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/takuto/scout_ws/src/roughness_slope_astar/src\n'}
+[0.456557] (roughness_slope_astar) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.457605] (roughness_slope_astar) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.459824] (roughness_slope_astar) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.461011] (roughness_slope_astar) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.469451] (roughness_slope_astar) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.469664] (roughness_slope_astar) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.470710] (roughness_slope_astar) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.471359] (roughness_slope_astar) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.482989] (roughness_slope_astar) StdoutLine: {'line': b'-- Generating done\n'}
+[0.486100] (roughness_slope_astar) StdoutLine: {'line': b'-- Build files have been written to: /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar\n'}
+[0.493271] (roughness_slope_astar) CommandEnded: {'returncode': 0}
+[0.493766] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'build'}
+[0.494273] (roughness_slope_astar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', '--', '-j16', '-l16'], 'cwd': '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto/scout_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1829'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1803,unix/takuto-PC:/tmp/.ICE-unix/1803'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b14b899b_c2a7_42e8_b4c7_fea667c29d1d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.G99WI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.500196] (-) TimerEvent: {}
+[0.544025] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o\x1b[0m\n'}
+[0.544193] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/AstarPlanner/AstarPlanner.cpp.o\x1b[0m\n'}
+[0.544250] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.544298] (roughness_slope_astar) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o\x1b[0m\n'}
+[0.600309] (-) TimerEvent: {}
+[0.700599] (-) TimerEvent: {}
+[0.785049] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[0.785249] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:1\x1b[m\x1b[K:\n'}
+[0.785302] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after struct definition\n'}
+[0.785347] (roughness_slope_astar) StderrLine: {'line': b'   12 | }\n'}
+[0.785388] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.785428] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[0.787341] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.787558] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.787703] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[0.787771] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.787830] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.787951] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[0.788206] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.788317] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.788425] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[0.788508] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.788626] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.788763] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[0.788871] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.788957] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.789052] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[0.789125] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.789195] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.789275] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[0.789323] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.789371] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.789422] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[0.789472] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.789520] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.789569] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[0.789617] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.789665] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.789714] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.789762] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[0.789807] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.789866] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.789986] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[0.790102] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.790181] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.790260] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[0.790334] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.790407] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.790458] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[0.790508] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.790554] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.790602] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[0.790649] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.790694] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.790743] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[0.790799] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.790846] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.790894] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[0.790948] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.791017] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.791079] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[0.791128] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[0.800706] (-) TimerEvent: {}
+[0.901005] (-) TimerEvent: {}
+[1.001299] (-) TimerEvent: {}
+[1.101639] (-) TimerEvent: {}
+[1.104626] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[1.104896] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.cpp:1\x1b[m\x1b[K:\n'}
+[1.105161] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after struct definition\n'}
+[1.105239] (roughness_slope_astar) StderrLine: {'line': b'   12 | }\n'}
+[1.105306] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.105367] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.105424] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.105483] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.105538] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[1.105591] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.105645] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.105698] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[1.105753] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.105807] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.105888] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[1.105982] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.106119] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.106206] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[1.106283] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.106368] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.106438] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[1.106504] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.106567] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.106634] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[1.106701] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.106766] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.106831] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[1.106912] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.107016] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.107088] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[1.107151] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.107211] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.107273] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.107335] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[1.107395] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.107454] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.107506] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[1.107553] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.107609] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.107661] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[1.107709] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.107758] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.107810] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[1.107859] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.107907] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.108015] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[1.108072] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.108122] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.108178] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[1.108226] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.108274] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.108324] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[1.108371] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.108440] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.108493] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[1.108544] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[1.148052] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AstarPlanner::set_roughness_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.148284] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:31:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.148369] (roughness_slope_astar) StderrLine: {'line': b'   31 |     for(int k = 0; \x1b[01;35m\x1b[Kk + 2 < n\x1b[m\x1b[K; k += 3){\n'}
+[1.148436] (roughness_slope_astar) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.148554] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AstarPlanner::set_slope_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.148627] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.cpp:50:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst size_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst long unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.148689] (roughness_slope_astar) StderrLine: {'line': b'   50 |     for(int k = 0; \x1b[01;35m\x1b[Kk + 9 < n\x1b[m\x1b[K; k += 10){\n'}
+[1.148745] (roughness_slope_astar) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.192103] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:118: CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[1.192308] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** \xe6\x9c\xaa\xe5\xae\x8c\xe4\xba\x86\xe3\x81\xae\xe3\x82\xb8\xe3\x83\xa7\xe3\x83\x96\xe3\x82\x92\xe5\xbe\x85\xe3\x81\xa3\xe3\x81\xa6\xe3\x81\x84\xe3\x81\xbe\xe3\x81\x99....\n'}
+[1.201748] (-) TimerEvent: {}
+[1.302022] (-) TimerEvent: {}
+[1.309202] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:104: CMakeFiles/roughness_slope_astar_node.dir/src/AstarPlanner/AstarPlanner.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[1.402138] (-) TimerEvent: {}
+[1.502442] (-) TimerEvent: {}
+[1.602758] (-) TimerEvent: {}
+[1.703075] (-) TimerEvent: {}
+[1.803378] (-) TimerEvent: {}
+[1.903677] (-) TimerEvent: {}
+[2.003993] (-) TimerEvent: {}
+[2.104820] (-) TimerEvent: {}
+[2.205135] (-) TimerEvent: {}
+[2.305430] (-) TimerEvent: {}
+[2.405728] (-) TimerEvent: {}
+[2.506023] (-) TimerEvent: {}
+[2.606316] (-) TimerEvent: {}
+[2.706612] (-) TimerEvent: {}
+[2.747332] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.747716] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.747790] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.747852] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after struct definition\n'}
+[2.747933] (roughness_slope_astar) StderrLine: {'line': b'   12 | }\n'}
+[2.748005] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.748063] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.748116] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.748172] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.748237] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[2.748295] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.748348] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.748401] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.748450] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.748499] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.748549] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[2.748597] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.748646] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.748708] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[2.748767] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.748825] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.748886] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[2.748955] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.749045] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.749127] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.749188] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.749247] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.749308] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[2.749366] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.749422] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.749481] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[2.749538] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.749594] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.749651] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.749696] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[2.749737] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.749784] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.749828] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.749869] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.749910] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.749962] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[2.750022] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.750074] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.750125] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[2.750166] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.750208] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.750251] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[2.750293] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.750334] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.750376] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.750419] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.750461] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.750505] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[2.750548] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.750589] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.750632] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[2.750684] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.751537] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.751612] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.751668] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.751717] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.751763] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.751810] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.751987] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.752045] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.752093] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.752140] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.752186] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.753060] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.753155] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.753217] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.753272] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.753325] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.753375] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.753427] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.753479] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.753532] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.753585] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.753637] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.753696] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.753746] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.753791] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.753836] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.753881] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.753925] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.753982] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.754049] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.754095] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.754139] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.754183] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.754227] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.754270] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.754314] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.754357] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.754399] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.754443] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.754485] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.754533] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple types in one declaration\n'}
+[2.754576] (roughness_slope_astar) StderrLine: {'line': b'    8 | \x1b[01;31m\x1b[Kstruct\x1b[m\x1b[K Odometry{\n'}
+[2.754619] (roughness_slope_astar) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.754662] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.754708] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.754753] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.754797] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.754840] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.754883] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.754925] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.754992] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.755046] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.755098] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.755169] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.755248] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.755291] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.755345] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.755388] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.755430] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.755472] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.755515] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.755557] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.755608] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.755654] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.755699] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.755744] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.755789] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.755834] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.755879] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.755924] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.755983] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.756039] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.756085] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.756129] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.756183] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.756228] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.756272] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.756317] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.756361] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.756405] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.756457] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.756506] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[2.756551] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.756596] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.756649] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.756693] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.756738] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.756784] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[2.756827] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.756891] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.756942] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[2.757002] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.757051] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.757106] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[2.757151] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.757196] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.757253] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.757297] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.757340] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.757386] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[2.757431] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.757474] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.757521] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[2.757565] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.757608] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.757652] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.757697] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.757741] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.757784] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.757827] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.757871] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.757913] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.757969] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.758139] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.758230] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.758305] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.758375] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.758437] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.758497] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.758563] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[2.758628] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.758682] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.758730] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.758776] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.758820] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.758867] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[2.758913] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.758970] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.759027] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[2.759075] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.759120] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.759172] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[2.759215] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.759256] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.759306] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.759349] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.759392] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.759435] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[2.759477] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.759519] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.759567] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[2.759610] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.759671] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.759714] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.759757] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.759800] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.759844] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.759887] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.759946] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.760013] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.760059] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.760104] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.760148] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.760192] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.760236] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.760287] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.760330] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.760374] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.760418] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.760463] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.760509] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.760553] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.760597] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.760642] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.760685] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.760730] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.760774] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.760817] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.760877] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.760921] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.760975] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.761032] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.761077] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.761121] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.761165] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.761208] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.761251] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.761294] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.761346] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple types in one declaration\n'}
+[2.761392] (roughness_slope_astar) StderrLine: {'line': b'    8 | \x1b[01;31m\x1b[Kstruct\x1b[m\x1b[K Odometry{\n'}
+[2.761436] (roughness_slope_astar) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.761480] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.761525] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.761569] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.761617] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.761663] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.761708] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.761759] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.761806] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.761850] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.761893] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.761952] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.762005] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.762056] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.762099] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.762141] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.762184] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.762228] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.762271] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.762314] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.762359] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.762409] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.762465] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.762507] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.762550] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.762594] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.762637] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.762680] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.762723] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.762765] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.762808] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.762850] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.762901] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.762950] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.763001] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.763050] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.763098] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[2.763141] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.763183] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.763234] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.763279] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.763326] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.763385] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[2.763431] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.763474] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.763518] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[2.763567] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.763610] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.763654] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[2.763699] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.763741] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.763786] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.763831] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.763874] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.763918] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[2.763970] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.764017] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.764062] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[2.764104] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.764146] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.764189] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.764239] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.764281] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.764323] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.764365] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.764407] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.764455] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.764500] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.764545] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.764589] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.764632] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.764676] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.764720] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.764772] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[2.764823] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.764867] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.764913] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.764968] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.765018] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.765065] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[2.765109] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.765161] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.765214] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[2.765260] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.765324] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.765383] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[2.765427] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.765498] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.765562] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.765607] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.765665] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.765711] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[2.765754] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.765797] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.765842] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[2.765885] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.779211] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.779647] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.779752] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.779872] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:12:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after struct definition\n'}
+[2.779966] (roughness_slope_astar) StderrLine: {'line': b'   12 | }\n'}
+[2.780062] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.780151] (roughness_slope_astar) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.780249] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.780335] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.780441] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[2.780533] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.780620] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.780713] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.780798] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.780886] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.780980] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[2.781074] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.781161] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.781257] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[2.781342] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.781447] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.781542] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[2.781622] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.781703] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.781791] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.781888] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.781983] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.782084] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[2.782171] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.782239] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.782311] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[2.782390] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.782467] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.782545] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.782644] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[2.782733] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.782821] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.782924] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.783026] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.783078] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.783137] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[2.783185] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.783230] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.783278] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[2.783328] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.783373] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.783433] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[2.783483] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.783532] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.783581] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.783632] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.783683] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.783827] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[2.783884] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.783936] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.784362] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[2.784436] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.784491] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.784550] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.784604] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.784713] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.785165] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.785268] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.785325] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.785375] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.785427] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.785484] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.785530] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.785578] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.785626] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.785671] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.785731] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.785777] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.785835] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.785883] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.785928] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.785986] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.786038] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.786082] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.786134] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.786178] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.786222] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.786265] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.786310] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.786353] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.786396] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.786440] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.786493] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.786538] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.786582] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.786636] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.786681] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.786724] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.786766] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.786808] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.786852] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.786894] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.786936] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple types in one declaration\n'}
+[2.786991] (roughness_slope_astar) StderrLine: {'line': b'    8 | \x1b[01;31m\x1b[Kstruct\x1b[m\x1b[K Odometry{\n'}
+[2.787039] (roughness_slope_astar) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.787082] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.787125] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.787167] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.787212] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.787253] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.787296] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.787340] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.787382] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.787424] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.787467] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.787522] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.787569] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.787617] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.787661] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.787706] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.787765] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.787810] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.787854] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.787898] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.787948] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.788011] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.788056] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.788107] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.788151] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.788196] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.788241] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.788288] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.788342] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.788403] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.788452] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.788498] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.788552] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.788598] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.788643] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.788688] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.788733] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.788776] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.788819] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.788864] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[2.788906] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.788958] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.789026] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.789073] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.789118] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.789164] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[2.789208] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.789250] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.789301] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[2.789344] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.789386] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.789437] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[2.789480] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.789523] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.789568] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.789610] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.789651] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.789695] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[2.789739] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.789782] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.789829] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[2.789874] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.789924] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.789979] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.790037] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.790081] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.790124] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.790166] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.790209] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.790251] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.790295] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.790337] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.790388] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.hpp:22\x1b[m\x1b[K,\n'}
+[2.790431] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:15\x1b[m\x1b[K,\n'}
+[2.790474] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.790522] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.790569] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.790615] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[2.790658] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.790700] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.790746] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.790798] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.790842] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.790888] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[2.790933] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.790988] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.791042] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[2.791086] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.791129] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.791174] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[2.791217] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.791261] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.791316] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.791362] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.791406] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.791458] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[2.791504] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.791548] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.791592] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[2.791636] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.791679] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.791722] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.791765] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.791808] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.791851] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;31m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.791895] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.791949] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.792003] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.792049] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.792094] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Pose2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.792137] (roughness_slope_astar) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KPose2D\x1b[m\x1b[K {\n'}
+[2.792180] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.792223] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.792274] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.792317] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.792360] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.792403] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.792452] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.792495] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.792539] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.792581] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Odometry\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.792624] (roughness_slope_astar) StderrLine: {'line': b'    8 | struct \x1b[01;36m\x1b[KOdometry\x1b[m\x1b[K{\n'}
+[2.792666] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.792708] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.792753] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.792796] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum class CostMode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.792840] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;31m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.792884] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.792927] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.792981] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.793038] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.793081] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:14:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[2.793124] (roughness_slope_astar) StderrLine: {'line': b'   14 | enum class \x1b[01;36m\x1b[KCostMode\x1b[m\x1b[K : int {\n'}
+[2.793168] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.793215] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.793272] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.793318] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:8:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple types in one declaration\n'}
+[2.793362] (roughness_slope_astar) StderrLine: {'line': b'    8 | \x1b[01;31m\x1b[Kstruct\x1b[m\x1b[K Odometry{\n'}
+[2.793406] (roughness_slope_astar) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.793449] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.793496] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;31m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.793540] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.793583] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.793633] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.793679] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.793724] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:20:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct Cell\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.793769] (roughness_slope_astar) StderrLine: {'line': b'   20 | struct \x1b[01;36m\x1b[KCell\x1b[m\x1b[K{\n'}
+[2.793813] (roughness_slope_astar) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.793856] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.793901] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.793950] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.794011] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;31m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.794057] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.794102] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.794146] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.794190] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.794243] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:25:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dir_from_dxdy(int, int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.794295] (roughness_slope_astar) StderrLine: {'line': b'   25 | inline int \x1b[01;36m\x1b[Kdir_from_dxdy\x1b[m\x1b[K(int dx, int dy)\n'}
+[2.794339] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.794383] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.794427] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.794471] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.794515] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;31m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.794558] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.794601] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.794645] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.794690] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.794734] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:39:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.794778] (roughness_slope_astar) StderrLine: {'line': b'   39 | inline int \x1b[01;36m\x1b[Kdx_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.794822] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.794865] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.794909] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.794962] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dx_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.795025] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:42:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.795072] (roughness_slope_astar) StderrLine: {'line': b'   42 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 1;\n'}
+[2.795115] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.795164] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:43:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.795216] (roughness_slope_astar) StderrLine: {'line': b'   43 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.795258] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.795301] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:44:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.795347] (roughness_slope_astar) StderrLine: {'line': b'   44 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 0;\n'}
+[2.795390] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.795433] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:45:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.795477] (roughness_slope_astar) StderrLine: {'line': b'   45 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return -1;\n'}
+[2.795520] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.795562] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:46:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.795606] (roughness_slope_astar) StderrLine: {'line': b'   46 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return -1;\n'}
+[2.795648] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.795692] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:47:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.795762] (roughness_slope_astar) StderrLine: {'line': b'   47 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.795819] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.795863] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:48:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.795920] (roughness_slope_astar) StderrLine: {'line': b'   48 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return 0;\n'}
+[2.796010] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.796057] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:49:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.796119] (roughness_slope_astar) StderrLine: {'line': b'   49 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return 1;\n'}
+[2.796171] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.796215] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.796259] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.796304] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;31m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.796348] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.796391] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/AstarPlanner/AstarPlanner.hpp:28\x1b[m\x1b[K,\n'}
+[2.796435] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:14\x1b[m\x1b[K,\n'}
+[2.796478] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.796525] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:53:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[2.796571] (roughness_slope_astar) StderrLine: {'line': b'   53 | inline int \x1b[01;36m\x1b[Kdy_from_dir\x1b[m\x1b[K(int dir)\n'}
+[2.796629] (roughness_slope_astar) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.796676] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:16\x1b[m\x1b[K,\n'}
+[2.796729] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.796774] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint dy_from_dir(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.796819] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:56:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.796864] (roughness_slope_astar) StderrLine: {'line': b'   56 |   if (\x1b[01;35m\x1b[Kdir = 0\x1b[m\x1b[K) return 0;\n'}
+[2.796908] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.796960] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:57:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.797021] (roughness_slope_astar) StderrLine: {'line': b'   57 |   if (\x1b[01;35m\x1b[Kdir = 1\x1b[m\x1b[K) return 1;\n'}
+[2.797066] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.797109] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:58:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.797162] (roughness_slope_astar) StderrLine: {'line': b'   58 |   if (\x1b[01;35m\x1b[Kdir = 2\x1b[m\x1b[K) return 1;\n'}
+[2.797206] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.797249] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:59:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.797295] (roughness_slope_astar) StderrLine: {'line': b'   59 |   if (\x1b[01;35m\x1b[Kdir = 3\x1b[m\x1b[K) return 1;\n'}
+[2.797338] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.797381] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:60:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.797426] (roughness_slope_astar) StderrLine: {'line': b'   60 |   if (\x1b[01;35m\x1b[Kdir = 4\x1b[m\x1b[K) return 0;\n'}
+[2.797475] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.797519] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:61:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.797564] (roughness_slope_astar) StderrLine: {'line': b'   61 |   if (\x1b[01;35m\x1b[Kdir = 5\x1b[m\x1b[K) return -1;\n'}
+[2.797606] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.797649] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:62:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.797702] (roughness_slope_astar) StderrLine: {'line': b'   62 |   if (\x1b[01;35m\x1b[Kdir = 6\x1b[m\x1b[K) return -1;\n'}
+[2.797758] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.797801] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/Library.hpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around assignment used as truth value [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.797846] (roughness_slope_astar) StderrLine: {'line': b'   63 |   if (\x1b[01;35m\x1b[Kdir = 7\x1b[m\x1b[K) return -1;\n'}
+[2.797890] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[2.806706] (-) TimerEvent: {}
+[2.828842] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.829028] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:7:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kroughness_slope_Astar_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.829106] (roughness_slope_astar) StderrLine: {'line': b'    7 |   rclcpp::spin(std::make_shared<\x1b[01;31m\x1b[Kroughness_slope_Astar_node\x1b[m\x1b[K>());\n'}
+[2.829157] (roughness_slope_astar) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.829216] (roughness_slope_astar) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K\n'}
+[2.829269] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:7:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.829316] (roughness_slope_astar) StderrLine: {'line': b'    7 |   rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<roughness_slope_Astar_node>()\x1b[m\x1b[K);\n'}
+[2.829360] (roughness_slope_astar) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.829858] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[2.829992] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.830063] (roughness_slope_astar) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[2.830115] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.830168] (roughness_slope_astar) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[2.830213] (roughness_slope_astar) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.830258] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.830302] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/main.cpp:7:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.830345] (roughness_slope_astar) StderrLine: {'line': b'    7 |   rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<roughness_slope_Astar_node>()\x1b[m\x1b[K);\n'}
+[2.830390] (roughness_slope_astar) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.873628] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.876602] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:20:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_odom(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.876687] (roughness_slope_astar) StderrLine: {'line': b'   20 | void \x1b[01;31m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K::on_odom(const nav_msgs::msg::Odometry::SharedPtr& msg){\n'}
+[2.876739] (roughness_slope_astar) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.876786] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.876846] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:70:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.876902] (roughness_slope_astar) StderrLine: {'line': b'   70 |         void \x1b[01;36m\x1b[Kon_odom\x1b[m\x1b[K(const nav_msgs::msg::Odometry::SharedPtr msg);\n'}
+[2.876956] (roughness_slope_astar) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.877018] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RoughnessSlopeAstarNode\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.877062] (roughness_slope_astar) StderrLine: {'line': b'   27 | class \x1b[01;36m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[2.877103] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.877143] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:25:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.877184] (roughness_slope_astar) StderrLine: {'line': b'   25 | void \x1b[01;31m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K::on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){\n'}
+[2.877237] (roughness_slope_astar) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.877281] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.877323] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:71:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.877382] (roughness_slope_astar) StderrLine: {'line': b'   71 |         void \x1b[01;36m\x1b[Kon_roughness_cost\x1b[m\x1b[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);\n'}
+[2.877462] (roughness_slope_astar) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.877504] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RoughnessSlopeAstarNode\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.877560] (roughness_slope_astar) StderrLine: {'line': b'   27 | class \x1b[01;36m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[2.877608] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.877649] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:29:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_slope_cost(const SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.877698] (roughness_slope_astar) StderrLine: {'line': b'   29 | void \x1b[01;31m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K::on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){\n'}
+[2.877745] (roughness_slope_astar) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.877785] (roughness_slope_astar) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1\x1b[m\x1b[K:\n'}
+[2.877825] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:72:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid RoughnessSlopeAstarNode::on_slope_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.877867] (roughness_slope_astar) StderrLine: {'line': b'   72 |         void \x1b[01;36m\x1b[Kon_slope_cost\x1b[m\x1b[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);\n'}
+[2.877912] (roughness_slope_astar) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.877970] (roughness_slope_astar) StderrLine: {'line': b'\x1b[01m\x1b[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:27:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass RoughnessSlopeAstarNode\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.878038] (roughness_slope_astar) StderrLine: {'line': b'   27 | class \x1b[01;36m\x1b[KRoughnessSlopeAstarNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[2.878084] (roughness_slope_astar) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.906829] (-) TimerEvent: {}
+[3.007170] (-) TimerEvent: {}
+[3.107530] (-) TimerEvent: {}
+[3.207866] (-) TimerEvent: {}
+[3.208132] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:76: CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[3.307989] (-) TimerEvent: {}
+[3.408268] (-) TimerEvent: {}
+[3.508675] (-) TimerEvent: {}
+[3.608994] (-) TimerEvent: {}
+[3.709282] (-) TimerEvent: {}
+[3.809559] (-) TimerEvent: {}
+[3.909842] (-) TimerEvent: {}
+[4.010128] (-) TimerEvent: {}
+[4.110693] (-) TimerEvent: {}
+[4.210993] (-) TimerEvent: {}
+[4.311282] (-) TimerEvent: {}
+[4.411558] (-) TimerEvent: {}
+[4.511860] (-) TimerEvent: {}
+[4.612242] (-) TimerEvent: {}
+[4.712579] (-) TimerEvent: {}
+[4.812881] (-) TimerEvent: {}
+[4.913196] (-) TimerEvent: {}
+[5.013507] (-) TimerEvent: {}
+[5.113814] (-) TimerEvent: {}
+[5.214128] (-) TimerEvent: {}
+[5.314409] (-) TimerEvent: {}
+[5.414696] (-) TimerEvent: {}
+[5.456988] (roughness_slope_astar) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:90: CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[5.457614] (roughness_slope_astar) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roughness_slope_astar_node.dir/all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[5.457779] (roughness_slope_astar) StderrLine: {'line': b'gmake: *** [Makefile:146: all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[5.460283] (roughness_slope_astar) CommandEnded: {'returncode': 2}
+[5.467264] (roughness_slope_astar) JobEnded: {'identifier': 'roughness_slope_astar', 'rc': 2}
+[5.477698] (-) EventReactorShutdown: {}

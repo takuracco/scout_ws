@@ -6,7 +6,7 @@ RobotController::RobotController(float _t):TurnPID(_t),StraightPID(_t){
 }
 
 
-void RobotController::set_odom(nav_msgs::msg::Odometry::SharedPtr& msg){
+void RobotController::set_odom(nav_msgs::msg::Odometry::SharedPtr msg){
     //自己位置の取得
     odom.x = msg->pose.pose.position.x;
     odom.y = msg->pose.pose.position.y;

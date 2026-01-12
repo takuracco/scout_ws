@@ -1,0 +1,40 @@
+[0.009s] Invoking command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar -- -j16 -l16
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node[0m
+[0.072s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o[0m
+[0.072s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o[0m
+[0.072s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o[0m
+[0.072s] [ 80%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/AstarPlanner/AstarPlanner.cpp.o[0m
+[2.446s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:20:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_odom(const SharedPtr&)[m[K’
+[2.446s]    20 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_odom(const nav_msgs::msg::Odometry::SharedPtr& msg){
+[2.446s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.446s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.446s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:73:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’
+[2.446s]    73 |         void [01;36m[Kon_odom[m[K(const nav_msgs::msg::Odometry::SharedPtr msg);
+[2.446s]       |              [01;36m[K^~~~~~~[m[K
+[2.446s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.446s]    30 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.446s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.446s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:25:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(const SharedPtr&)[m[K’
+[2.446s]    25 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+[2.446s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.446s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.447s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:74:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_roughness_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’
+[2.447s]    74 |         void [01;36m[Kon_roughness_cost[m[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+[2.447s]       |              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[2.447s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.447s]    30 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.447s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.447s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:29:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RoughnessSlopeAstarNode::on_slope_cost(const SharedPtr&)[m[K’
+[2.447s]    29 | void [01;31m[KRoughnessSlopeAstarNode[m[K::on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr& msg){
+[2.447s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.447s] In file included from [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:1[m[K:
+[2.447s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:75:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RoughnessSlopeAstarNode::on_slope_cost(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’
+[2.447s]    75 |         void [01;36m[Kon_slope_cost[m[K(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+[2.447s]       |              [01;36m[K^~~~~~~~~~~~~[m[K
+[2.447s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.hpp:30:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RoughnessSlopeAstarNode[m[K’ defined here
+[2.447s]    30 | class [01;36m[KRoughnessSlopeAstarNode[m[K : public rclcpp::Node {
+[2.447s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.062s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:90: CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o] エラー 1
+[5.062s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roughness_slope_astar_node.dir/all] エラー 2
+[5.062s] gmake: *** [Makefile:146: all] エラー 2
+[5.064s] Invoked command in '/home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/src/roughness_slope_astar/build/roughness_slope_astar -- -j16 -l16

@@ -14,6 +14,9 @@ cmd_vel(Pose2D)　　　　　            ・・・get_vel_cmd
 実行部
 MovingRobot()
 -------------------------------------------------------------------------*/
+#ifndef __RobotController_HPP__
+#define __RobotController_HPP__
+
 #include <vector>
 #include <cmath>
 #include <algorithm>
@@ -53,7 +56,7 @@ class RobotController{
         RobotController(float _t);
 
         
-        void set_odom(nav_msgs::msg::Odometry::SharedPtr& msg);
+        void set_odom(nav_msgs::msg::Odometry::SharedPtr msg);
         
         void setup();
         
@@ -72,3 +75,5 @@ class RobotController{
         bool Straight_Robot();
         void Stop_Robot();
 };
+
+#endif

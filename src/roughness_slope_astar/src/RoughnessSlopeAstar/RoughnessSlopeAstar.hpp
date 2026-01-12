@@ -1,3 +1,6 @@
+#ifndef __RoughnessSlopeAstar_HPP__
+#define __RoughnessSlopeAstar_HPP__
+
 #include <rclcpp/rclcpp.hpp>
 
 #include <geometry_msgs/msg/twist.hpp>
@@ -67,9 +70,9 @@ class RoughnessSlopeAstarNode : public rclcpp::Node {
     
     private:
         //callback
-        void on_odom(const nav_msgs::msg::Odometry::SharedPtr msg);
-        void on_roughness_cost(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
-        void on_slope_cost(const std_msgs::msg::Float32MultiArray::SharedPtr msg);
+        void on_odom(nav_msgs::msg::Odometry::SharedPtr msg);
+        void on_roughness_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg);
+        void on_slope_cost(std_msgs::msg::Float32MultiArray::SharedPtr msg);
 
         // timers
         void plan_tick();
@@ -79,3 +82,5 @@ class RoughnessSlopeAstarNode : public rclcpp::Node {
         // void publish_stop();
 
 };
+
+#endif

@@ -26,10 +26,9 @@ endif()
 
 add_executable(roughness_slope_astar_node
   src/main.cpp
-  src/roughness_slope_astar/roughness_slope_astar.cpp
+  src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp
   src/AstarPlanner/AstarPlanner.cpp
   src/RobotController/RobotController.cpp
-  src/AutoControlSequence/AutoControlSequence.cpp
 )
 
 target_include_directories(roughness_slope_astar_node

@@ -1,3 +1,7 @@
+#ifndef __PID_HPP__
+#define __PID_HPP__
+
+
 class PID{
     private:
         float t;
@@ -31,3 +35,5 @@ class PID{
             return u;
         }
 };
+
+#endif

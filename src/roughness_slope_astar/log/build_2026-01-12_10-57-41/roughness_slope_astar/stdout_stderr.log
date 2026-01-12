@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable roughness_slope_astar_node[0m
+[100%] Built target roughness_slope_astar_node
+-- Install configuration: ""
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/ament_index/resource_index/package_run_dependencies/roughness_slope_astar
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/ament_index/resource_index/parent_prefix_path/roughness_slope_astar
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.sh
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.dsv
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.sh
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.dsv
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.bash
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.sh
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.zsh
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.dsv
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/package.dsv
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/ament_index/resource_index/packages/roughness_slope_astar
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig.cmake
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig-version.cmake
+-- Installing: /home/takuto/scout_ws/src/roughness_slope_astar/install/roughness_slope_astar/share/roughness_slope_astar/package.xml
