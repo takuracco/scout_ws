@@ -1,3 +1,4 @@
+import numpy as np
 
 class Parameter():
     def __init__(self):
@@ -8,6 +9,9 @@ class Parameter():
         # 表示サイズ
         self.grid_size = 9          # 9 x 9
         self.radius_m  = (self.grid_size // 2) * self.cell_res  # 10 m
+
+        # ロボットの上がれる最大角度(0~2πまで)
+        self.max_rad = np.pi/2
 
         # ロボットの初期位置
         self.robot_x     = 0.0

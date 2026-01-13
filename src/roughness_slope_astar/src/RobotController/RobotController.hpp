@@ -45,7 +45,7 @@ class RobotController{
         MovingState moving_state;
 
 
-        float yaw_err_max = 10;    //角度誤差(度数法)
+        float yaw_err_max = 1;    //角度誤差(度数法)
         float W_MAX = 3.0f;       //角速度最大値(rad/s)
         float vel_err_max = 0.01f;//距離の誤差(m)
         float D_MAX = 5.0f;       //最大速度(m/s)
@@ -68,13 +68,13 @@ class RobotController{
 
         bool is_finished();
         
+        float get_yaw_err();
         Odometry get_odom();
     private:
         void set_target_cell(Cell target);
         float normalize_angle(float angle);
-        float get_yaw_err();
-        float get_err();
         bool Turn_Robot();
+        float get_err();
         bool Straight_Robot();
         void Stop_Robot();
 };

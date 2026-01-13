@@ -1,0 +1,2 @@
+Invoking command in '/home/takuto/scout_ws/build/roughness_slope_astar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takuto/scout_ws/src/roughness_slope_astar -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/install/roughness_slope_astar
+Invoked command in '/home/takuto/scout_ws/build/roughness_slope_astar' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/takuto/scout_ws/src/roughness_slope_astar -DCMAKE_INSTALL_PREFIX=/home/takuto/scout_ws/install/roughness_slope_astar

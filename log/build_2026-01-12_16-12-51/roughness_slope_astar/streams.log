@@ -1,0 +1,12 @@
+[0.929s] Invoking command in '/home/takuto/scout_ws/build/roughness_slope_astar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/build/roughness_slope_astar -- -j16 -l16
+[1.027s] [35m[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node[0m
+[1.100s] [ 20%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o[0m
+[2.344s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.cpp:[m[K In function ‘[01m[KMovingState get_move_state()[m[K’:
+[2.344s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RobotController/RobotController.cpp:64:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kmoving_state[m[K’ was not declared in this scope; did you mean ‘[01m[KMovingState[m[K’?
+[2.344s]    64 |     return [01;31m[Kmoving_state[m[K;
+[2.344s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[2.344s]       |            [32m[KMovingState[m[K
+[2.514s] gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:118: CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o] エラー 1
+[2.515s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roughness_slope_astar_node.dir/all] エラー 2
+[2.516s] gmake: *** [Makefile:146: all] エラー 2
+[2.519s] Invoked command in '/home/takuto/scout_ws/build/roughness_slope_astar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/build/roughness_slope_astar -- -j16 -l16

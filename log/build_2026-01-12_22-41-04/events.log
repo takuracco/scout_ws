@@ -1,0 +1,524 @@
+[0.000000] (-) TimerEvent: {}
+[0.000464] (cmd_vel_joy) JobQueued: {'identifier': 'cmd_vel_joy', 'dependencies': OrderedDict()}
+[0.001250] (cost_cul) JobQueued: {'identifier': 'cost_cul', 'dependencies': OrderedDict()}
+[0.001313] (hesai_description) JobQueued: {'identifier': 'hesai_description', 'dependencies': OrderedDict()}
+[0.001348] (hesai_ros_driver) JobQueued: {'identifier': 'hesai_ros_driver', 'dependencies': OrderedDict()}
+[0.001585] (roughness_slope_astar) JobQueued: {'identifier': 'roughness_slope_astar', 'dependencies': OrderedDict()}
+[0.001623] (cmd_vel_joy) JobStarted: {'identifier': 'cmd_vel_joy'}
+[0.013723] (cost_cul) JobStarted: {'identifier': 'cost_cul'}
+[0.023157] (hesai_description) JobStarted: {'identifier': 'hesai_description'}
+[0.029648] (hesai_ros_driver) JobStarted: {'identifier': 'hesai_ros_driver'}
+[0.037341] (roughness_slope_astar) JobStarted: {'identifier': 'roughness_slope_astar'}
+[0.099574] (-) TimerEvent: {}
+[0.199945] (-) TimerEvent: {}
+[0.300419] (-) TimerEvent: {}
+[0.400916] (-) TimerEvent: {}
+[0.501402] (-) TimerEvent: {}
+[0.601991] (-) TimerEvent: {}
+[0.702937] (-) TimerEvent: {}
+[0.803363] (-) TimerEvent: {}
+[0.903756] (-) TimerEvent: {}
+[0.907946] (hesai_description) JobProgress: {'identifier': 'hesai_description', 'progress': 'cmake'}
+[0.908611] (hesai_description) JobProgress: {'identifier': 'hesai_description', 'progress': 'build'}
+[0.909461] (hesai_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/takuto/scout_ws/build/hesai_description', '--', '-j16', '-l16'], 'cwd': '/home/takuto/scout_ws/build/hesai_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1787'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/takuto/scout_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NALBJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.183'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/build/hesai_description'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble')]), 'shell': False}
+[0.912748] (hesai_ros_driver) JobProgress: {'identifier': 'hesai_ros_driver', 'progress': 'cmake'}
+[0.913496] (hesai_ros_driver) JobProgress: {'identifier': 'hesai_ros_driver', 'progress': 'build'}
+[0.914543] (hesai_ros_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/takuto/scout_ws/build/hesai_ros_driver', '--', '-j16', '-l16'], 'cwd': '/home/takuto/scout_ws/build/hesai_ros_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1787'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/takuto/scout_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NALBJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.183'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/build/hesai_ros_driver'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble')]), 'shell': False}
+[0.918990] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'cmake'}
+[0.919743] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'build'}
+[0.920943] (roughness_slope_astar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/takuto/scout_ws/build/roughness_slope_astar', '--', '-j16', '-l16'], 'cwd': '/home/takuto/scout_ws/build/roughness_slope_astar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1787'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/takuto/scout_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NALBJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.183'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/build/roughness_slope_astar'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble')]), 'shell': False}
+[0.977320] (hesai_description) CommandEnded: {'returncode': 0}
+[0.978884] (hesai_description) JobProgress: {'identifier': 'hesai_description', 'progress': 'install'}
+[1.000877] (hesai_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/takuto/scout_ws/build/hesai_description'], 'cwd': '/home/takuto/scout_ws/build/hesai_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1787'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/takuto/scout_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NALBJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.183'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/build/hesai_description'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble')]), 'shell': False}
+[1.003861] (-) TimerEvent: {}
+[1.007714] (roughness_slope_astar) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node\x1b[0m\n'}
+[1.014484] (hesai_ros_driver) StdoutLine: {'line': b'[  1%] Built target hesai_ros_driver__cpp\n'}
+[1.015008] (hesai_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.015777] (hesai_ros_driver) StdoutLine: {'line': b'[  3%] Built target log_lib\n'}
+[1.016017] (hesai_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.016924] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//launch/description.launch.py\n'}
+[1.017248] (hesai_ros_driver) StdoutLine: {'line': b'[ 10%] Built target hesai_ros_driver__rosidl_generator_c\n'}
+[1.017527] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//launch/visualize.launch.py\n'}
+[1.021875] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//meshes/visual/qt64.dae\n'}
+[1.022353] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//meshes/visual/xt32.dae\n'}
+[1.022559] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//rviz/model.rviz\n'}
+[1.022760] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//urdf/gazebo.urdf.xacro\n'}
+[1.024834] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//urdf/hesai_qt64.urdf.xacro\n'}
+[1.025059] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//urdf/hesai_qt64_standalone.urdf.xacro\n'}
+[1.025238] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//urdf/hesai_xt32.urdf.xacro\n'}
+[1.025844] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description//urdf/hesai_xt32_standalone.urdf.xacro\n'}
+[1.026058] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/ament_index/resource_index/package_run_dependencies/hesai_description\n'}
+[1.026245] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/ament_index/resource_index/parent_prefix_path/hesai_description\n'}
+[1.026413] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/environment/ament_prefix_path.sh\n'}
+[1.026580] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/environment/ament_prefix_path.dsv\n'}
+[1.028946] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/environment/path.sh\n'}
+[1.029354] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/environment/path.dsv\n'}
+[1.029558] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/local_setup.bash\n'}
+[1.029778] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/local_setup.sh\n'}
+[1.034843] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/local_setup.zsh\n'}
+[1.036988] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/local_setup.dsv\n'}
+[1.037230] (hesai_description) StdoutLine: {'line': b'-- Symlinking: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.dsv\n'}
+[1.037409] (hesai_ros_driver) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_symlink_hesai_ros_driver\n'}
+[1.058569] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/ament_index/resource_index/packages/hesai_description\n'}
+[1.059394] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/cmake/hesai_descriptionConfig.cmake\n'}
+[1.060556] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/cmake/hesai_descriptionConfig-version.cmake\n'}
+[1.061701] (hesai_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_description/share/hesai_description/package.xml\n'}
+[1.073700] (hesai_description) CommandEnded: {'returncode': 0}
+[1.075716] (roughness_slope_astar) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o\x1b[0m\n'}
+[1.094076] (hesai_ros_driver) StdoutLine: {'line': b'[ 25%] Built target hesai_ros_driver__rosidl_typesupport_cpp\n'}
+[1.094416] (hesai_ros_driver) StdoutLine: {'line': b'[ 25%] Built target hesai_ros_driver__rosidl_typesupport_introspection_c\n'}
+[1.094620] (hesai_ros_driver) StdoutLine: {'line': b'[ 36%] Built target platutils_lib\n'}
+[1.096088] (hesai_ros_driver) StdoutLine: {'line': b'[ 36%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_cpp\n'}
+[1.096304] (hesai_ros_driver) StdoutLine: {'line': b'[ 44%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_c\n'}
+[1.096476] (hesai_ros_driver) StdoutLine: {'line': b'[ 51%] Built target hesai_ros_driver__rosidl_typesupport_c\n'}
+[1.096642] (hesai_ros_driver) StdoutLine: {'line': b'[ 59%] Built target hesai_ros_driver__rosidl_typesupport_introspection_cpp\n'}
+[1.104272] (-) TimerEvent: {}
+[1.126542] (hesai_description) JobEnded: {'identifier': 'hesai_description', 'rc': 0}
+[1.147191] (hesai_ros_driver) StdoutLine: {'line': b'[ 59%] Built target hesai_ros_driver\n'}
+[1.150758] (hesai_ros_driver) StdoutLine: {'line': b'[ 62%] Built target udpParser_lib\n'}
+[1.151237] (hesai_ros_driver) StdoutLine: {'line': b'[ 67%] Built target source_lib\n'}
+[1.158725] (hesai_ros_driver) StdoutLine: {'line': b'[ 76%] Built target ptcClient_lib\n'}
+[1.196500] (hesai_ros_driver) StdoutLine: {'line': b'[ 77%] Built target hesai_ros_driver__py\n'}
+[1.201139] (hesai_ros_driver) StdoutLine: {'line': b'[ 79%] Built target serialClient_lib\n'}
+[1.204381] (-) TimerEvent: {}
+[1.249430] (hesai_ros_driver) StdoutLine: {'line': b'[ 84%] Built target lidar_lib\n'}
+[1.249842] (hesai_ros_driver) StdoutLine: {'line': b'[ 88%] Built target hesai_ros_driver__rosidl_generator_py\n'}
+[1.297891] (hesai_ros_driver) StdoutLine: {'line': b'[ 92%] Built target hesai_sdk_lib\n'}
+[1.298239] (hesai_ros_driver) StdoutLine: {'line': b'[ 92%] Built target hesai_ros_driver__rosidl_typesupport_introspection_c__pyext\n'}
+[1.302757] (hesai_ros_driver) StdoutLine: {'line': b'[ 94%] Built target hesai_ros_driver__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.304491] (-) TimerEvent: {}
+[1.305408] (hesai_ros_driver) StdoutLine: {'line': b'[ 96%] Built target hesai_ros_driver__rosidl_typesupport_c__pyext\n'}
+[1.368707] (hesai_ros_driver) StdoutLine: {'line': b'[100%] Built target hesai_ros_driver_node\n'}
+[1.404622] (-) TimerEvent: {}
+[1.505618] (-) TimerEvent: {}
+[1.606515] (-) TimerEvent: {}
+[1.655317] (hesai_ros_driver) StdoutLine: {'line': b'running egg_info\n'}
+[1.657288] (hesai_ros_driver) StdoutLine: {'line': b'writing hesai_ros_driver.egg-info/PKG-INFO\n'}
+[1.657959] (hesai_ros_driver) StdoutLine: {'line': b'writing dependency_links to hesai_ros_driver.egg-info/dependency_links.txt\n'}
+[1.658429] (hesai_ros_driver) StdoutLine: {'line': b'writing top-level names to hesai_ros_driver.egg-info/top_level.txt\n'}
+[1.662681] (hesai_ros_driver) StdoutLine: {'line': b"reading manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'\n"}
+[1.664017] (hesai_ros_driver) StdoutLine: {'line': b"writing manifest file 'hesai_ros_driver.egg-info/SOURCES.txt'\n"}
+[1.706798] (-) TimerEvent: {}
+[1.725917] (hesai_ros_driver) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_hesai_ros_driver_egg\n'}
+[1.745135] (cost_cul) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/cost_cul', 'build', '--build-base', '/home/takuto/scout_ws/build/cost_cul/build', 'install', '--record', '/home/takuto/scout_ws/build/cost_cul/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/takuto/scout_ws/src/cost_cul', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'takuto', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/takuto', 'OLDPWD': '/home/takuto', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1787', 'UNZIP': '-O CP932', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/takuto/scout_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'takuto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'takuto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.NALBJ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/takuto/scout_ws/build/cost_cul', 'ZIPINFO': '-O CP932', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LDS_MODEL': 'LDS-01', 'PYTHONPATH': '/home/takuto/scout_ws/build/cost_cul/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description'}, 'shell': False}
+[1.757229] (cmd_vel_joy) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/cmd_vel_joy', 'build', '--build-base', '/home/takuto/scout_ws/build/cmd_vel_joy/build', 'install', '--record', '/home/takuto/scout_ws/build/cmd_vel_joy/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/takuto/scout_ws/src/cmd_vel_joy', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'takuto', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/takuto', 'OLDPWD': '/home/takuto', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1787', 'UNZIP': '-O CP932', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/takuto/scout_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'takuto', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'takuto', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'ja_JP.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.NALBJ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.183', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/takuto/scout_ws/build/cmd_vel_joy', 'ZIPINFO': '-O CP932', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LDS_MODEL': 'LDS-01', 'PYTHONPATH': '/home/takuto/scout_ws/build/cmd_vel_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description'}, 'shell': False}
+[1.770581] (hesai_ros_driver) CommandEnded: {'returncode': 0}
+[1.772544] (hesai_ros_driver) JobProgress: {'identifier': 'hesai_ros_driver', 'progress': 'install'}
+[1.772621] (hesai_ros_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/takuto/scout_ws/build/hesai_ros_driver'], 'cwd': '/home/takuto/scout_ws/build/hesai_ros_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1787'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/takuto/scout_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NALBJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.183'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/build/hesai_ros_driver'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble')]), 'shell': False}
+[1.786666] (hesai_ros_driver) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[1.787744] (hesai_ros_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.788197] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/ament_index/resource_index/rosidl_interfaces/hesai_ros_driver\n'}
+[1.789231] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__functions.h\n'}
+[1.789468] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__struct.h\n'}
+[1.789693] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.h\n'}
+[1.790039] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__functions.h\n'}
+[1.790386] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__struct.h\n'}
+[1.790619] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.h\n'}
+[1.790858] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__functions.h\n'}
+[1.792905] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__struct.h\n'}
+[1.793191] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.h\n'}
+[1.793346] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__functions.h\n'}
+[1.793885] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__struct.h\n'}
+[1.794116] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.h\n'}
+[1.794523] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__functions.h\n'}
+[1.794671] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__struct.h\n'}
+[1.794839] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.h\n'}
+[1.794987] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/firetime.h\n'}
+[1.795189] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/loss_packet.h\n'}
+[1.795424] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/ptp.h\n'}
+[1.795574] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.796231] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_frame.h\n'}
+[1.796958] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_packet.h\n'}
+[1.800174] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/library_path.sh\n'}
+[1.800501] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/library_path.dsv\n'}
+[1.800650] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_fastrtps_c.h\n'}
+[1.800817] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[1.800963] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_fastrtps_c.h\n'}
+[1.801174] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_fastrtps_c.h\n'}
+[1.801310] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[1.801440] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.805967] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__builder.hpp\n'}
+[1.806318] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__struct.hpp\n'}
+[1.806472] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__traits.hpp\n'}
+[1.806620] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__type_support.hpp\n'}
+[1.806778] (-) TimerEvent: {}
+[1.807002] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__builder.hpp\n'}
+[1.807204] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__struct.hpp\n'}
+[1.807350] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__traits.hpp\n'}
+[1.807489] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__type_support.hpp\n'}
+[1.807625] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__builder.hpp\n'}
+[1.807807] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__struct.hpp\n'}
+[1.807956] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__traits.hpp\n'}
+[1.808685] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__type_support.hpp\n'}
+[1.808980] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__builder.hpp\n'}
+[1.809160] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__struct.hpp\n'}
+[1.809326] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__traits.hpp\n'}
+[1.809605] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__type_support.hpp\n'}
+[1.809767] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__builder.hpp\n'}
+[1.809997] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__struct.hpp\n'}
+[1.810155] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__traits.hpp\n'}
+[1.810304] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__type_support.hpp\n'}
+[1.810466] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/firetime.hpp\n'}
+[1.810670] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/loss_packet.hpp\n'}
+[1.810992] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/ptp.hpp\n'}
+[1.811151] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[1.811288] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_frame.hpp\n'}
+[1.811443] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/udp_packet.hpp\n'}
+[1.811690] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.812051] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.812336] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.812600] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.812922] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.813268] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.813811] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_introspection_c.h\n'}
+[1.814138] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_introspection_c.h\n'}
+[1.814438] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_introspection_c.h\n'}
+[1.814717] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_introspection_c.h\n'}
+[1.815034] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_introspection_c.h\n'}
+[1.815334] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.815958] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/firetime__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.816271] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/loss_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.816919] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/ptp__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.817267] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_frame__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.817501] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/include/hesai_ros_driver/hesai_ros_driver/msg/detail/udp_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.817840] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/pythonpath.sh\n'}
+[1.818155] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/pythonpath.dsv\n'}
+[1.818401] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/PKG-INFO\n'}
+[1.818699] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.819051] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.819414] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver-1.5.0-py3.10.egg-info/top_level.txt\n'}
+[1.820758] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/__init__.py\n'}
+[1.821106] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_c.c\n'}
+[1.821436] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.821728] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/_hesai_ros_driver_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.822004] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.822206] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.822488] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.822682] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/libhesai_ros_driver__rosidl_generator_py.so\n'}
+[1.822969] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/__init__.py\n'}
+[1.823210] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_firetime.py\n'}
+[1.823637] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_firetime_s.c\n'}
+[1.824012] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_loss_packet.py\n'}
+[1.824260] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_loss_packet_s.c\n'}
+[1.824609] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_ptp.py\n'}
+[1.824919] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_ptp_s.c\n'}
+[1.825190] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_frame.py\n'}
+[1.825520] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_frame_s.c\n'}
+[1.825780] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_packet.py\n'}
+[1.826048] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg/_udp_packet_s.c\n'}
+[1.826407] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.826938] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.827441] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/hesai_ros_driver_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.827819] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg/UdpPacket.idl\n'}
+[1.828146] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg/UdpFrame.idl\n'}
+[1.828420] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg/Firetime.idl\n'}
+[1.828742] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg/Ptp.idl\n'}
+[1.829114] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg/LossPacket.idl\n'}
+[1.829434] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/UdpPacket.msg\n'}
+[1.829705] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/UdpFrame.msg\n'}
+[1.830031] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/Firetime.msg\n'}
+[1.830469] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/Ptp.msg\n'}
+[1.830848] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/msg_ros2/LossPacket.msg\n'}
+[1.831484] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/lib/hesai_ros_driver/hesai_ros_driver_node\n'}
+[1.832176] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_sdk_lib.so\n'}
+[1.832626] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/lib/liblog_lib.so\n'}
+[1.833139] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/lib/liblidar_lib.so\n'}
+[1.833977] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/launch/dashing_start.py\n'}
+[1.834339] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/launch/start.launch\n'}
+[1.834640] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/launch/start.py\n'}
+[1.835285] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/rviz/rviz.rviz\n'}
+[1.835751] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/rviz/rviz2.rviz\n'}
+[1.836142] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/ament_index/resource_index/package_run_dependencies/hesai_ros_driver\n'}
+[1.836660] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/ament_index/resource_index/parent_prefix_path/hesai_ros_driver\n'}
+[1.837140] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/ament_prefix_path.sh\n'}
+[1.837575] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/ament_prefix_path.dsv\n'}
+[1.838048] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/path.sh\n'}
+[1.838412] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/environment/path.dsv\n'}
+[1.838677] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.bash\n'}
+[1.838993] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.sh\n'}
+[1.839267] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.zsh\n'}
+[1.839498] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/local_setup.dsv\n'}
+[1.839796] (hesai_ros_driver) StdoutLine: {'line': b'-- Symlinking: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.dsv\n'}
+[1.863381] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/ament_index/resource_index/packages/hesai_ros_driver\n'}
+[1.863891] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake-extras.cmake\n'}
+[1.864171] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.864458] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.864912] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.865382] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.865842] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.866296] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.866799] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driverConfig.cmake\n'}
+[1.867195] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driverConfig-version.cmake\n'}
+[1.867779] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/package.xml\n'}
+[1.868486] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_c.so\n'}
+[1.869288] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_c.so\n'}
+[1.870083] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.870844] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_c.so\n'}
+[1.871592] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_c.so\n'}
+[1.872316] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_introspection_cpp.so\n'}
+[1.873054] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_typesupport_cpp.so\n'}
+[1.906900] (-) TimerEvent: {}
+[1.940710] (hesai_ros_driver) StdoutLine: {'line': b"Listing '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver'...\n"}
+[1.941116] (hesai_ros_driver) StdoutLine: {'line': b"Listing '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages/hesai_ros_driver/msg'...\n"}
+[1.950980] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/lib/libhesai_ros_driver__rosidl_generator_py.so\n'}
+[1.951467] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cExport.cmake\n'}
+[1.951783] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cExport-release.cmake\n'}
+[1.952131] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.952348] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[1.952566] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_cppExport.cmake\n'}
+[1.952934] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.953300] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[1.953520] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.953727] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[1.954057] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cExport.cmake\n'}
+[1.954311] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cExport-release.cmake\n'}
+[1.954528] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.954715] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[1.954909] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cppExport.cmake\n'}
+[1.955092] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/hesai_ros_driver__rosidl_typesupport_cppExport-release.cmake\n'}
+[1.955265] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_pyExport.cmake\n'}
+[1.955442] (hesai_ros_driver) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/hesai_ros_driver/share/hesai_ros_driver/cmake/export_hesai_ros_driver__rosidl_generator_pyExport-release.cmake\n'}
+[1.958460] (hesai_ros_driver) CommandEnded: {'returncode': 0}
+[1.993268] (hesai_ros_driver) JobEnded: {'identifier': 'hesai_ros_driver', 'rc': 0}
+[2.007016] (-) TimerEvent: {}
+[2.107450] (-) TimerEvent: {}
+[2.207913] (-) TimerEvent: {}
+[2.305204] (cmd_vel_joy) StdoutLine: {'line': b'running egg_info\n'}
+[2.306926] (cmd_vel_joy) StdoutLine: {'line': b'writing ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/PKG-INFO\n'}
+[2.307368] (cmd_vel_joy) StdoutLine: {'line': b'writing dependency_links to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/dependency_links.txt\n'}
+[2.307696] (cmd_vel_joy) StdoutLine: {'line': b'writing entry points to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/entry_points.txt\n'}
+[2.307896] (-) TimerEvent: {}
+[2.308169] (cmd_vel_joy) StdoutLine: {'line': b'writing requirements to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/requires.txt\n'}
+[2.308452] (cmd_vel_joy) StdoutLine: {'line': b'writing top-level names to ../../build/cmd_vel_joy/cmd_vel_joy.egg-info/top_level.txt\n'}
+[2.312248] (cmd_vel_joy) StdoutLine: {'line': b"reading manifest file '../../build/cmd_vel_joy/cmd_vel_joy.egg-info/SOURCES.txt'\n"}
+[2.313955] (cmd_vel_joy) StdoutLine: {'line': b"writing manifest file '../../build/cmd_vel_joy/cmd_vel_joy.egg-info/SOURCES.txt'\n"}
+[2.314869] (cmd_vel_joy) StdoutLine: {'line': b'running build\n'}
+[2.315077] (cmd_vel_joy) StdoutLine: {'line': b'running build_py\n'}
+[2.315426] (cmd_vel_joy) StdoutLine: {'line': b'running install\n'}
+[2.316599] (cmd_vel_joy) StdoutLine: {'line': b'running install_lib\n'}
+[2.319838] (cmd_vel_joy) StdoutLine: {'line': b'running install_data\n'}
+[2.320334] (cmd_vel_joy) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.323491] (cost_cul) StdoutLine: {'line': b'running egg_info\n'}
+[2.324668] (cmd_vel_joy) StdoutLine: {'line': b"removing '/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.325421] (cost_cul) StdoutLine: {'line': b'writing ../../build/cost_cul/cost_cul.egg-info/PKG-INFO\n'}
+[2.325786] (cmd_vel_joy) StdoutLine: {'line': b'Copying ../../build/cmd_vel_joy/cmd_vel_joy.egg-info to /home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages/cmd_vel_joy-0.0.0-py3.10.egg-info\n'}
+[2.326106] (cost_cul) StdoutLine: {'line': b'writing dependency_links to ../../build/cost_cul/cost_cul.egg-info/dependency_links.txt\n'}
+[2.326390] (cost_cul) StdoutLine: {'line': b'writing entry points to ../../build/cost_cul/cost_cul.egg-info/entry_points.txt\n'}
+[2.326676] (cost_cul) StdoutLine: {'line': b'writing requirements to ../../build/cost_cul/cost_cul.egg-info/requires.txt\n'}
+[2.326989] (cost_cul) StdoutLine: {'line': b'writing top-level names to ../../build/cost_cul/cost_cul.egg-info/top_level.txt\n'}
+[2.327886] (cmd_vel_joy) StdoutLine: {'line': b'running install_scripts\n'}
+[2.331134] (cost_cul) StdoutLine: {'line': b"reading manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'\n"}
+[2.333475] (cost_cul) StdoutLine: {'line': b"writing manifest file '../../build/cost_cul/cost_cul.egg-info/SOURCES.txt'\n"}
+[2.333953] (cost_cul) StdoutLine: {'line': b'running build\n'}
+[2.334151] (cost_cul) StdoutLine: {'line': b'running build_py\n'}
+[2.335351] (cost_cul) StdoutLine: {'line': b'running install\n'}
+[2.336226] (cost_cul) StdoutLine: {'line': b'running install_lib\n'}
+[2.339834] (cost_cul) StdoutLine: {'line': b'running install_data\n'}
+[2.340164] (cost_cul) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.344064] (cost_cul) StdoutLine: {'line': b"removing '/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.344902] (cost_cul) StdoutLine: {'line': b'Copying ../../build/cost_cul/cost_cul.egg-info to /home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages/cost_cul-0.0.0-py3.10.egg-info\n'}
+[2.346781] (cost_cul) StdoutLine: {'line': b'running install_scripts\n'}
+[2.371556] (cmd_vel_joy) StdoutLine: {'line': b'Installing joy_cmd script to /home/takuto/scout_ws/install/cmd_vel_joy/lib/cmd_vel_joy\n'}
+[2.372364] (cmd_vel_joy) StdoutLine: {'line': b"writing list of installed files to '/home/takuto/scout_ws/build/cmd_vel_joy/install.log'\n"}
+[2.397047] (cost_cul) StdoutLine: {'line': b'Installing cost_cul_node script to /home/takuto/scout_ws/install/cost_cul/lib/cost_cul\n'}
+[2.399839] (cost_cul) StdoutLine: {'line': b"writing list of installed files to '/home/takuto/scout_ws/build/cost_cul/install.log'\n"}
+[2.408079] (-) TimerEvent: {}
+[2.443327] (cmd_vel_joy) CommandEnded: {'returncode': 0}
+[2.471685] (cmd_vel_joy) JobEnded: {'identifier': 'cmd_vel_joy', 'rc': 0}
+[2.478808] (cost_cul) CommandEnded: {'returncode': 0}
+[2.501166] (cost_cul) JobEnded: {'identifier': 'cost_cul', 'rc': 0}
+[2.508238] (-) TimerEvent: {}
+[2.608791] (-) TimerEvent: {}
+[2.709171] (-) TimerEvent: {}
+[2.809585] (-) TimerEvent: {}
+[2.910062] (-) TimerEvent: {}
+[3.010693] (-) TimerEvent: {}
+[3.111302] (-) TimerEvent: {}
+[3.211747] (-) TimerEvent: {}
+[3.312562] (-) TimerEvent: {}
+[3.413531] (-) TimerEvent: {}
+[3.514044] (-) TimerEvent: {}
+[3.614555] (-) TimerEvent: {}
+[3.714949] (-) TimerEvent: {}
+[3.815361] (-) TimerEvent: {}
+[3.915828] (-) TimerEvent: {}
+[4.016203] (-) TimerEvent: {}
+[4.116901] (-) TimerEvent: {}
+[4.217715] (-) TimerEvent: {}
+[4.318124] (-) TimerEvent: {}
+[4.418488] (-) TimerEvent: {}
+[4.518951] (-) TimerEvent: {}
+[4.619595] (-) TimerEvent: {}
+[4.720033] (-) TimerEvent: {}
+[4.821051] (-) TimerEvent: {}
+[4.921446] (-) TimerEvent: {}
+[5.021892] (-) TimerEvent: {}
+[5.122368] (-) TimerEvent: {}
+[5.222767] (-) TimerEvent: {}
+[5.323186] (-) TimerEvent: {}
+[5.423650] (-) TimerEvent: {}
+[5.524240] (-) TimerEvent: {}
+[5.624643] (-) TimerEvent: {}
+[5.725078] (-) TimerEvent: {}
+[5.825498] (-) TimerEvent: {}
+[5.925969] (-) TimerEvent: {}
+[6.026533] (-) TimerEvent: {}
+[6.126928] (-) TimerEvent: {}
+[6.227803] (-) TimerEvent: {}
+[6.328161] (-) TimerEvent: {}
+[6.428531] (-) TimerEvent: {}
+[6.529076] (-) TimerEvent: {}
+[6.629771] (-) TimerEvent: {}
+[6.730462] (-) TimerEvent: {}
+[6.832146] (-) TimerEvent: {}
+[6.932608] (-) TimerEvent: {}
+[7.033000] (-) TimerEvent: {}
+[7.133419] (-) TimerEvent: {}
+[7.233790] (-) TimerEvent: {}
+[7.334167] (-) TimerEvent: {}
+[7.434574] (-) TimerEvent: {}
+[7.535109] (-) TimerEvent: {}
+[7.635602] (-) TimerEvent: {}
+[7.736199] (-) TimerEvent: {}
+[7.836548] (-) TimerEvent: {}
+[7.936917] (-) TimerEvent: {}
+[8.037289] (-) TimerEvent: {}
+[8.137683] (-) TimerEvent: {}
+[8.238275] (-) TimerEvent: {}
+[8.338777] (-) TimerEvent: {}
+[8.439358] (-) TimerEvent: {}
+[8.539789] (-) TimerEvent: {}
+[8.640277] (-) TimerEvent: {}
+[8.740775] (-) TimerEvent: {}
+[8.841340] (-) TimerEvent: {}
+[8.941867] (-) TimerEvent: {}
+[9.042664] (-) TimerEvent: {}
+[9.143072] (-) TimerEvent: {}
+[9.243415] (-) TimerEvent: {}
+[9.343806] (-) TimerEvent: {}
+[9.444236] (-) TimerEvent: {}
+[9.544713] (-) TimerEvent: {}
+[9.645296] (-) TimerEvent: {}
+[9.746038] (-) TimerEvent: {}
+[9.846468] (-) TimerEvent: {}
+[9.946828] (-) TimerEvent: {}
+[10.047237] (-) TimerEvent: {}
+[10.147699] (-) TimerEvent: {}
+[10.248077] (-) TimerEvent: {}
+[10.348470] (-) TimerEvent: {}
+[10.448896] (-) TimerEvent: {}
+[10.549423] (-) TimerEvent: {}
+[10.650014] (-) TimerEvent: {}
+[10.750405] (-) TimerEvent: {}
+[10.850799] (-) TimerEvent: {}
+[10.951346] (-) TimerEvent: {}
+[11.052002] (-) TimerEvent: {}
+[11.152511] (-) TimerEvent: {}
+[11.252910] (-) TimerEvent: {}
+[11.353550] (-) TimerEvent: {}
+[11.453998] (-) TimerEvent: {}
+[11.554389] (-) TimerEvent: {}
+[11.654764] (-) TimerEvent: {}
+[11.755213] (-) TimerEvent: {}
+[11.855648] (-) TimerEvent: {}
+[11.956291] (-) TimerEvent: {}
+[12.056763] (-) TimerEvent: {}
+[12.157530] (-) TimerEvent: {}
+[12.257942] (-) TimerEvent: {}
+[12.358325] (-) TimerEvent: {}
+[12.458643] (-) TimerEvent: {}
+[12.559042] (-) TimerEvent: {}
+[12.659505] (-) TimerEvent: {}
+[12.759896] (-) TimerEvent: {}
+[12.860239] (-) TimerEvent: {}
+[12.960600] (-) TimerEvent: {}
+[13.061093] (-) TimerEvent: {}
+[13.161683] (-) TimerEvent: {}
+[13.262183] (-) TimerEvent: {}
+[13.362560] (-) TimerEvent: {}
+[13.463013] (-) TimerEvent: {}
+[13.563444] (-) TimerEvent: {}
+[13.663801] (-) TimerEvent: {}
+[13.764188] (-) TimerEvent: {}
+[13.864638] (-) TimerEvent: {}
+[13.965148] (-) TimerEvent: {}
+[14.065835] (-) TimerEvent: {}
+[14.166220] (-) TimerEvent: {}
+[14.266760] (-) TimerEvent: {}
+[14.367181] (-) TimerEvent: {}
+[14.467547] (-) TimerEvent: {}
+[14.567964] (-) TimerEvent: {}
+[14.668505] (-) TimerEvent: {}
+[14.769677] (-) TimerEvent: {}
+[14.870105] (-) TimerEvent: {}
+[14.970440] (-) TimerEvent: {}
+[15.070828] (-) TimerEvent: {}
+[15.171296] (-) TimerEvent: {}
+[15.271714] (-) TimerEvent: {}
+[15.372185] (-) TimerEvent: {}
+[15.472546] (-) TimerEvent: {}
+[15.573146] (-) TimerEvent: {}
+[15.673901] (-) TimerEvent: {}
+[15.774225] (-) TimerEvent: {}
+[15.874607] (-) TimerEvent: {}
+[15.975045] (-) TimerEvent: {}
+[16.075573] (-) TimerEvent: {}
+[16.176121] (-) TimerEvent: {}
+[16.276508] (-) TimerEvent: {}
+[16.376820] (-) TimerEvent: {}
+[16.477450] (-) TimerEvent: {}
+[16.578096] (-) TimerEvent: {}
+[16.678519] (-) TimerEvent: {}
+[16.778891] (-) TimerEvent: {}
+[16.879311] (-) TimerEvent: {}
+[16.979805] (-) TimerEvent: {}
+[17.080212] (-) TimerEvent: {}
+[17.180889] (-) TimerEvent: {}
+[17.281364] (-) TimerEvent: {}
+[17.381936] (-) TimerEvent: {}
+[17.482392] (-) TimerEvent: {}
+[17.582815] (-) TimerEvent: {}
+[17.683198] (-) TimerEvent: {}
+[17.783577] (-) TimerEvent: {}
+[17.884065] (-) TimerEvent: {}
+[17.984540] (-) TimerEvent: {}
+[18.084983] (-) TimerEvent: {}
+[18.185826] (-) TimerEvent: {}
+[18.286726] (-) TimerEvent: {}
+[18.387232] (-) TimerEvent: {}
+[18.444380] (roughness_slope_astar) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable roughness_slope_astar_node\x1b[0m\n'}
+[18.487363] (-) TimerEvent: {}
+[18.587720] (-) TimerEvent: {}
+[18.688232] (-) TimerEvent: {}
+[18.788673] (-) TimerEvent: {}
+[18.889196] (-) TimerEvent: {}
+[18.989778] (-) TimerEvent: {}
+[19.090289] (-) TimerEvent: {}
+[19.190662] (-) TimerEvent: {}
+[19.291416] (-) TimerEvent: {}
+[19.320694] (roughness_slope_astar) StdoutLine: {'line': b'[100%] Built target roughness_slope_astar_node\n'}
+[19.341114] (roughness_slope_astar) CommandEnded: {'returncode': 0}
+[19.342444] (roughness_slope_astar) JobProgress: {'identifier': 'roughness_slope_astar', 'progress': 'install'}
+[19.343437] (roughness_slope_astar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/takuto/scout_ws/build/roughness_slope_astar'], 'cwd': '/home/takuto/scout_ws/build/roughness_slope_astar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'takuto'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/takuto/scout_ws/install/hesai_ros_driver/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/takuto'), ('OLDPWD', '/home/takuto'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1787'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/takuto/scout_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'takuto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'takuto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/takuto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/takuto-PC:@/tmp/.ICE-unix/1761,unix/takuto-PC:/tmp/.ICE-unix/1761'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1a46a47_5049_4119_9f32_b7eeb29b0624'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NALBJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.183'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/takuto/scout_ws/build/roughness_slope_astar'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LDS_MODEL', 'LDS-01'), ('PYTHONPATH', '/home/takuto/scout_ws/install/hesai_ros_driver/local/lib/python3.10/dist-packages:/home/takuto/scout_ws/install/cost_cul/lib/python3.10/site-packages:/home/takuto/scout_ws/install/cmd_vel_joy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/takuto/scout_ws/install/scout_mini_gazebo_sim:/home/takuto/scout_ws/install/scout_mini_description:/home/takuto/scout_ws/install/scout_mini_control:/home/takuto/scout_ws/install/scout_gazebo:/home/takuto/scout_ws/install/scout_description:/home/takuto/scout_ws/install/roughness_slope_astar:/home/takuto/scout_ws/install/hesai_ros_driver:/home/takuto/scout_ws/install/hesai_description:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble')]), 'shell': False}
+[19.354542] (roughness_slope_astar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.354946] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/install/roughness_slope_astar/lib/roughness_slope_astar/roughness_slope_astar_node\n'}
+[19.369016] (roughness_slope_astar) StdoutLine: {'line': b'-- Set runtime path of "/home/takuto/scout_ws/install/roughness_slope_astar/lib/roughness_slope_astar/roughness_slope_astar_node" to ""\n'}
+[19.369434] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/ament_index/resource_index/package_run_dependencies/roughness_slope_astar\n'}
+[19.369617] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/ament_index/resource_index/parent_prefix_path/roughness_slope_astar\n'}
+[19.369788] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.sh\n'}
+[19.369955] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.dsv\n'}
+[19.370072] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.sh\n'}
+[19.370149] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.dsv\n'}
+[19.370250] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.bash\n'}
+[19.370352] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.sh\n'}
+[19.370438] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.zsh\n'}
+[19.370519] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.dsv\n'}
+[19.370598] (roughness_slope_astar) StdoutLine: {'line': b'-- Installing: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/package.dsv\n'}
+[19.370676] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/ament_index/resource_index/packages/roughness_slope_astar\n'}
+[19.370829] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig.cmake\n'}
+[19.370916] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig-version.cmake\n'}
+[19.370988] (roughness_slope_astar) StdoutLine: {'line': b'-- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/package.xml\n'}
+[19.374650] (roughness_slope_astar) CommandEnded: {'returncode': 0}
+[19.391144] (roughness_slope_astar) JobEnded: {'identifier': 'roughness_slope_astar', 'rc': 0}
+[19.392740] (-) TimerEvent: {}
+[19.392899] (-) EventReactorShutdown: {}

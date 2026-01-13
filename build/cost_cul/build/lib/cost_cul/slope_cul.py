@@ -22,6 +22,8 @@ class slope_cul():
         self.origin_x = float(origin_x)
         self.origin_y = float(origin_y)
 
+        self.max_rad = param.max_rad
+
         self.grid_plane = {}
         self.slope_cost = {}
 
@@ -32,65 +34,44 @@ class slope_cul():
         self.grid_plane = grid_plane
         return grid_plane
 
-    def get_cell_center(self, i, j):
-        """セル(i,j)の中心のz座標を返す関数"""
+    def angle_estimation_plane_only(self, x, y):
+        """
+        平面推定した情報(ax+by+cz+d=0)から、
+        セル(x,y)の8方向の傾斜角(theta) [rad] を返す（plane only）
+        """
+        theta = np.full(8, np.inf, dtype=np.float32)
 
-        plane = self.grid_plane.get((i, j), None)
+        plane = self.grid_plane.get((x, y), None)
         if plane is None:
-            return np.nan  # 未推定
+            return np.zeros(8, dtype=np.float32)  # 未推定は0扱い（あなたの方針）
 
         a, b, c, d = plane
         if abs(c) < 1e-9:
-            return None  # 推定はあるが計算不能
+            return theta
 
-        # 中心の座標
-        center_x = self.origin_x + (i + 0.5) * self.cell_res
-        center_y = self.origin_y + (j + 0.5) * self.cell_res
-        
-        if abs(c) < 1e-9:
-            return None
+        for dir_idx, (dx, dy) in enumerate(DIRECTIONS):
+            # 方向ベクトルを正規化（右上など(1,1)対策）
+            norm = np.hypot(dx, dy)
+            ux, uy = dx / norm, dy / norm
 
-        center_z = (- a * center_x - b * center_y - d) / c # 0=ax+by+cz+d
+            # 方向微分 dz/ds
+            dzds = -(a * ux + b * uy) / c
 
-        return center_z
+            # 傾斜角（符号付き）
+            theta[dir_idx] = np.float32(np.arctan(dzds))
+
+        return theta
+
 
     def slope_cul(self, i, j):
         """
         セル(i,j)に対して、8方向の傾斜角コストを計算する
         return: slope_cost[8] のndarray
         """
-        center_z = self.get_cell_center(i, j)
-        # 返り値は必ず ndarray にする
         slope_cost = np.full(8, np.inf, dtype=np.float32)
+        slope_angle = self.angle_estimation_plane_only(i, j)
 
-        # セル自体が計算不能なら全部通れない
-        if center_z is None:
-            return slope_cost
-
-        # 未推定セルは「何もない」扱いにしたいなら 0 を返す（あなたの方針）
-        if np.isnan(center_z):
-            return np.zeros(8, dtype=np.float32)
-
-        for dir_idx, (dx,dy) in enumerate(DIRECTIONS):
-            nx = i + dx
-            ny = j + dy
-
-            neighbor_z = self.get_cell_center(nx, ny)
-
-            if np.isnan(neighbor_z):
-                slope_cost[dir_idx] = np.inf
-                continue
-            
-            # 高さ
-            dz = neighbor_z - center_z
-            # 距離(斜めは√2倍)
-            horizontal_dist = self.cell_res * (np.sqrt(2) if dx != 0 and dy != 0 else 1)
-            # 傾斜角(rad)
-            theta = np.arctan(dz / horizontal_dist)
-
-            # 角度がコストになってる(rad) -1.7 ~ 1.7
-            slope_cost[dir_idx] = theta
-
+        slope_cost = np.clip(np.abs(slope_angle), 0.0, self.max_rad) / self.max_rad # 正規化 (0~1に)
         return slope_cost
     
 

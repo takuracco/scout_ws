@@ -1,0 +1,4 @@
+[01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:[m[K In member function ‘[01m[Kvoid RoughnessSlopeAstarNode::plan_tick()[m[K’:
+[01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:38:11:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KDIST_ONLY[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+   38 |     switch[01;35m[K([m[Kcost_mode){
+      |           [01;35m[K^[m[K

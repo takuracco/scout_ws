@@ -11,7 +11,7 @@ RoughnessSlopeAstarNode::RoughnessSlopeAstarNode(): Node("roughness_slope_astar_
     cmd_pub_       = this->create_publisher<geometry_msgs::msg::Twist>("diff_drive_controller/cmd_vel_unstamped",rclcpp::QoS(10));
 
     //subscription
-    odom_sub_      = this->create_subscription<nav_msgs::msg::Odometry>("diff_drive_controller/odom", 1, std::bind(&RoughnessSlopeAstarNode::on_odom, this, _1));
+    odom_sub_      = this->create_subscription<nav_msgs::msg::Odometry>("ground_truth/odom", 1, std::bind(&RoughnessSlopeAstarNode::on_odom, this, _1));
     roughness_sub_ = this->create_subscription<std_msgs::msg::Float32MultiArray>("roughness_cost", 1, std::bind(&RoughnessSlopeAstarNode::on_roughness_cost, this, _1));
     slope_sub_     = this->create_subscription<std_msgs::msg::Float32MultiArray>("slope_cost", 1, std::bind(&RoughnessSlopeAstarNode::on_slope_cost, this, _1));
 
@@ -94,13 +94,13 @@ void RoughnessSlopeAstarNode::control_tick(){
                 path_i++;
             }
             vel = robot.get_vel_cmd();
-            cmd_vel.linear.x = vel.x;
+            cmd_vel.linear.x = -1 * vel.x;
             cmd_vel.angular.z = vel.yaw;
             cmd_pub_->publish(cmd_vel);
             // RCLCPP_INFO(this->get_logger(), "移動中(%d,%d)　速度(%f,%f,%f)", path_[path_i].x, path_[path_i].y, vel.x, vel.y, vel.yaw);
             // RCLCPP_INFO(this->get_logger(), "odom:%f, %f, %f", Od.x, Od.y, Od.yaw);
             // RCLCPP_INFO(this->get_logger(), "state:%d", robot.get_move_state());
-            printf("%f ,%f ,%f ,%f ,%f ,%f ,%d ,%d \n", vel.x, vel.y, vel.yaw, odom.x, odom.y, odom.yaw, path_[path_i].x, path_[path_i].y);
+            printf("%f ,%f ,%f ,%d ,%d ,%d ,%f \n", odom.x, odom.y, odom.yaw, path_[path_i].x, path_[path_i].y, robot.get_move_state(), robot.get_yaw_err());
             break;
             
         case RobotState::Goal:
@@ -113,9 +113,9 @@ void RoughnessSlopeAstarNode::control_tick(){
 
 
 void RoughnessSlopeAstarNode::get_odom(nav_msgs::msg::Odometry::SharedPtr msg){
-    odom.x = msg->pose.pose.position.x + start_x;
-    odom.y = msg->pose.pose.position.y + start_y;
-    odom.z = msg->pose.pose.position.z + start_z;
+    odom.x = msg->pose.pose.position.x;
+    odom.y = msg->pose.pose.position.y;
+    odom.z = msg->pose.pose.position.z;
     float x = msg->pose.pose.orientation.x;
     float y = msg->pose.pose.orientation.y;
     float z = msg->pose.pose.orientation.z;

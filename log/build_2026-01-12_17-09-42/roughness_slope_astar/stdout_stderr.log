@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target roughness_slope_astar_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RobotController/RobotController.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o[0m
+[01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:[m[K In member function ‘[01m[Kvoid RoughnessSlopeAstarNode::control_tick()[m[K’:
+[01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:105:26:[m[K [01;31m[Kerror: [m[Kjump to case label
+  105 |         case RobotState::[01;31m[KGoal[m[K:
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:99:22:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[KOdometry Od[m[K’
+   99 |             Odometry [01;36m[KOd[m[K = robot.get_odom();
+      |                      [01;36m[K^~[m[K
+[01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:73:11:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KGoal[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+   73 |     switch[01;35m[K([m[KState){
+      |           [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/roughness_slope_astar_node.dir/build.make:90: CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roughness_slope_astar_node.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2

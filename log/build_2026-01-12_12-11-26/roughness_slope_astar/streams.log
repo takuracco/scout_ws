@@ -1,0 +1,30 @@
+[0.674s] Invoking command in '/home/takuto/scout_ws/build/roughness_slope_astar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/build/roughness_slope_astar -- -j16 -l16
+[0.779s] [ 20%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp.o[0m
+[0.782s] [ 40%] [32mBuilding CXX object CMakeFiles/roughness_slope_astar_node.dir/src/main.cpp.o[0m
+[4.038s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:[m[K In member function ‘[01m[Kvoid RoughnessSlopeAstarNode::plan_tick()[m[K’:
+[4.038s] [01m[K/home/takuto/scout_ws/src/roughness_slope_astar/src/RoughnessSlopeAstar/RoughnessSlopeAstar.cpp:38:11:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KDIST_ONLY[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[4.038s]    38 |     switch[01;35m[K([m[Kcost_mode){
+[4.038s]       |           [01;35m[K^[m[K
+[12.787s] [ 60%] [32m[1mLinking CXX executable roughness_slope_astar_node[0m
+[13.363s] [100%] Built target roughness_slope_astar_node
+[13.377s] Invoked command in '/home/takuto/scout_ws/build/roughness_slope_astar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble /usr/bin/cmake --build /home/takuto/scout_ws/build/roughness_slope_astar -- -j16 -l16
+[13.378s] Invoking command in '/home/takuto/scout_ws/build/roughness_slope_astar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble /usr/bin/cmake --install /home/takuto/scout_ws/build/roughness_slope_astar
+[13.386s] -- Install configuration: ""
+[13.387s] -- Installing: /home/takuto/scout_ws/install/roughness_slope_astar/lib/roughness_slope_astar/roughness_slope_astar_node
+[13.395s] -- Set runtime path of "/home/takuto/scout_ws/install/roughness_slope_astar/lib/roughness_slope_astar/roughness_slope_astar_node" to ""
+[13.395s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/ament_index/resource_index/package_run_dependencies/roughness_slope_astar
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/ament_index/resource_index/parent_prefix_path/roughness_slope_astar
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.sh
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/ament_prefix_path.dsv
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.sh
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/environment/path.dsv
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.bash
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.sh
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.zsh
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/local_setup.dsv
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/package.dsv
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/ament_index/resource_index/packages/roughness_slope_astar
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig.cmake
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/cmake/roughness_slope_astarConfig-version.cmake
+[13.396s] -- Up-to-date: /home/takuto/scout_ws/install/roughness_slope_astar/share/roughness_slope_astar/package.xml
+[13.398s] Invoked command in '/home/takuto/scout_ws/build/roughness_slope_astar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/takuto/scout_ws/install/cost_cul:/home/takuto/scout_ws/install/cmd_vel_joy:/opt/ros/humble /usr/bin/cmake --install /home/takuto/scout_ws/build/roughness_slope_astar

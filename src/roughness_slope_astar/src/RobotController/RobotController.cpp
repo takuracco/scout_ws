@@ -12,8 +12,8 @@ void RobotController::set_odom(Odometry msg){
 }
 
 void RobotController::setup(){
-    TurnPID.SetParam(0.1, 0.02, 0.0);
-    StraightPID.SetParam(1, 0, 0);
+    TurnPID.SetParam(2, 0.02, 0.005);
+    StraightPID.SetParam(1, 0.02, 0.008);
 }
 
 void RobotController::Moving_Robot(Cell target){
